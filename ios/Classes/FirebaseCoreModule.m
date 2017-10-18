@@ -18,20 +18,20 @@
 
 - (id)moduleGUID
 {
-	return @"67251823-11de-4439-8150-56cad62a55eb";
+  return @"67251823-11de-4439-8150-56cad62a55eb";
 }
 
 - (NSString *)moduleId
 {
-	return @"firebase.core";
+  return @"firebase.core";
 }
 
 #pragma mark Lifecycle
 
 - (void)startup
 {
-	[super startup];
-	NSLog(@"[DEBUG] %@ loaded",self);
+  [super startup];
+  NSLog(@"[DEBUG] %@ loaded", self);
 }
 
 #pragma Public APIs
@@ -42,7 +42,7 @@
     [FIRApp configure];
     return;
   }
-  
+
   // TODO: Expose options
   __unused NSDictionary *options = [arguments objectAtIndex:0];
   [FIRApp configureWithOptions:FIROptions.defaultOptions];
