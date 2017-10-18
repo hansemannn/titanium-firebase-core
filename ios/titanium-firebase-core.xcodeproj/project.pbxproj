@@ -35,6 +35,7 @@
 		DB15C77A1F976C650054FD3A /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15C7741F976C650054FD3A /* nanopb.framework */; };
 		DB15C77B1F976C650054FD3A /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15C7751F976C650054FD3A /* FirebaseCoreDiagnostics.framework */; };
 		DB15C77D1F976F130054FD3A /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15C77C1F976F130054FD3A /* Protobuf.framework */; };
+		DB42567E1F97710400EB254E /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB42567D1F97710400EB254E /* GTMSessionFetcher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DB15C7741F976C650054FD3A /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = platform/nanopb.framework; sourceTree = "<group>"; };
 		DB15C7751F976C650054FD3A /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = platform/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 		DB15C77C1F976F130054FD3A /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = platform/Protobuf.framework; sourceTree = "<group>"; };
+		DB42567D1F97710400EB254E /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = platform/GTMSessionFetcher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB15C7781F976C650054FD3A /* FirebaseCore.framework in Frameworks */,
+				DB42567E1F97710400EB254E /* GTMSessionFetcher.framework in Frameworks */,
 				DB15C7771F976C650054FD3A /* GoogleToolboxForMac.framework in Frameworks */,
 				DB15C7791F976C650054FD3A /* FirebaseInstanceID.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
@@ -111,6 +114,7 @@
 				DB15C7731F976C640054FD3A /* FirebaseInstanceID.framework */,
 				DB15C7701F976C640054FD3A /* FirebaseNanoPB.framework */,
 				DB15C7711F976C640054FD3A /* GoogleToolboxForMac.framework */,
+				DB42567D1F97710400EB254E /* GTMSessionFetcher.framework */,
 				DB15C7741F976C650054FD3A /* nanopb.framework */,
 				DB15C77C1F976F130054FD3A /* Protobuf.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
