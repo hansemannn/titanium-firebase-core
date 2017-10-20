@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 3
+architectures: armeabi-v7a x86
+description: titanium-firebase-core
+author: Hans Knoechel
+license: Apache 2
+copyright: Copyright (c) 2017 by Axway Appcelerator
+
+# these should not be edited
+name: titanium-firebase-core
+moduleid: firebase.core
+guid: ab3474fc-9923-4cda-a651-0dfc2ba3ad4c
+platform: android
+minsdk: 6.2.2.GA
