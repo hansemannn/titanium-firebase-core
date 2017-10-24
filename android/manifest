@@ -15,4 +15,4 @@ name: titanium-firebase-core
 moduleid: firebase.core
 guid: ab3474fc-9923-4cda-a651-0dfc2ba3ad4c
 platform: android
-minsdk: 6.2.2.GA
+minsdk: 6.3.1
