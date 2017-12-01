@@ -1,8 +1,0 @@
-"/Users/hknoechel/Documents/appcelerator_modules/titanium-firebase/titanium-firebase-core/android/src/firebase/core/TitaniumFirebaseCoreModule.java"
-"/Users/hknoechel/Documents/appcelerator_modules/titanium-firebase/titanium-firebase-core/android/build/generated/java/firebase/core/TitaniumFirebaseCoreBootstrap.java"
-"/Users/hknoechel/Documents/appcelerator_modules/titanium-firebase/titanium-firebase-core/android/build/generated/r/android/support/compat/R.java"
-"/Users/hknoechel/Documents/appcelerator_modules/titanium-firebase/titanium-firebase-core/android/build/generated/r/android/support/design/R.java"
-"/Users/hknoechel/Documents/appcelerator_modules/titanium-firebase/titanium-firebase-core/android/build/generated/r/android/support/v7/appcompat/R.java"
-"/Users/hknoechel/Documents/appcelerator_modules/titanium-firebase/titanium-firebase-core/android/build/generated/r/android/support/v7/cardview/R.java"
-"/Users/hknoechel/Documents/appcelerator_modules/titanium-firebase/titanium-firebase-core/android/build/generated/r/firebase/core/R.java"
-"/Users/hknoechel/Documents/appcelerator_modules/titanium-firebase/titanium-firebase-core/android/build/generated/r/ti/modules/titanium/ui/R.java"
