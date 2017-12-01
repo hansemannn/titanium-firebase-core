@@ -55,8 +55,8 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 			if (param.containsKey("storageBucket")) {
 				options.setStorageBucket(param.getString("storageBucket"));
 			}
-			if (param.containsKey("bundleID")) {
-				options.setApplicationId(param.getString("bundleID"));
+			if (param.containsKey("applicationID")) {
+				options.setApplicationId(param.getString("applicationID"));
 			}
 			if (param.containsKey("GCMSenderID")) {
 				options.setGcmSenderId(param.getString("GCMSenderID"));
