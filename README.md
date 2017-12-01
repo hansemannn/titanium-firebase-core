@@ -16,19 +16,20 @@ Use the native Firebase SDK in Axway Titanium. This repository is part of the [T
 
 ##### `configure()`
 
-#### `configure(parameters)` (iOS-only)
+#### `configure(parameters)`
 
 Optionally, you can pass parameters to the `configure` method. Either pass a config plist in the  `file` property,
 pass your Google-ID's (`googleAppID` and `GCMSenderID`) or sub-set of the following properties:
 
   - `APIKey` (String)
-  - `bundleID` (String)
-  - `clientID` (String)
-  - `trackingID` (String)
+  - `bundleID` (String; iOS only) 
+  - `applicationID` (String; Android only)   
+  - `clientID` (String; iOS only)
+  - `trackingID` (String; iOS only)
   - `projectID` (String)
-  - `androidClientID` (String)
+  - `androidClientID` (String; iOS only)
   - `databaseURL` (String)
-  - `deepLinkURLScheme` (String)
+  - `deepLinkURLScheme` (String; iOS only)
   - `storageBucket` (String)
 
 ## Example
