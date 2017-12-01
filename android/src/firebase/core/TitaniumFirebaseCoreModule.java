@@ -14,8 +14,10 @@ import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiConfig;
+import org.appcelerator.kroll.KrollDict;
 
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
 
 @Kroll.module(name="TitaniumFirebaseCore", id="firebase.core")
 public class TitaniumFirebaseCoreModule extends KrollModule
@@ -37,9 +39,34 @@ public class TitaniumFirebaseCoreModule extends KrollModule
   // Public APIs
   
   @Kroll.method
-	public void configure()
+	public void configure(@Kroll.argument(optional=true)KrollDict param)
 	{
-    // TODO: Allow passing options as well. Right now, it will use the default Firebase-instance
-    FirebaseApp.initializeApp(getActivity().getApplicationContext());
-  }
+		if (param != null) {
+			FirebaseOptions.Builder options = new FirebaseOptions.Builder();
+			if (param.containsKey("APIKey")) {
+				options.setApiKey(param.getString("APIKey"));
+			}
+			if (param.containsKey("databaseUrl")) {
+				options.setDatabaseUrl(param.getString("databaseUrl"));
+			}
+			if (param.containsKey("projectId")) {
+				options.setProjectId(param.getString("projectId"));
+			}
+			if (param.containsKey("storageBucket")) {
+				options.setStorageBucket(param.getString("storageBucket"));
+			}
+			if (param.containsKey("applicationId")) {
+				options.setApplicationId(param.getString("applicationId"));
+			}
+			if (param.containsKey("gcmSenderId")) {
+				options.setGcmSenderId(param.getString("gcmSenderId"));
+			}
+			if (param.containsKey("gcmSenderId")) {
+				options.setGcmSenderId(param.getString("gcmSenderId"));
+			}
+			FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
+		} else {
+			FirebaseApp.initializeApp(getActivity().getApplicationContext());
+		}
+	}
 }
