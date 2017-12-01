@@ -46,23 +46,20 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 			if (param.containsKey("APIKey")) {
 				options.setApiKey(param.getString("APIKey"));
 			}
-			if (param.containsKey("databaseUrl")) {
-				options.setDatabaseUrl(param.getString("databaseUrl"));
+			if (param.containsKey("databaseURL")) {
+				options.setDatabaseUrl(param.getString("databaseURL"));
 			}
-			if (param.containsKey("projectId")) {
-				options.setProjectId(param.getString("projectId"));
+			if (param.containsKey("projectID")) {
+				options.setProjectId(param.getString("projectID"));
 			}
 			if (param.containsKey("storageBucket")) {
 				options.setStorageBucket(param.getString("storageBucket"));
 			}
-			if (param.containsKey("applicationId")) {
-				options.setApplicationId(param.getString("applicationId"));
+			if (param.containsKey("bundleID")) {
+				options.setApplicationId(param.getString("bundleID"));
 			}
-			if (param.containsKey("gcmSenderId")) {
-				options.setGcmSenderId(param.getString("gcmSenderId"));
-			}
-			if (param.containsKey("gcmSenderId")) {
-				options.setGcmSenderId(param.getString("gcmSenderId"));
+			if (param.containsKey("GCMSenderID")) {
+				options.setGcmSenderId(param.getString("GCMSenderID"));
 			}
 			FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
 		} else {
