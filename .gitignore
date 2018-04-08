@@ -32,3 +32,4 @@ nbproject
 /ios/firebase.core-iphone-*.zip
 /ios/metadata.json
 /android/java-sources.txt
+/ios/dist
