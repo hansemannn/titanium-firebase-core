@@ -30,12 +30,6 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 		super();
 	}
 
-	@Kroll.onAppCreate
-	public static void onAppCreate(TiApplication app)
-	{
-		Log.d(LCAT, "inside onAppCreate");
-	}
-
   // Public APIs
   
   @Kroll.method
