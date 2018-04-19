@@ -31,7 +31,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 	}
 
   // Public APIs
-  
+
   @Kroll.method
 	public void configure(@Kroll.argument(optional=true)KrollDict param)
 	{
@@ -55,9 +55,17 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 			if (param.containsKey("GCMSenderID")) {
 				options.setGcmSenderId(param.getString("GCMSenderID"));
 			}
-			FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
+			try {
+				FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
+			} catch (IllegalStateException e) {
+				// error or already initialized
+			}
 		} else {
-			FirebaseApp.initializeApp(getActivity().getApplicationContext());
+			try {
+				FirebaseApp.initializeApp(getActivity().getApplicationContext());
+			} catch (IllegalStateException e) {
+				// error or already initialized
+			}
 		}
 	}
 }
