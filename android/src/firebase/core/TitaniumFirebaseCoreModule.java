@@ -58,13 +58,13 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 			try {
 				FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
 			} catch (IllegalStateException e) {
-				// error or already initialized
+				Log.w(LCAT, "There was a problem initializing FirebaseApp or it was initialized a second time.");
 			}
 		} else {
 			try {
 				FirebaseApp.initializeApp(getActivity().getApplicationContext());
 			} catch (IllegalStateException e) {
-				// error or already initialized
+				Log.w(LCAT, "There was a problem initializing FirebaseApp or it was initialized a second time.");
 			}
 		}
 	}
