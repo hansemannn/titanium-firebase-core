@@ -51,11 +51,10 @@ FirebaseCore.configure();
 
 ## Build
 ```js
-cd ios
-appc ti build -p ios --build-only
+cd [ios|android]
+appc run -p [ios|android] --build-only
 ```
 
 ## Legal
 
-This module is Copyright (c) 2017-Present by Appcelerator, Inc. All Rights Reserved. 
-Usage of this module is subject to the Terms of Service agreement with Appcelerator, Inc.  
+This module is Copyright (c) 2017-Present by Hans Knöchel. All Rights Reserved. 
