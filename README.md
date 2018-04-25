@@ -18,35 +18,32 @@ Use the native Firebase SDK in Axway Titanium. This repository is part of the [T
 
 #### `configure(parameters)`
 
-Optionally, you can pass parameters to the `configure` method. Either pass a config plist in the  `file` property,
-pass your Google-ID's (`googleAppID` and `GCMSenderID`) or sub-set of the following properties:
+| Name | Type | Component | Platform |
+| - | - | - | - |
+| `file`* | String | | iOS
+| `googleAppID` | String | | *
+| `GCMSenderID` | String | Cloud Messaging | *
+| `APIKey` | String | Auth | *
+| `projectID` | String | | *
+| `databaseURL` | String | Real Time Database | *
+| `storageBucket` | String | Storage Bucket | *
+| `bundleID` | String | | iOS
+| `clientID` | String | | iOS
+| `trackingID` | String | | iOS
+| `androidClientID` | String | | iOS
+| `deepLinkURLScheme` | String | | iOS
+| `applicationID` | String | Analytics | Android
 
-
-  iOS & Android:
-  - `APIKey` (String) - Auth
-  - `projectID` (String)
-  - `databaseURL` (String) - Real Time Database
-  - `storageBucket` (String) - Storage Bucket
-
-
-  iOS only:
-  - `bundleID` (String)
-  - `clientID` (String)
-  - `trackingID` (String)
-  - `androidClientID` (String)
-  - `deepLinkURLScheme` (String)
-
-
-  Android only:
-  - `applicationID` (String) - Analytics
-
+\* By passing the `file` property, you can give a location to the Firebase plist file (usually named "GoogleService-Info.plist"), which contains all necessary properties for your Firebase project. This makes all other properties unnecessary.
 ## Example
 ```js
 // Require the Firebase Core module
 var FirebaseCore = require('firebase.core');
 
 // Configure your Firebase API's (only required once for all)
-FirebaseCore.configure();
+FirebaseCore.configure({
+  // Properties...
+});
 ```
 
 ## Build
