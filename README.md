@@ -16,7 +16,11 @@ Use the native Firebase SDK in Axway Titanium. This repository is part of the [T
 
 ##### `configure()`
 
-#### `configure(parameters)`
+Configure Firebase without additional parameters.
+
+##### `configure(parameters)`
+
+Configure Firebase without configuration parameters.
 
 | Name | Type | Component | Platform |
 | - | - | - | - |
