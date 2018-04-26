@@ -24,7 +24,7 @@ Configure Firebase without configuration parameters.
 
 | Name | Type | Component | Platform |
 | - | - | - | - |
-| `file`* | String | | iOS
+| `file`* | String | | *
 | `googleAppID` | String | | *
 | `GCMSenderID` | String | Cloud Messaging | *
 | `APIKey` | String | Auth | *
@@ -38,8 +38,10 @@ Configure Firebase without configuration parameters.
 | `deepLinkURLScheme` | String | | iOS
 | `applicationID` | String | Analytics | Android
 
-\* By passing the `file` property, you can give a location to the Firebase plist file (usually named "GoogleService-Info.plist"), which contains all necessary properties for your Firebase project. This makes all other properties unnecessary.
+\* By passing the `file` property, you can give a location to the Firebase plist file (usually named "GoogleService-Info.plist"), which contains all necessary properties for your Firebase project. This makes all other properties unnecessary. For Android: place the file in `/app/assets/android/` and pass just the filename.
+
 ## Example
+
 ```js
 // Require the Firebase Core module
 var FirebaseCore = require('firebase.core');
@@ -58,4 +60,4 @@ appc run -p [ios|android] --build-only
 
 ## Legal
 
-This module is Copyright (c) 2017-Present by Hans Knöchel. All Rights Reserved. 
+This module is Copyright (c) 2017-Present by Hans Knöchel. All Rights Reserved.
