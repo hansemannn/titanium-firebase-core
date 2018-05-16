@@ -48,7 +48,15 @@ var FirebaseCore = require('firebase.core');
 
 // Configure your Firebase API's (only required once for all)
 FirebaseCore.configure({
-  // Properties...
+  APIKey: "AIYasZBtfJh..........",
+  projectID: "test-12345",
+  storageBucket: "test-12345.appspot.com",
+  applicationID: "1:12345678890:android:abc123efg456"
+});
+
+// alternative way:
+FirebaseCore.configure({
+  file: "filename.json"
 });
 ```
 
