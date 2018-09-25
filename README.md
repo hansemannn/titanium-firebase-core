@@ -40,7 +40,12 @@ Configure Firebase without configuration parameters.
 
 \* By passing the `file` property, you can give a location to the Firebase plist file (usually named "GoogleService-Info.plist"), which contains all necessary properties for your Firebase project. This makes all other properties unnecessary. For Android: place the file in `/app/assets/android/` and pass just the filename.
 
-## Example
+##### `defaultAppConfigured` *iOS Only
+
+Checks whether the Module's default app has already been setup with the above configure method.
+Included as a check to prevent an exception being thrown when using Liveview with iOS where after a reload the configure code would be executed again and throw an exception.
+
+## Examples
 
 ```js
 // Require the Firebase Core module
@@ -58,6 +63,15 @@ FirebaseCore.configure({
 FirebaseCore.configure({
   file: "filename.json"
 });
+```
+
+```js
+// wrap the configure method in this check to prevent an exception on reloads of iOS Liveview builds
+if(!FirebaseCore.defaultAppConfigured){
+  FirebaseCore.configure({
+    file: "filename.plist"
+  });
+}
 ```
 
 ## Build
