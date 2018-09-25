@@ -93,4 +93,13 @@
   [FIRApp configureWithOptions:options];
 }
 
+- (NSNumber *)defaultAppConfigured
+{
+  if([FIRApp defaultApp] != nil){
+    return NUMBOOL(YES);
+  }else{
+    return NUMBOOL(NO);
+  }
+}
+
 @end
