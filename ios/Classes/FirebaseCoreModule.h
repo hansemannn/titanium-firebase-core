@@ -11,6 +11,5 @@
 }
 
 - (void)configure:(id)arguments;
-- (NSNumber *)defaultAppConfigured;
 
 @end

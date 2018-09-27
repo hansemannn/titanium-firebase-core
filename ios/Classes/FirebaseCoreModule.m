@@ -45,6 +45,11 @@
 
 - (void)configure:(id)arguments
 {
+  if([FIRApp defaultApp] != nil){
+    NSLog(@"[INFO] The defaultApp of FirebaseCore has already been configured, skipping initialization.");
+    return;
+  }
+
   if (!arguments || [arguments count] == 0) {
     [FIRApp configure];
     return;
@@ -91,15 +96,6 @@
   }
 
   [FIRApp configureWithOptions:options];
-}
-
-- (NSNumber *)defaultAppConfigured
-{
-  if([FIRApp defaultApp] != nil){
-    return NUMBOOL(YES);
-  }else{
-    return NUMBOOL(NO);
-  }
 }
 
 @end
