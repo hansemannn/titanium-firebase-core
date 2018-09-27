@@ -45,8 +45,8 @@
 
 - (void)configure:(id)arguments
 {
-  if([FIRApp defaultApp] != nil){
-    NSLog(@"[INFO] The defaultApp of FirebaseCore has already been configured, skipping initialization.");
+  if ([FIRApp defaultApp] != nil) {
+    DebugLog(@"[DEBUG] The defaultApp of FirebaseCore has already been configured, skipping initialization.");
     return;
   }
 
