@@ -42,25 +42,25 @@ Configure Firebase without configuration parameters.
 
 ##### `deleteInstanceId(callback)`
 
-Delete the current instanceId (invalidating all tokens). [Firebase documentation](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId.html#deleteInstanceId())
+Delete the current `instanceId` (invalidating all tokens). See the [Firebase docs](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId.html#deleteInstanceId()) for details.
 
-The callback riceive an objcet containing this fieds:
+The callback receives an object containing this fields:
 
-| Key | Type | description |
+| Key | Type |Description |
 | - | - | - |
-| `success` | boolean | `true` if the deleting process succeed| *
-| `error` | String | The error localized message | *
+| `success` | Boolean | `true` if the deletion succeeded | *
+| `error` | String | The localized error message | *
 
 ##### `deleteToken(authorizedEntity, scope, callback)`
 
-Delete the token by the provided authorizedEntity and scope. [Firebase documentation](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#deleteToken(java.lang.String,%20java.lang.String))
+Delete the token of the provided `authorizedEntity` and `scope`. See the [Firebase docs](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#deleteToken(java.lang.String,%20java.lang.String)) for details.
 
-The callback riceive an objcet containing this fieds:
+The callback receives an object containing this fields:
 
-| Key | Type | description |
+| Key | Type | Description |
 | - | - | - |
-| `success` | boolean | `true` if the deleting process succeed| *
-| `error` | String | The error localized message | *
+| `success` | Boolean | `true` if the deletion succeeded | *
+| `error` | String | The localized error message | *
 
 ## Examples
 
