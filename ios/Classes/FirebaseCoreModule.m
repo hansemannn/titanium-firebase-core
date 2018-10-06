@@ -6,6 +6,7 @@
  */
 
 #import <FirebaseCore/FirebaseCore.h>
+#import <FirebaseInstanceId/FIRInstanceID.h>
 
 #import "FirebaseCoreModule.h"
 #import "TiBase.h"
@@ -96,6 +97,47 @@
   }
 
   [FIRApp configureWithOptions:options];
+}
+
+- (void)deleteInstanceId:(id)callback
+{
+    ENSURE_SINGLE_ARG_OR_NIL(callback, KrollCallback);
+    [[FIRInstanceID instanceID] deleteIDWithHandler:^(NSError *error) {
+        if(callback!=nil){
+            NSDictionary* dict;
+            if(error != nil){
+                NSLog(@"[ERROR] deleteInstanceId failed", [error localizedDescription]);
+                dict = [[NSDictionary alloc] initWithObjectsAndKeys:  @false, @"success", [error localizedDescription], @"error", nil];
+            } else {
+                dict = [[NSDictionary alloc] initWithObjectsAndKeys: @true, @"success", nil];
+            }
+            NSArray* array = [NSArray arrayWithObjects: dict, nil];
+            [callback call:array thisObject:nil];
+        }
+    }];
+}
+
+- (void)deleteToken:(id)arguments
+{
+    NSString* authorizedEntity;
+    ENSURE_ARG_AT_INDEX(authorizedEntity, arguments, 0, NSString);
+    NSString* scope;
+    ENSURE_ARG_AT_INDEX(scope, arguments, 1, NSString);
+    KrollCallback* callback;
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, arguments, 2, KrollCallback);
+    [[FIRInstanceID instanceID] deleteTokenWithAuthorizedEntity:authorizedEntity scope:scope handler:^(NSError *error) {
+        if(callback!=nil){
+            NSDictionary* dict;
+            if(error != nil){
+                NSLog(@"[ERROR] deleteToken failed", [error localizedDescription]);
+                dict = [[NSDictionary alloc] initWithObjectsAndKeys:  @false, @"success", [error localizedDescription], @"error", nil];
+            } else {
+                dict = [[NSDictionary alloc] initWithObjectsAndKeys: @true, @"success", nil];
+            }
+            NSArray* array = [NSArray arrayWithObjects: dict, nil];
+            [callback call:array thisObject:nil];
+        }
+    }];
 }
 
 @end
