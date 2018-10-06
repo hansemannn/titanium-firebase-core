@@ -40,6 +40,28 @@ Configure Firebase without configuration parameters.
 
 \* By passing the `file` property, you can give a location to the Firebase plist file (usually named "GoogleService-Info.plist"), which contains all necessary properties for your Firebase project. This makes all other properties unnecessary. For Android: place the file in `/app/assets/android/` and pass just the filename.
 
+##### `deleteInstanceId(callback)`
+
+Delete the current instanceId (invalidating all tokens). [Firebase documentation](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId.html#deleteInstanceId())
+
+The callback riceive an objcet containing this fieds:
+
+| Key | Type | description |
+| - | - | - |
+| `success` | boolean | `true` if the deleting process succeed| *
+| `error` | String | The error localized message | *
+
+##### `deleteToken(authorizedEntity, scope, callback)`
+
+Delete the token by the provided authorizedEntity and scope. [Firebase documentation](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#deleteToken(java.lang.String,%20java.lang.String))
+
+The callback riceive an objcet containing this fieds:
+
+| Key | Type | description |
+| - | - | - |
+| `success` | boolean | `true` if the deleting process succeed| *
+| `error` | String | The error localized message | *
+
 ## Examples
 
 ```js
