@@ -135,23 +135,21 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 	@Kroll.method
 	public void deleteInstanceId(final KrollFunction callback)
 	{
-		Log.d(LCAT, "deleting instanceId ... ");
 		new AsyncTask<Void, Void, IOException>() {
 			protected IOException doInBackground(Void ... v) {
 				try {
 					FirebaseInstanceId.getInstance().deleteInstanceId();
-					Log.d(LCAT, "instanceId deleted");
 					return null;
 				} catch (IOException e) {
-						e.printStackTrace();
-						return e;
+					e.printStackTrace();
+					return e;
 				}
 			}
 			protected void onPostExecute(IOException error) {
-				if(callback != null) {
+				if (callback != null) {
 					HashMap args = new HashMap<>();
 					args.put("success", error == null);
-					if(error != null){
+					if (error != null) {
 						args.put("error", error.getLocalizedMessage());
 					}
 					callback.call(getKrollObject(), args);
@@ -163,23 +161,21 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 	@Kroll.method
 	public void deleteToken(final String authorizedEntity, final String scope, final KrollFunction callback)
 	{
-		Log.d(LCAT, "deleting token ... ");
 		new AsyncTask<Void, Void, IOException>() {
 			protected IOException doInBackground(Void ... v) {
 				try {
 					FirebaseInstanceId.getInstance().deleteToken(authorizedEntity, scope);
-					Log.d(LCAT, "token deleted");
 					return null;
 				} catch (IOException e) {
-						e.printStackTrace();
-						return e;
+					e.printStackTrace();
+					return e;
 				}
 			}
 			protected void onPostExecute(IOException error) {
-				if(callback != null) {
+				if (callback != null) {
 					HashMap args = new HashMap<>();
 					args.put("success", error == null);
-					if(error != null){
+					if (error != null) {
 						args.put("error", error.getLocalizedMessage());
 					}
 					callback.call(getKrollObject(), args);
@@ -202,8 +198,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 			inStream.close();
 			json = new String(buffer, "UTF-8");
 		} catch (IOException ex) {
-			Log.e(LCAT, "Error reading file");
-			return "";
+´       		return "";
 		}
 		return json;
 	}
