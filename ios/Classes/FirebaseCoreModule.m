@@ -102,40 +102,40 @@
 - (void)deleteInstanceId:(id)callback
 {
     ENSURE_SINGLE_ARG_OR_NIL(callback, KrollCallback);
+
     [[FIRInstanceID instanceID] deleteIDWithHandler:^(NSError *error) {
-        if(callback!=nil){
-            NSDictionary* dict;
-            if(error != nil){
-                NSLog(@"[ERROR] deleteInstanceId failed", [error localizedDescription]);
-                dict = [[NSDictionary alloc] initWithObjectsAndKeys:  @false, @"success", [error localizedDescription], @"error", nil];
+        if (callback != nil) {
+            NSDictionary *dict = nil;
+            if (error != nil) {
+                dict = @{ @"success": @NO, @"error": [error localizedDescription] };
             } else {
-                dict = [[NSDictionary alloc] initWithObjectsAndKeys: @true, @"success", nil];
+                dict = @{ @"success": @YES };
             }
-            NSArray* array = [NSArray arrayWithObjects: dict, nil];
-            [callback call:array thisObject:nil];
+            [callback call:@[dict] thisObject:nil];
         }
     }];
 }
 
 - (void)deleteToken:(id)arguments
 {
-    NSString* authorizedEntity;
+    NSString *authorizedEntity;
     ENSURE_ARG_AT_INDEX(authorizedEntity, arguments, 0, NSString);
-    NSString* scope;
+
+    NSString *scope;
     ENSURE_ARG_AT_INDEX(scope, arguments, 1, NSString);
-    KrollCallback* callback;
+
+    KrollCallback *callback;
     ENSURE_ARG_OR_NIL_AT_INDEX(callback, arguments, 2, KrollCallback);
+
     [[FIRInstanceID instanceID] deleteTokenWithAuthorizedEntity:authorizedEntity scope:scope handler:^(NSError *error) {
-        if(callback!=nil){
-            NSDictionary* dict;
-            if(error != nil){
-                NSLog(@"[ERROR] deleteToken failed", [error localizedDescription]);
-                dict = [[NSDictionary alloc] initWithObjectsAndKeys:  @false, @"success", [error localizedDescription], @"error", nil];
+        if (callback != nil) {
+            NSDictionary *dict = nil;
+            if (error != nil) {
+                dict = @{ @"success": @NO, @"error": [error localizedDescription] };
             } else {
-                dict = [[NSDictionary alloc] initWithObjectsAndKeys: @true, @"success", nil];
+                dict = @{ @"success": @YES };
             }
-            NSArray* array = [NSArray arrayWithObjects: dict, nil];
-            [callback call:array thisObject:nil];
+            [callback call:@[dict] thisObject:nil];
         }
     }];
 }
