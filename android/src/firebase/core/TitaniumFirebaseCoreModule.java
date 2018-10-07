@@ -198,7 +198,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 			inStream.close();
 			json = new String(buffer, "UTF-8");
 		} catch (IOException ex) {
-´       		return "";
+			return "";
 		}
 		return json;
 	}
