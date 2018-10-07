@@ -6,6 +6,7 @@
  */
 
 #import <FirebaseCore/FirebaseCore.h>
+#import <FirebaseInstanceId/FIRInstanceID.h>
 
 #import "FirebaseCoreModule.h"
 #import "TiBase.h"
@@ -96,6 +97,47 @@
   }
 
   [FIRApp configureWithOptions:options];
+}
+
+- (void)deleteInstanceId:(id)callback
+{
+    ENSURE_SINGLE_ARG_OR_NIL(callback, KrollCallback);
+
+    [[FIRInstanceID instanceID] deleteIDWithHandler:^(NSError *error) {
+        if (callback != nil) {
+            NSDictionary *dict = nil;
+            if (error != nil) {
+                dict = @{ @"success": @NO, @"error": [error localizedDescription] };
+            } else {
+                dict = @{ @"success": @YES };
+            }
+            [callback call:@[dict] thisObject:nil];
+        }
+    }];
+}
+
+- (void)deleteToken:(id)arguments
+{
+    NSString *authorizedEntity;
+    ENSURE_ARG_AT_INDEX(authorizedEntity, arguments, 0, NSString);
+
+    NSString *scope;
+    ENSURE_ARG_AT_INDEX(scope, arguments, 1, NSString);
+
+    KrollCallback *callback;
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, arguments, 2, KrollCallback);
+
+    [[FIRInstanceID instanceID] deleteTokenWithAuthorizedEntity:authorizedEntity scope:scope handler:^(NSError *error) {
+        if (callback != nil) {
+            NSDictionary *dict = nil;
+            if (error != nil) {
+                dict = @{ @"success": @NO, @"error": [error localizedDescription] };
+            } else {
+                dict = @{ @"success": @YES };
+            }
+            [callback call:@[dict] thisObject:nil];
+        }
+    }];
 }
 
 @end

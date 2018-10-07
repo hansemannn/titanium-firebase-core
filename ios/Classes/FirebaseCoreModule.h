@@ -12,4 +12,8 @@
 
 - (void)configure:(id)arguments;
 
+- (void)deleteInstanceId:(id)callback;
+
+- (void)deleteToken:(id)arguments;
+
 @end
