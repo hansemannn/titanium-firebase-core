@@ -16,11 +16,15 @@ Use the native Firebase SDK in Axway Titanium. This repository is part of the [T
 
 ##### `configure()`
 
-Configure Firebase without additional parameters.
+Configure Firebase with json file downloaded from Firebase console. File is in resources root and is named `google-services.json` 
+
+##### `configure(filename)`
+
+Configure Firebase with json file downloaded from Firebase console 
 
 ##### `configure(parameters)`
 
-Configure Firebase without configuration parameters.
+Configure Firebase with configuration parameters.
 
 | Name | Type | Component | Platform |
 | - | - | - | - |
@@ -38,7 +42,7 @@ Configure Firebase without configuration parameters.
 | `deepLinkURLScheme` | String | | iOS
 | `applicationID` | String | Analytics | Android
 
-\* By passing the `file` property, you can give a location to the Firebase plist file (usually named "GoogleService-Info.plist"), which contains all necessary properties for your Firebase project. This makes all other properties unnecessary. For Android: place the file in `/app/assets/android/` and pass just the filename.
+\* By passing the `filename` property, you can give a location to the Firebase plist file (usually named "GoogleService-Info.plist"), which contains all necessary properties for your Firebase project. This makes all other properties unnecessary. For Android: place the file in `/app/assets/android/` and pass just the filename.
 
 ##### `deleteInstanceId(callback)`
 
