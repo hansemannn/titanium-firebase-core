@@ -31,112 +31,132 @@ import java.lang.Void;
 import java.util.HashMap;
 
 @Kroll.module(name = "TitaniumFirebaseCore", id = "firebase.core")
-public class TitaniumFirebaseCoreModule extends KrollModule
-{
-	private static final String LCAT = "TitaniumFirebaseCoreModule";
+public class TitaniumFirebaseCoreModule extends KrollModule {
+	private static final String LCAT = "TiFirebaseCore";
 	private static final boolean DBG = TiConfig.LOGD;
 
-	public TitaniumFirebaseCoreModule()
-	{
+	public TitaniumFirebaseCoreModule() {
 		super();
 	}
 
 	// Public APIs
 
+	public final String DEFAULTJSONFILE = "google-services.json";
+
 	@Kroll.method
-	public void configure(@Kroll.argument(optional = true) KrollDict param)
-	{
-		if (param != null) {
-			String apiKey = "";
-			String databaseURL = "";
-			String projectID = "";
-			String storageBucket = "";
-			String applicationID = "";
-			String GCMSenderID = "";
-			FirebaseOptions.Builder options = new FirebaseOptions.Builder();
+	public void configure(@Kroll.argument(optional = true) Object object) {
+		String filenameOfJSON = null;
+		String apiKey = "";
+		String databaseURL = "";
+		String projectID = "";
+		String storageBucket = "";
+		String applicationID = "";
+		String GCMSenderID = "";
+		Log.d(LCAT,"Start reading of firebase paramters:\n======================");
+		if (object == null) {
+			// if args empty we use default filename.
+			// we cannot use the standard native way, because the default place of file
+			// is unrechable by titanium 
+			Log.i(LCAT, "configure parameter was empty, use " + DEFAULTJSONFILE);
+			filenameOfJSON = DEFAULTJSONFILE;
+		} else if (object instanceof String) {
+			filenameOfJSON = (String) object;
+			Log.d(LCAT, "configure parameter was filename=" + filenameOfJSON);
+		}
+		if (filenameOfJSON != null) {
+			Log.d(LCAT,"filenameOfJSON is "+ filenameOfJSON + ", try to open and parse:");
+			try {
+				JSONObject json = new JSONObject(
+						loadJSONFromAsset(filenameOfJSON));
+				JSONObject projectInfo = json.getJSONObject("project_info");
+				String packageName = TiApplication.getAppCurrentActivity()
+						.getPackageName();
 
-			if (param.containsKey("file")) {
-				// open file and parse it
-				try {
-					JSONObject json = new JSONObject(loadJSONFromAsset(param.getString("file")));
-					JSONObject projectInfo = json.getJSONObject("project_info");
-					String packageName = TiApplication.getAppCurrentActivity().getPackageName();
-
-					if (projectInfo.has("storage_bucket")) {
-						storageBucket = projectInfo.getString("storage_bucket");
-					}
-					if (projectInfo.has("firebase_url")) {
-						databaseURL = projectInfo.getString("firebase_url");
-					}
-					if (projectInfo.has("project_number")) {
-						GCMSenderID = projectInfo.getString("project_number");
-					}
-					if (projectInfo.has("project_id")) {
-						projectID = projectInfo.getString("project_id");
-					}
-					if (json.has("client")) {
-						JSONArray clients = json.getJSONArray("client");
-						for (int i = 0, len = clients.length(); i < len; i++) {
-							JSONObject client = clients.getJSONObject(i);
-							JSONObject clientInfo = client.getJSONObject("client_info");
-							String pName = clientInfo.getJSONObject("android_client_info").getString("package_name");
-							if (pName.equals(packageName)) {
-								applicationID = client.getJSONObject("client_info").getString("mobilesdk_app_id");
-								apiKey = client.getJSONArray("api_key").getJSONObject(0).getString("current_key");
-							}
+				if (projectInfo.has("storage_bucket")) {
+					storageBucket = projectInfo.getString("storage_bucket");
+				}
+				if (projectInfo.has("firebase_url")) {
+					databaseURL = projectInfo.getString("firebase_url");
+				}
+				if (projectInfo.has("project_number")) {
+					GCMSenderID = projectInfo.getString("project_number");
+				}
+				if (projectInfo.has("project_id")) {
+					projectID = projectInfo.getString("project_id");
+				}
+				if (json.has("client")) {
+					JSONArray clients = json.getJSONArray("client");
+					Log.d(LCAT,"json contains " + clients.length() + " clients. Looking for our client with name "+ packageName);
+					for (int i = 0, len = clients.length(); i < len; i++) {
+						JSONObject client = clients.getJSONObject(i);
+						JSONObject clientInfo = client
+								.getJSONObject("client_info");
+						String pName = clientInfo.getJSONObject(
+								"android_client_info")
+								.getString("package_name");
+						Log.d(LCAT,"packagename=" +pName);
+						if (pName.equals(packageName)) {
+							applicationID = client.getJSONObject("client_info")
+									.getString("mobilesdk_app_id");
+							apiKey = client.getJSONArray("api_key")
+									.getJSONObject(0).getString("current_key");
 						}
 					}
-				} catch (JSONException e) {
-					Log.e(LCAT, "Error parsing file");
+					if (applicationID.equals("")) Log.w(LCAT,"Our packagename is not part of this json!");
 				}
-			} else {
-				// use parameters
-				if (param.containsKey("APIKey")) {
-					apiKey = param.getString("APIKey");
-				}
-				if (param.containsKey("databaseURL")) {
-					databaseURL = param.getString("databaseURL");
-				}
-				if (param.containsKey("projectID")) {
-					projectID = param.getString("projectID");
-				}
-				if (param.containsKey("storageBucket")) {
-					storageBucket = param.getString("storageBucket");
-				}
-				if (param.containsKey("applicationID")) {
-					applicationID = param.getString("applicationID");
-				}
-				if (param.containsKey("GCMSenderID")) {
-					GCMSenderID = param.getString("GCMSenderID");
-				}
+			} catch (JSONException e) {
+				Log.e(LCAT, "Error parsing file");
 			}
 
-			options.setApiKey(apiKey);
-			options.setDatabaseUrl(databaseURL);
-			options.setProjectId(projectID);
-			options.setStorageBucket(storageBucket);
-			options.setApplicationId(applicationID);
-			options.setGcmSenderId(GCMSenderID);
-
-			try {
-				FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
-			} catch (IllegalStateException e) {
-				Log.w(LCAT, "There was a problem initializing FirebaseApp or it was initialized a second time.");
+		} else if (object instanceof KrollDict) {
+			Log.i(LCAT, "configure parameter was object");
+			KrollDict param = (KrollDict) object;
+			if (param.containsKeyAndNotNull("APIKey")) {
+				apiKey = param.getString("APIKey");
+			} else
+				Log.w(LCAT, "APIKey is missing (like: AIzaSyD3EmON0R*)");
+			if (param.containsKey("databaseURL")) {
+				databaseURL = param.getString("databaseURL");
 			}
-		} else {
-			try {
-				FirebaseApp.initializeApp(getActivity().getApplicationContext());
-			} catch (IllegalStateException e) {
-				Log.w(LCAT, "There was a problem initializing FirebaseApp or it was initialized a second time.");
-			}
+			if (param.containsKey("projectID")) {
+				projectID = param.getString("projectID");
+			} else
+				Log.w(LCAT, "projectID is missing (like: mytest)");
+			if (param.containsKey("storageBucket")) {
+				storageBucket = param.getString("storageBucket");
+			} else
+				Log.w(LCAT,
+						"storageBucket is missing (like: com.mycompany.test)");
+			if (param.containsKey("applicationID")) {
+				applicationID = param.getString("applicationID");
+			} else
+				Log.w(LCAT,
+						"applicationID is missing (like: 1:595170299549:android*)");
+			if (param.containsKey("GCMSenderID")) {
+				GCMSenderID = param.getString("GCMSenderID");
+			} else
+				Log.w(LCAT, "GCMSenderID is missing");
+		}
+		FirebaseOptions.Builder options = new FirebaseOptions.Builder();
+		options.setApiKey(apiKey);
+		options.setDatabaseUrl(databaseURL);
+		options.setProjectId(projectID);
+		options.setStorageBucket(storageBucket);
+		options.setApplicationId(applicationID);
+		options.setGcmSenderId(GCMSenderID);
+		try {
+			FirebaseApp.initializeApp(getActivity().getApplicationContext(),
+					options.build());
+		} catch (IllegalStateException e) {
+			Log.w(LCAT,
+					"There was a problem initializing FirebaseApp or it was initialized a second time.");
 		}
 	}
 
 	@Kroll.method
-	public void deleteInstanceId(final KrollFunction callback)
-	{
+	public void deleteInstanceId(final KrollFunction callback) {
 		new AsyncTask<Void, Void, IOException>() {
-			protected IOException doInBackground(Void ... v) {
+			protected IOException doInBackground(Void... v) {
 				try {
 					FirebaseInstanceId.getInstance().deleteInstanceId();
 					return null;
@@ -145,6 +165,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 					return e;
 				}
 			}
+
 			protected void onPostExecute(IOException error) {
 				if (callback != null) {
 					HashMap args = new HashMap<>();
@@ -159,18 +180,20 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 	}
 
 	@Kroll.method
-	public void deleteToken(final String authorizedEntity, final String scope, final KrollFunction callback)
-	{
+	public void deleteToken(final String authorizedEntity, final String scope,
+			final KrollFunction callback) {
 		new AsyncTask<Void, Void, IOException>() {
-			protected IOException doInBackground(Void ... v) {
+			protected IOException doInBackground(Void... v) {
 				try {
-					FirebaseInstanceId.getInstance().deleteToken(authorizedEntity, scope);
+					FirebaseInstanceId.getInstance().deleteToken(
+							authorizedEntity, scope);
 					return null;
 				} catch (IOException e) {
 					e.printStackTrace();
 					return e;
 				}
 			}
+
 			protected void onPostExecute(IOException error) {
 				if (callback != null) {
 					HashMap args = new HashMap<>();
@@ -184,21 +207,21 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 		}.execute();
 	}
 
-	public String loadJSONFromAsset(String filename)
-	{
+	public String loadJSONFromAsset(String filename) {
 		String json = null;
-
 		try {
 			String url = this.resolveUrl(null, filename);
 			Log.d(LCAT, "JSON Path: " + url);
 
-			InputStream inStream = TiFileFactory.createTitaniumFile(new String[] { url }, false).getInputStream();
+			InputStream inStream = TiFileFactory.createTitaniumFile(
+					new String[] { url }, false).getInputStream();
 			byte[] buffer = new byte[inStream.available()];
 			inStream.read(buffer);
 			inStream.close();
 			json = new String(buffer, "UTF-8");
 		} catch (IOException ex) {
-			return "";
+			Log.e(LCAT, ex.getMessage());
+			ex.printStackTrace();
 		}
 		return json;
 	}
