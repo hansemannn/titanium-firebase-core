@@ -42,101 +42,59 @@ public class TitaniumFirebaseCoreModule extends KrollModule {
 	// Public APIs
 
 	public final String DEFAULTJSONFILE = "google-services.json";
+	private String filenameOfJSON = null;
+	private String apiKey = "";
+	private String databaseURL = "";
+	private String projectID = "";
+	private String storageBucket = "";
+	private String applicationID = "";
+	private String GCMSenderID = "";
 
 	@Kroll.method
-	public void configure(@Kroll.argument(optional = true) Object object) {
-		String filenameOfJSON = null;
-		String apiKey = "";
-		String databaseURL = "";
-		String projectID = "";
-		String storageBucket = "";
-		String applicationID = "";
-		String GCMSenderID = "";
-		Log.d(LCAT,"Start reading of firebase paramters:\n======================");
+	public boolean configure(@Kroll.argument(optional = true) Object object) {
+
+		Log.d(LCAT,
+				"Start reading of firebase paramters:\n===============================");
 		if (object == null) {
 			// if args empty we use default filename.
-			// we cannot use the standard native way, because the default place of file
-			// is unrechable by titanium 
-			Log.i(LCAT, "configure parameter was empty, use " + DEFAULTJSONFILE);
+			// we cannot use the standard native way, because the default place
+			// of file
+			// is unrechable by titanium
+			Log.d(LCAT, "configure parameter was empty, use " + DEFAULTJSONFILE);
 			filenameOfJSON = DEFAULTJSONFILE;
 		} else if (object instanceof String) {
 			filenameOfJSON = (String) object;
 			Log.d(LCAT, "configure parameter was filename=" + filenameOfJSON);
 		}
 		if (filenameOfJSON != null) {
-			Log.d(LCAT,"filenameOfJSON is "+ filenameOfJSON + ", try to open and parse:");
+			Log.d(LCAT, "filenameOfJSON is " + filenameOfJSON
+					+ ", try to open and parse:");
 			try {
-				JSONObject json = new JSONObject(
-						loadJSONFromAsset(filenameOfJSON));
-				JSONObject projectInfo = json.getJSONObject("project_info");
-				String packageName = TiApplication.getAppCurrentActivity()
-						.getPackageName();
-
-				if (projectInfo.has("storage_bucket")) {
-					storageBucket = projectInfo.getString("storage_bucket");
-				}
-				if (projectInfo.has("firebase_url")) {
-					databaseURL = projectInfo.getString("firebase_url");
-				}
-				if (projectInfo.has("project_number")) {
-					GCMSenderID = projectInfo.getString("project_number");
-				}
-				if (projectInfo.has("project_id")) {
-					projectID = projectInfo.getString("project_id");
-				}
-				if (json.has("client")) {
-					JSONArray clients = json.getJSONArray("client");
-					Log.d(LCAT,"json contains " + clients.length() + " clients. Looking for our client with name "+ packageName);
-					for (int i = 0, len = clients.length(); i < len; i++) {
-						JSONObject client = clients.getJSONObject(i);
-						JSONObject clientInfo = client
-								.getJSONObject("client_info");
-						String pName = clientInfo.getJSONObject(
-								"android_client_info")
-								.getString("package_name");
-						Log.d(LCAT,"packagename=" +pName);
-						if (pName.equals(packageName)) {
-							applicationID = client.getJSONObject("client_info")
-									.getString("mobilesdk_app_id");
-							apiKey = client.getJSONArray("api_key")
-									.getJSONObject(0).getString("current_key");
-						}
-					}
-					if (applicationID.equals("")) Log.w(LCAT,"Our packagename is not part of this json!");
-				}
+				parseFromJSONFile(new JSONObject(loadJSONFromAsset(filenameOfJSON)));
 			} catch (JSONException e) {
-				Log.e(LCAT, "Error parsing file");
+				e.printStackTrace();
+				return false;
 			}
 
 		} else if (object instanceof KrollDict) {
-			Log.i(LCAT, "configure parameter was object");
+			Log.d(LCAT, "configure parameter was object");
 			KrollDict param = (KrollDict) object;
-			if (param.containsKeyAndNotNull("APIKey")) {
-				apiKey = param.getString("APIKey");
-			} else
-				Log.w(LCAT, "APIKey is missing (like: AIzaSyD3EmON0R*)");
-			if (param.containsKey("databaseURL")) {
-				databaseURL = param.getString("databaseURL");
+			if (param.containsKeyAndNotNull("file")) {
+				filenameOfJSON = param.getString("file");
+				try {
+					parseFromJSONFile(new JSONObject(loadJSONFromAsset(filenameOfJSON)));
+				} catch (JSONException e) {
+					e.printStackTrace();
+					return false;
+				}
 			}
-			if (param.containsKey("projectID")) {
-				projectID = param.getString("projectID");
-			} else
-				Log.w(LCAT, "projectID is missing (like: mytest)");
-			if (param.containsKey("storageBucket")) {
-				storageBucket = param.getString("storageBucket");
-			} else
-				Log.w(LCAT,
-						"storageBucket is missing (like: com.mycompany.test)");
-			if (param.containsKey("applicationID")) {
-				applicationID = param.getString("applicationID");
-			} else
-				Log.w(LCAT,
-						"applicationID is missing (like: 1:595170299549:android*)");
-			if (param.containsKey("GCMSenderID")) {
-				GCMSenderID = param.getString("GCMSenderID");
-			} else
-				Log.w(LCAT, "GCMSenderID is missing");
-		}
+			parseFromKrollDict(param);
+			
+		} else {
+			Log.d(LCAT, "unknown type of input");
+			return false;
+		}	
+		
 		FirebaseOptions.Builder options = new FirebaseOptions.Builder();
 		options.setApiKey(apiKey);
 		options.setDatabaseUrl(databaseURL);
@@ -145,11 +103,14 @@ public class TitaniumFirebaseCoreModule extends KrollModule {
 		options.setApplicationId(applicationID);
 		options.setGcmSenderId(GCMSenderID);
 		try {
-			FirebaseApp.initializeApp(getActivity().getApplicationContext(),
-					options.build());
+			FirebaseApp firebaseApp = FirebaseApp.initializeApp(getActivity()
+					.getApplicationContext(), options.build());
+			Log.d(LCAT, firebaseApp.toString());
+			return firebaseApp != null ? true : false;
 		} catch (IllegalStateException e) {
-			Log.w(LCAT,
+			Log.d(LCAT,
 					"There was a problem initializing FirebaseApp or it was initialized a second time.");
+			return false;
 		}
 	}
 
@@ -224,5 +185,85 @@ public class TitaniumFirebaseCoreModule extends KrollModule {
 			ex.printStackTrace();
 		}
 		return json;
+	}
+
+	private boolean parseFromKrollDict(KrollDict param) {
+		if (param.containsKeyAndNotNull("APIKey")) {
+			apiKey = param.getString("APIKey");
+		} else
+			Log.w(LCAT, "APIKey is missing (like: AIzaSyD3EmON0R*)");
+		if (param.containsKey("databaseURL")) {
+			databaseURL = param.getString("databaseURL");
+		}
+		if (param.containsKey("projectID")) {
+			projectID = param.getString("projectID");
+		} else
+			Log.w(LCAT, "projectID is missing (like: mytest)");
+		if (param.containsKey("storageBucket")) {
+			storageBucket = param.getString("storageBucket");
+		} else
+			Log.w(LCAT,
+					"storageBucket is missing (like: com.mycompany.test)");
+		if (param.containsKey("applicationID")) {
+			applicationID = param.getString("applicationID");
+		} else
+			Log.w(LCAT,
+					"applicationID is missing (like: 1:595170299549:android*)");
+		if (param.containsKey("GCMSenderID")) {
+			GCMSenderID = param.getString("GCMSenderID");
+		} else
+			Log.w(LCAT, "GCMSenderID is missing");
+		return true;
+	}
+	
+	private boolean parseFromJSONFile(JSONObject json) {
+		try {
+			
+			JSONObject projectInfo = json.getJSONObject("project_info");
+			String packageName = TiApplication.getAppCurrentActivity()
+					.getPackageName();
+
+			if (projectInfo.has("storage_bucket")) {
+				storageBucket = projectInfo.getString("storage_bucket");
+			}
+			if (projectInfo.has("firebase_url")) {
+				databaseURL = projectInfo.getString("firebase_url");
+			}
+			if (projectInfo.has("project_number")) {
+				GCMSenderID = projectInfo.getString("project_number");
+			}
+			if (projectInfo.has("project_id")) {
+				projectID = projectInfo.getString("project_id");
+			}
+			if (json.has("client")) {
+				JSONArray clients = json.getJSONArray("client");
+				Log.d(LCAT, "json contains " + clients.length()
+						+ " clients. Looking for our client with name "
+						+ packageName);
+				for (int i = 0, len = clients.length(); i < len; i++) {
+					JSONObject client = clients.getJSONObject(i);
+					JSONObject clientInfo = client.getJSONObject("client_info");
+					String pName = clientInfo.getJSONObject(
+							"android_client_info").getString("package_name");
+					Log.d(LCAT, "packagename=" + pName);
+					if (pName.equals(packageName)) {
+						applicationID = client.getJSONObject("client_info")
+								.getString("mobilesdk_app_id");
+						apiKey = client.getJSONArray("api_key")
+								.getJSONObject(0).getString("current_key");
+					}
+				}
+				if (applicationID.equals("")) {
+					Log.w(LCAT, "Our packagename is not part of this json!");
+					return false;
+				} else
+					return true;
+
+			}
+		} catch (JSONException e) {
+			Log.e(LCAT, "Error parsing file");
+			return false;
+		}
+		return false;
 	}
 }
