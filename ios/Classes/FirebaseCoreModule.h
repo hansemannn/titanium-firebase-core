@@ -7,10 +7,9 @@
 
 #import "TiModule.h"
 
-@interface FirebaseCoreModule : TiModule {
-}
+@interface FirebaseCoreModule : TiModule
 
-- (void)configure:(id)arguments;
+- (NSNumber *)configure:(id)arguments;
 
 - (void)deleteInstanceId:(id)callback;
 

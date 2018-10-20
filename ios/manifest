@@ -2,17 +2,17 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.3.0
+version: 2.0.0
 apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: titanium-firebase-core
 author: Hans Knoechel
 license: Apache 2
-copyright: Copyright (c) 2017 by Axway Appcelerator
+copyright: Copyright (c) 2017-present by Hans Knoechel
 
 # these should not be edited
 name: titanium-firebase-core
 moduleid: firebase.core
 guid: 67251823-11de-4439-8150-56cad62a55eb
 platform: iphone
-minsdk: 6.3.0.GA
+minsdk: 7.0.0

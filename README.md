@@ -2,7 +2,7 @@
 Use the native Firebase SDK in Axway Titanium. This repository is part of the [Titanium Firebase](https://github.com/hansemannn/titanium-firebase) project.
 
 ## Requirements
-- [x] Titanium SDK 6.3.0+
+- [x] Titanium SDK 7.0.0+
 
 ## Download
 - [x] [Stable release](https://github.com/hansemannn/titanium-firebase-core/releases)
@@ -14,11 +14,11 @@ Use the native Firebase SDK in Axway Titanium. This repository is part of the [T
 
 #### Methods
 
-##### `configure()`
+##### `configure() -> Boolean`
 
 Configure Firebase without additional parameters.
 
-<b>Android</b>: returns false if it was already configured or if there was an error. Calling `deleteInstanceId()` can be used to re-configure it again.
+Returns `false` if it was already configured or if there was an error. Calling `deleteInstanceId()` can be used to re-configure it.
 
 ##### `configure(parameters)`
 
