@@ -29,6 +29,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.Void;
 import java.util.HashMap;
+import java.util.List;
 
 @Kroll.module(name = "TitaniumFirebaseCore", id = "firebase.core")
 public class TitaniumFirebaseCoreModule extends KrollModule
@@ -44,91 +45,106 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 	// Public APIs
 
 	@Kroll.method
-	public void configure(@Kroll.argument(optional = true) KrollDict param)
+	public boolean configure(@Kroll.argument(optional = true) KrollDict param)
 	{
-		if (param != null) {
-			String apiKey = "";
-			String databaseURL = "";
-			String projectID = "";
-			String storageBucket = "";
-			String applicationID = "";
-			String GCMSenderID = "";
-			FirebaseOptions.Builder options = new FirebaseOptions.Builder();
+		String filename = null;
 
-			if (param.containsKey("file")) {
-				// open file and parse it
-				try {
-					JSONObject json = new JSONObject(loadJSONFromAsset(param.getString("file")));
-					JSONObject projectInfo = json.getJSONObject("project_info");
-					String packageName = TiApplication.getAppCurrentActivity().getPackageName();
+		if (param == null) {
+			filename = "google-services.json";
+		} else if (param.containsKey("file")) {
+			filename = param.getString("file");
+		}
+		String apiKey = "";
+		String databaseURL = "";
+		String projectID = "";
+		String storageBucket = "";
+		String applicationID = "";
+		String GCMSenderID = "";
+		FirebaseOptions.Builder options = new FirebaseOptions.Builder();
 
-					if (projectInfo.has("storage_bucket")) {
-						storageBucket = projectInfo.getString("storage_bucket");
-					}
-					if (projectInfo.has("firebase_url")) {
-						databaseURL = projectInfo.getString("firebase_url");
-					}
-					if (projectInfo.has("project_number")) {
-						GCMSenderID = projectInfo.getString("project_number");
-					}
-					if (projectInfo.has("project_id")) {
-						projectID = projectInfo.getString("project_id");
-					}
-					if (json.has("client")) {
-						JSONArray clients = json.getJSONArray("client");
-						for (int i = 0, len = clients.length(); i < len; i++) {
-							JSONObject client = clients.getJSONObject(i);
-							JSONObject clientInfo = client.getJSONObject("client_info");
-							String pName = clientInfo.getJSONObject("android_client_info").getString("package_name");
-							if (pName.equals(packageName)) {
-								applicationID = client.getJSONObject("client_info").getString("mobilesdk_app_id");
-								apiKey = client.getJSONArray("api_key").getJSONObject(0).getString("current_key");
-							}
+		if (filename != null) {
+			// open file and parse it
+			try {
+				JSONObject json = new JSONObject(loadJSONFromAsset(filename));
+				JSONObject projectInfo = json.getJSONObject("project_info");
+				String packageName = TiApplication.getAppCurrentActivity().getPackageName();
+
+				if (projectInfo.has("storage_bucket")) {
+					storageBucket = projectInfo.getString("storage_bucket");
+				}
+				if (projectInfo.has("firebase_url")) {
+					databaseURL = projectInfo.getString("firebase_url");
+				}
+				if (projectInfo.has("project_number")) {
+					GCMSenderID = projectInfo.getString("project_number");
+				}
+				if (projectInfo.has("project_id")) {
+					projectID = projectInfo.getString("project_id");
+				}
+				if (json.has("client")) {
+					JSONArray clients = json.getJSONArray("client");
+					for (int i = 0, len = clients.length(); i < len; i++) {
+						JSONObject client = clients.getJSONObject(i);
+						JSONObject clientInfo = client.getJSONObject("client_info");
+						String pName = clientInfo.getJSONObject("android_client_info").getString("package_name");
+						if (pName.equals(packageName)) {
+							applicationID = client.getJSONObject("client_info").getString("mobilesdk_app_id");
+							apiKey = client.getJSONArray("api_key").getJSONObject(0).getString("current_key");
 						}
 					}
-				} catch (JSONException e) {
-					Log.e(LCAT, "Error parsing file");
 				}
-			} else {
-				// use parameters
-				if (param.containsKey("APIKey")) {
-					apiKey = param.getString("APIKey");
-				}
-				if (param.containsKey("databaseURL")) {
-					databaseURL = param.getString("databaseURL");
-				}
-				if (param.containsKey("projectID")) {
-					projectID = param.getString("projectID");
-				}
-				if (param.containsKey("storageBucket")) {
-					storageBucket = param.getString("storageBucket");
-				}
-				if (param.containsKey("applicationID")) {
-					applicationID = param.getString("applicationID");
-				}
-				if (param.containsKey("GCMSenderID")) {
-					GCMSenderID = param.getString("GCMSenderID");
-				}
-			}
-
-			options.setApiKey(apiKey);
-			options.setDatabaseUrl(databaseURL);
-			options.setProjectId(projectID);
-			options.setStorageBucket(storageBucket);
-			options.setApplicationId(applicationID);
-			options.setGcmSenderId(GCMSenderID);
-
-			try {
-				FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
-			} catch (IllegalStateException e) {
-				Log.w(LCAT, "There was a problem initializing FirebaseApp or it was initialized a second time.");
+			} catch (JSONException e) {
+				Log.e(LCAT, "Error parsing file");
 			}
 		} else {
+			// use parameters
+			if (param.containsKey("APIKey")) {
+				apiKey = param.getString("APIKey");
+			}
+			if (param.containsKey("databaseURL")) {
+				databaseURL = param.getString("databaseURL");
+			}
+			if (param.containsKey("projectID")) {
+				projectID = param.getString("projectID");
+			}
+			if (param.containsKey("storageBucket")) {
+				storageBucket = param.getString("storageBucket");
+			}
+			if (param.containsKey("applicationID")) {
+				applicationID = param.getString("applicationID");
+			}
+			if (param.containsKey("GCMSenderID")) {
+				GCMSenderID = param.getString("GCMSenderID");
+			}
+		}
+
+		options.setApiKey(apiKey);
+		options.setDatabaseUrl(databaseURL);
+		options.setProjectId(projectID);
+		options.setStorageBucket(storageBucket);
+		options.setApplicationId(applicationID);
+		options.setGcmSenderId(GCMSenderID);
+
+		// check for existing firebaseApp
+		boolean hasBeenInitialized = false;
+		List<FirebaseApp> fbsLcl = FirebaseApp.getApps(getActivity().getApplicationContext());
+		for (FirebaseApp app : fbsLcl) {
+			if (app.getName().equals(FirebaseApp.DEFAULT_APP_NAME)) {
+				hasBeenInitialized = true;
+			}
+		}
+
+		if (!hasBeenInitialized) {
 			try {
-				FirebaseApp.initializeApp(getActivity().getApplicationContext());
+				FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
+				return true;
 			} catch (IllegalStateException e) {
 				Log.w(LCAT, "There was a problem initializing FirebaseApp or it was initialized a second time.");
+				return false;
 			}
+		} else {
+			Log.d(LCAT, "FirebaseApp is alraedy initialized.");
+			return false;
 		}
 	}
 
@@ -136,7 +152,8 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 	public void deleteInstanceId(final KrollFunction callback)
 	{
 		new AsyncTask<Void, Void, IOException>() {
-			protected IOException doInBackground(Void ... v) {
+			protected IOException doInBackground(Void... v)
+			{
 				try {
 					FirebaseInstanceId.getInstance().deleteInstanceId();
 					return null;
@@ -145,7 +162,8 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 					return e;
 				}
 			}
-			protected void onPostExecute(IOException error) {
+			protected void onPostExecute(IOException error)
+			{
 				if (callback != null) {
 					HashMap args = new HashMap<>();
 					args.put("success", error == null);
@@ -155,14 +173,16 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 					callback.call(getKrollObject(), args);
 				}
 			}
-		}.execute();
+		}
+			.execute();
 	}
 
 	@Kroll.method
 	public void deleteToken(final String authorizedEntity, final String scope, final KrollFunction callback)
 	{
 		new AsyncTask<Void, Void, IOException>() {
-			protected IOException doInBackground(Void ... v) {
+			protected IOException doInBackground(Void... v)
+			{
 				try {
 					FirebaseInstanceId.getInstance().deleteToken(authorizedEntity, scope);
 					return null;
@@ -171,7 +191,8 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 					return e;
 				}
 			}
-			protected void onPostExecute(IOException error) {
+			protected void onPostExecute(IOException error)
+			{
 				if (callback != null) {
 					HashMap args = new HashMap<>();
 					args.put("success", error == null);
@@ -181,7 +202,8 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 					callback.call(getKrollObject(), args);
 				}
 			}
-		}.execute();
+		}
+			.execute();
 	}
 
 	public String loadJSONFromAsset(String filename)
@@ -190,14 +212,13 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 
 		try {
 			String url = this.resolveUrl(null, filename);
-			Log.d(LCAT, "JSON Path: " + url);
-
 			InputStream inStream = TiFileFactory.createTitaniumFile(new String[] { url }, false).getInputStream();
 			byte[] buffer = new byte[inStream.available()];
 			inStream.read(buffer);
 			inStream.close();
 			json = new String(buffer, "UTF-8");
 		} catch (IOException ex) {
+			Log.e(LCAT, "Error opening file: " + ex.getMessage());
 			return "";
 		}
 		return json;
