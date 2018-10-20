@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>titanium-firebase-core</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>com.appcelerator.titanium.mobile.module.nature</nature>
+<nature>com.aptana.projects.webnature</nature>		
+
+	</natures>
+</projectDescription>

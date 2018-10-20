@@ -168,7 +168,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule {
 		}.execute();
 	}
 
-	public String loadJSONFromAsset(String filename) {
+	private String loadJSONFromAsset(String filename) {
 		String json = null;
 		try {
 			String url = this.resolveUrl(null, filename);
