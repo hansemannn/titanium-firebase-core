@@ -50,7 +50,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 		String filename = null;
 
 		if (param == null) {
-			filename = "google-services.json";
+			filename = "/google-services.json";
 		} else if (param.containsKey("file")) {
 			filename = param.getString("file");
 		}
