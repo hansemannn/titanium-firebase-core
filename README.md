@@ -45,19 +45,30 @@ Or you can configure Firebase without a file by passing these parameters:
 | `trackingID` | String | | iOS
 | `androidClientID` | String | | iOS
 | `deepLinkURLScheme` | String | | iOS
+| `logLevel` | `LOG_LEVEL_* [ERROR|WARNING|NOTICE|INFO|DEBUG]` | | iOS
 | `applicationID` | String | Analytics | Android
 
+##### `fetchInstanceId(callback)` (iOS)
+
+Returns a result of app instance identifier InstanceID and a Firebase Messaging scoped token.
+
+The callback receives an object containing this fields:
+
+| Key | Type | Description | Platform |
+| - | - | - | - |
+| `fcmToken` | String | The current FCM token | *
+| `error` | String | The localized error message, if set | *
 
 ##### `deleteInstanceId(callback)`
 
-Delete the current `instanceId` (invalidating all tokens). See the [Firebase docs](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId.html#deleteInstanceId()) for details.
+Delete the current `instanceId` (invalidating all tokens).
 
 The callback receives an object containing this fields:
 
 | Key | Type | Description | Platform |
 | - | - | - | - |
 | `success` | Boolean | `true` if the deletion succeeded | *
-| `error` | String | The localized error message | *
+| `error` | String | The localized error message, if set | *
 
 ##### `deleteToken(authorizedEntity, scope, callback)`
 

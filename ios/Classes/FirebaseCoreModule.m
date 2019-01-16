@@ -106,6 +106,20 @@
   }
 }
 
+- (void)setLogLevel:(NSNumber *)logLevel
+{
+  [[FIRConfiguration sharedInstance] setLoggerLevel:[TiUtils intValue:logLevel]];
+}
+
+- (void)fetchInstanceID:(id)callback
+{
+  ENSURE_SINGLE_ARG_OR_NIL(callback, KrollCallback);
+  
+  [[FIRInstanceID instanceID] instanceIDWithHandler:^(FIRInstanceIDResult * _Nullable result, NSError * _Nullable error) {
+    [callback call:@[@{ @"fcmToken": result.token, @"error": (error.localizedDescription) ?: [NSNull null] }] thisObject:self];
+  }];
+}
+
 - (void)deleteInstanceId:(id)callback
 {
   ENSURE_SINGLE_ARG_OR_NIL(callback, KrollCallback);
@@ -146,5 +160,13 @@
     }
   }];
 }
+
+#pragma mark Constants
+
+MAKE_SYSTEM_PROP(LOG_LEVEL_ERROR, FIRLoggerLevelError);
+MAKE_SYSTEM_PROP(LOG_LEVEL_WARNING, FIRLoggerLevelWarning);
+MAKE_SYSTEM_PROP(LOG_LEVEL_NOTICE, FIRLoggerLevelNotice);
+MAKE_SYSTEM_PROP(LOG_LEVEL_INFO, FIRLoggerLevelInfo);
+MAKE_SYSTEM_PROP(LOG_LEVEL_DEBUG, FIRLoggerLevelDebug);
 
 @end
