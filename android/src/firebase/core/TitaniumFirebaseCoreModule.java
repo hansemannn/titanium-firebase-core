@@ -54,6 +54,11 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 		} else if (param.containsKey("file")) {
 			filename = param.getString("file");
 		}
+
+		if (!filename.startsWith("/")) {
+			filename = "/" + filename;
+		}
+
 		String apiKey = "";
 		String databaseURL = "";
 		String projectID = "";
