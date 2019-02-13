@@ -7,8 +7,7 @@ repositories {
 }
 
 dependencies {
-compile 'com.google.firebase:firebase-iid:15.0.0'
-compile 'com.google.firebase:firebase-common:15.0.0'
+compile 'com.google.firebase:firebase-core:16.0.7'
 }
 
 configurations.all {
