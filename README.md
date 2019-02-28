@@ -112,6 +112,12 @@ cd [ios|android]
 appc run -p [ios|android] --build-only
 ```
 
+## Notes
+
+If you are using also [ti.googlesignin](https://github.com/hansemannn/titanium-google-signin) module maybe, when compiling your iOS app you'll probably have a `duplicate symbols` error.
+[ti.googlesignin](https://github.com/hansemannn/titanium-google-signin) and this firebase.core module some common dependencies.
+In order to solve this conflict remove *GTMSessionFetcher.framework* and *GoogleToolboxForMac.framework* folders from `modules/iphone/firebase.code/version/platform` and rebuild your app.
+
 ## Legal
 
 This module is Copyright (c) 2017-Present by Hans Knöchel. All Rights Reserved.
