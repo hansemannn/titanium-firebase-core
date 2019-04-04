@@ -151,7 +151,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 				return false;
 			}
 		} else {
-			Log.d(LCAT, "FirebaseApp is alraedy initialized.");
+			Log.d(LCAT, "FirebaseApp is already initialized.");
 			return false;
 		}
 	}
