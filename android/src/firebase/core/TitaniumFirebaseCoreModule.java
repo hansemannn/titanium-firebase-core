@@ -8,14 +8,7 @@
  */
 package firebase.core;
 
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.os.AsyncTask;
-import android.os.Build;
-
 import org.appcelerator.kroll.KrollModule;
-import org.appcelerator.kroll.KrollFunction;
-import org.appcelerator.kroll.KrollObject;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
@@ -25,14 +18,11 @@ import org.appcelerator.titanium.io.TiFileFactory;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
-import com.google.firebase.iid.FirebaseInstanceId;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.Void;
-import java.util.HashMap;
 import java.util.List;
 
 @Kroll.module(name = "TitaniumFirebaseCore", id = "firebase.core")
@@ -156,43 +146,6 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 		}
 	}
 
-	@TargetApi(Build.VERSION_CODES.CUPCAKE)
-	@Kroll.method
-	public void deleteInstanceId(final KrollFunction callback)
-	{
-		new AsyncTask<Void, Void, IOException>() {
-			protected IOException doInBackground(Void... v)
-			{
-				try {
-					FirebaseInstanceId.getInstance().deleteInstanceId();
-					return null;
-				} catch (IOException e) {
-					e.printStackTrace();
-					return e;
-				}
-			}
-			protected void onPostExecute(IOException error)
-			{
-				if (callback != null) {
-					HashMap args = new HashMap<>();
-					args.put("success", error == null);
-					if (error != null) {
-						args.put("error", error.getLocalizedMessage());
-					}
-					callback.call(getKrollObject(), args);
-				}
-			}
-		}
-			.execute();
-	}
-
-	@TargetApi(Build.VERSION_CODES.CUPCAKE)
-	@Kroll.method
-	public void deleteToken(final String authorizedEntity, final String scope, final KrollFunction callback)
-	{
-		new TiBackgroundTask (authorizedEntity, scope, callback, getKrollObject()).execute();
-	}
-
 	private String loadJSONFromAsset(String filename)
 	{
 		String json = null;
@@ -210,42 +163,4 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 		}
 		return json;
 	}
-
-    @TargetApi(Build.VERSION_CODES.CUPCAKE)
-    private static class TiBackgroundTask extends AsyncTask<Void, Void, IOException>
-    {
-        private final String authorizedEntity;
-        private final String scope;
-        private final KrollFunction callback;
-        private final KrollObject krollObject;
-
-        public TiBackgroundTask (final String authorizedEntity, final String scope, final KrollFunction callback, final KrollObject krollObject) {
-            this.authorizedEntity = authorizedEntity;
-            this.scope = scope;
-            this.callback = callback;
-            this.krollObject = krollObject;
-        }
-
-        protected IOException doInBackground(Void... v)
-        {
-            try {
-                FirebaseInstanceId.getInstance().deleteToken(authorizedEntity, scope);
-                return null;
-            } catch (IOException e) {
-                e.printStackTrace();
-                return e;
-            }
-        }
-        protected void onPostExecute(IOException error)
-        {
-            if (callback != null) {
-                HashMap args = new HashMap<>();
-                args.put("success", error == null);
-                if (error != null) {
-                    args.put("error", error.getLocalizedMessage());
-                }
-                callback.call(krollObject, args);
-            }
-        }
-    }
 }

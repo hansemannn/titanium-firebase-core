@@ -59,7 +59,7 @@ The callback receives an object containing this fields:
 | `fcmToken` | String | The current FCM token | *
 | `error` | String | The localized error message, if set | *
 
-##### `deleteInstanceId(callback)`
+##### `deleteInstanceId(callback)` (iOS)
 
 Delete the current `instanceId` (invalidating all tokens).
 
@@ -70,7 +70,7 @@ The callback receives an object containing this fields:
 | `success` | Boolean | `true` if the deletion succeeded | *
 | `error` | String | The localized error message, if set | *
 
-##### `deleteToken(authorizedEntity, scope, callback)`
+##### `deleteToken(authorizedEntity, scope, callback)` (iOS)
 
 Delete the token of the provided `authorizedEntity` and `scope`. See the [Firebase docs](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#deleteToken(java.lang.String,%20java.lang.String)) for details.
 
