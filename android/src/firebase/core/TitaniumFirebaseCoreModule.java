@@ -8,7 +8,6 @@
  */
 package firebase.core;
 
-import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.os.AsyncTask;
 import android.os.Build;
