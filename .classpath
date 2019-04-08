@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="android/src"/>
+	<classpathentry kind="lib" path="/Users/maf/Library/Android/sdk/platforms/android-28/android.jar"/>
+	<classpathentry kind="lib" path="/Users/maf/Library/Application Support/Titanium/mobilesdk/osx/7.5.2.GA/android/kroll-v8.jar"/>
+	<classpathentry kind="lib" path="/Users/maf/Library/Application Support/Titanium/mobilesdk/osx/7.5.2.GA/android/kroll-common.jar"/>
+	<classpathentry kind="lib" path="/Users/maf/Library/Application Support/Titanium/mobilesdk/osx/7.5.2.GA/android/titanium.jar"/>
+	<classpathentry kind="lib" path="/Users/maf/Library/Application Support/Titanium/mobilesdk/osx/7.5.2.GA/android/kroll-apt.jar"/>
+	<classpathentry kind="lib" path="android/build/intermediates/exploded-aar/firebase-common-16.1.0/classes.jar"/>
+	<classpathentry kind="lib" path="android/build/intermediates/exploded-aar/firebase-core-16.0.8/classes.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
