@@ -48,7 +48,7 @@ Or you can configure Firebase without a file by passing these parameters:
 | `logLevel` | `LOG_LEVEL_* [ERROR|WARNING|NOTICE|INFO|DEBUG]` | | iOS
 | `applicationID` | String | Analytics | Android
 
-##### `fetchInstanceId(callback)` (iOS)
+##### `fetchInstanceID(callback)` (iOS)
 
 Returns a result of app instance identifier InstanceID and a Firebase Messaging scoped token.
 
