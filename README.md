@@ -10,7 +10,7 @@ Use the native Firebase SDK in Axway Titanium. This repository is part of the [T
 
 ## Installation
 
-Read the [Firebase-Core](https://github.com/hansemannn/titanium-firebase#installation) install part if you set up a new project.
+Read the [Titanium-Firebase](https://github.com/hansemannn/titanium-firebase#installation) install part if you set up a new project.
 
 ## API's
 
