@@ -1,22 +1,9 @@
-apply plugin: 'java'
-
 repositories {
 	google()
-	jcenter()
-	mavenCentral()
 }
 
 dependencies {
-	compile 'com.google.firebase:firebase-core:16.0.8'
-	compile 'com.google.firebase:firebase-iid:17.1.1'
-	compile 'com.google.firebase:firebase-common:16.1.0'
-}
-
-configurations.all {
-    transitive = false
-}
-
-task getDeps(type: Copy) {
-	from sourceSets.main.runtimeClasspath
-	into 'lib/'
+	compile 'com.google.firebase:firebase-core:17.3.0'
+	compile 'com.google.firebase:firebase-iid:20.1.4'
+	compile 'com.google.firebase:firebase-common:19.3.0'
 }
