@@ -88,6 +88,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 						if (pName.equals(packageName)) {
 							applicationID = client.getJSONObject("client_info").getString("mobilesdk_app_id");
 							apiKey = client.getJSONArray("api_key").getJSONObject(0).getString("current_key");
+							break;
 						}
 					}
 				}
