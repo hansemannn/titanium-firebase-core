@@ -2,4 +2,6 @@ framework module GoogleDataTransport {
 umbrella header "GoogleDataTransport.h"
 export *
 module * { export * }
+  link framework "CoreTelephony"
+  link framework "SystemConfiguration"
 }
