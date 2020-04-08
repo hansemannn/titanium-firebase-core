@@ -43,9 +43,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 	{
 		String filename = null;
 
-		if (param == null) {
-			filename = "/google-services.json";
-		} else if (param.containsKey("file")) {
+		if (param != null && param.containsKey("file")) {
 			filename = param.getString("file");
 			if (!filename.startsWith("/")) {
 				filename = "/" + filename;
@@ -58,7 +56,6 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 		String storageBucket = "";
 		String applicationID = "";
 		String GCMSenderID = "";
-		FirebaseOptions.Builder options = new FirebaseOptions.Builder();
 
 		if (filename != null) {
 			// open file and parse it
@@ -94,7 +91,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 			} catch (JSONException e) {
 				Log.e(LCAT, "Error parsing file");
 			}
-		} else {
+		} else if (param != null) {
 			// use parameters
 			if (param.containsKey("APIKey")) {
 				apiKey = param.getString("APIKey");
@@ -116,12 +113,16 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 			}
 		}
 
-		options.setApiKey(apiKey);
-		options.setDatabaseUrl(databaseURL);
-		options.setProjectId(projectID);
-		options.setStorageBucket(storageBucket);
-		options.setApplicationId(applicationID);
-		options.setGcmSenderId(GCMSenderID);
+		FirebaseOptions.Builder options = new FirebaseOptions.Builder();
+
+		if (param != null || filename != null) {
+			options.setApiKey(apiKey);
+			options.setDatabaseUrl(databaseURL);
+			options.setProjectId(projectID);
+			options.setStorageBucket(storageBucket);
+			options.setApplicationId(applicationID);
+			options.setGcmSenderId(GCMSenderID);
+		}
 
 		// check for existing firebaseApp
 		boolean hasBeenInitialized = false;
@@ -134,7 +135,11 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 
 		if (!hasBeenInitialized) {
 			try {
-				FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
+				if (param != null || filename != null) {
+					FirebaseApp.initializeApp(getActivity().getApplicationContext(), options.build());
+				} else {
+					FirebaseApp.initializeApp(getActivity().getApplicationContext());
+				}
 				return true;
 			} catch (IllegalStateException e) {
 				Log.w(LCAT, "There was a problem initializing FirebaseApp or it was initialized a second time.");
