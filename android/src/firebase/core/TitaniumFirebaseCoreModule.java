@@ -90,7 +90,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 					}
 				}
 			} catch (JSONException e) {
-				Log.e(LCAT, "Error parsing file");
+				Log.e(LCAT, "Error parsing file: " + e);
 			}
 		} else if (param != null) {
 			// use parameters
@@ -118,12 +118,12 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 		FirebaseOptions.Builder options = new FirebaseOptions.Builder();
 
 		if (param != null || filename != null) {
-			options.setApiKey(apiKey);
-			options.setDatabaseUrl(databaseURL);
-			options.setProjectId(projectID);
-			options.setStorageBucket(storageBucket);
-			options.setApplicationId(applicationID);
-			options.setGcmSenderId(GCMSenderID);
+			if (apiKey != "") options.setApiKey(apiKey);
+			if (databaseURL != "") options.setDatabaseUrl(databaseURL);
+			if (projectID != "") options.setProjectId(projectID);
+			if (storageBucket != "") options.setStorageBucket(storageBucket);
+			if (applicationID != "") options.setApplicationId(applicationID);
+			if (GCMSenderID != "") options.setGcmSenderId(GCMSenderID);
 		}
 
 		// check for existing firebaseApp
