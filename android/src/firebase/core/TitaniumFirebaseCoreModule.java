@@ -8,22 +8,22 @@
  */
 package firebase.core;
 
-import org.appcelerator.kroll.KrollModule;
-import org.appcelerator.kroll.annotations.Kroll;
-import org.appcelerator.titanium.TiApplication;
-import org.appcelerator.kroll.common.Log;
-import org.appcelerator.kroll.common.TiConfig;
-import org.appcelerator.kroll.KrollDict;
-import org.appcelerator.titanium.io.TiFileFactory;
-
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+import org.appcelerator.kroll.KrollDict;
+import org.appcelerator.kroll.KrollModule;
+import org.appcelerator.kroll.annotations.Kroll;
+import org.appcelerator.kroll.common.Log;
+import org.appcelerator.kroll.common.TiConfig;
+import org.appcelerator.titanium.TiApplication;
+import org.appcelerator.titanium.io.TiBaseFile;
+import org.appcelerator.titanium.io.TiFileFactory;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 @Kroll.module(name = "TitaniumFirebaseCore", id = "firebase.core")
 public class TitaniumFirebaseCoreModule extends KrollModule
@@ -88,6 +88,7 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 						if (pName.equals(packageName)) {
 							applicationID = client.getJSONObject("client_info").getString("mobilesdk_app_id");
 							apiKey = client.getJSONArray("api_key").getJSONObject(0).getString("current_key");
+							break;
 						}
 					}
 				}
@@ -116,12 +117,18 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 			}
 		}
 
-		options.setApiKey(apiKey);
-		options.setDatabaseUrl(databaseURL);
-		options.setProjectId(projectID);
-		options.setStorageBucket(storageBucket);
-		options.setApplicationId(applicationID);
-		options.setGcmSenderId(GCMSenderID);
+		if (apiKey != "")
+			options.setApiKey(apiKey);
+		if (databaseURL != "")
+			options.setDatabaseUrl(databaseURL);
+		if (projectID != "")
+			options.setProjectId(projectID);
+		if (storageBucket != "")
+			options.setStorageBucket(storageBucket);
+		if (applicationID != "")
+			options.setApplicationId(applicationID);
+		if (GCMSenderID != "")
+			options.setGcmSenderId(GCMSenderID);
 
 		// check for existing firebaseApp
 		boolean hasBeenInitialized = false;
@@ -152,11 +159,18 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 
 		try {
 			String url = this.resolveUrl(null, filename);
-			InputStream inStream = TiFileFactory.createTitaniumFile(new String[] { url }, false).getInputStream();
-			byte[] buffer = new byte[inStream.available()];
-			inStream.read(buffer);
-			inStream.close();
-			json = new String(buffer, "UTF-8");
+			TiBaseFile baseFile = TiFileFactory.createTitaniumFile(new String[] { url }, false);
+
+			if (baseFile.isFile()) {
+				InputStream inStream = baseFile.getInputStream();
+				byte[] buffer = new byte[inStream.available()];
+				inStream.read(buffer);
+				inStream.close();
+				json = new String(buffer, "UTF-8");
+			} else {
+				Log.e(LCAT, "Error opening file: google-services.json");
+				return "";
+			}
 		} catch (IOException ex) {
 			Log.e(LCAT, "Error opening file: " + ex.getMessage());
 			return "";
