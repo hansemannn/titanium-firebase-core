@@ -49,7 +49,7 @@ Or you can configure Firebase without a file by passing these parameters:
 | `trackingID` | String | | iOS
 | `androidClientID` | String | | iOS
 | `deepLinkURLScheme` | String | | iOS
-| `logLevel` | `LOG_LEVEL_* [ERROR|WARNING|NOTICE|INFO|DEBUG]` | | iOS
+| `logLevel` | `LOG_LEVEL_* [ERROR\|WARNING\|NOTICE\|INFO\|DEBUG]` | | iOS
 | `applicationID` | String | Analytics | Android
 
 ##### `fetchInstanceID(callback)` (iOS)
