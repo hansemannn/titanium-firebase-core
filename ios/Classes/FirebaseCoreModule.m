@@ -2,7 +2,7 @@
  * titanium-firebase-core
  *
  * Created by Hans Knoechel
- * Copyright (c) 2017 Axway Appcelerator. All rights reserved.
+ * Copyright (c) 2020 by Hans Knöchel. All rights reserved.
  */
 
 #import <FirebaseCore/FirebaseCore.h>
@@ -90,6 +90,7 @@
     ADD_TO_OPTIONS_IF_SET(payload, @"databaseURL", options);
     ADD_TO_OPTIONS_IF_SET(payload, @"deepLinkURLScheme", options);
     ADD_TO_OPTIONS_IF_SET(payload, @"storageBucket", options);
+    ADD_TO_OPTIONS_IF_SET(payload, @"appGroupID", options);
   }
   
   if (name != nil) {
