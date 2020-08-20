@@ -6,7 +6,7 @@
  */
 
 #import <FirebaseCore/FirebaseCore.h>
-#import <FirebaseInstanceId/FIRInstanceID.h>
+#import <FirebaseInstanceId/FirebaseInstanceId.h>
 
 #import "FirebaseCoreModule.h"
 #import "TiBase.h"
@@ -25,14 +25,6 @@
 - (NSString *)moduleId
 {
   return @"firebase.core";
-}
-
-#pragma mark Lifecycle
-
-- (void)startup
-{
-  [super startup];
-  NSLog(@"[DEBUG] %@ loaded", self);
 }
 
 #pragma Public APIs
