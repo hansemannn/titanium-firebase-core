@@ -16,7 +16,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import <GoogleDataTransport/GDTCORConsoleLogger.h>
+#import "GDTCORConsoleLogger.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 /** A block type that could be run instead of normal assertion logging. No return type, no params.
  */
@@ -89,3 +91,5 @@ FOUNDATION_EXPORT GDTCORAssertionBlock _Nullable GDTCORAssertionBlockToRunInstea
   } while (0);
 
 #endif  // defined(NS_BLOCK_ASSERTIONS)
+
+NS_ASSUME_NONNULL_END
