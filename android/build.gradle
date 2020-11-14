@@ -3,5 +3,6 @@ repositories {
 }
 
 dependencies {
-	implementation 'com.google.firebase:firebase-core:17.5.1'
+	// get latest version from https://firebase.google.com/docs/android/learn-more#bom
+	implementation 'com.google.firebase:firebase-core:18.0.0'
 }
