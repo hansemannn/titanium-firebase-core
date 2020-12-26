@@ -3,6 +3,6 @@ repositories {
 }
 
 dependencies {
-	compile 'com.google.firebase:firebase-iid:20.0.2'
-	compile 'com.google.firebase:firebase-common:19.3.0'
+	// get latest version from https://firebase.google.com/docs/android/learn-more#bom
+	implementation 'com.google.firebase:firebase-core:18.0.0'
 }
