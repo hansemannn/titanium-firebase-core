@@ -13,10 +13,4 @@
 
 - (void)setLogLevel:(NSNumber *)logLevel;
 
-- (void)fetchInstanceID:(id)callback;
-
-- (void)deleteInstanceId:(id)callback;
-
-- (void)deleteToken:(id)arguments;
-
 @end

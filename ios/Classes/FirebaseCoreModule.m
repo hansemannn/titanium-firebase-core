@@ -104,56 +104,6 @@
   [[FIRConfiguration sharedInstance] setLoggerLevel:[TiUtils intValue:logLevel]];
 }
 
-- (void)fetchInstanceID:(id)callback
-{
-  ENSURE_SINGLE_ARG_OR_NIL(callback, KrollCallback);
-  
-  [[FIRInstanceID instanceID] instanceIDWithHandler:^(FIRInstanceIDResult * _Nullable result, NSError * _Nullable error) {
-    [callback call:@[@{ @"fcmToken": result.token, @"error": (error.localizedDescription) ?: [NSNull null] }] thisObject:self];
-  }];
-}
-
-- (void)deleteInstanceId:(id)callback
-{
-  ENSURE_SINGLE_ARG_OR_NIL(callback, KrollCallback);
-  
-  [[FIRInstanceID instanceID] deleteIDWithHandler:^(NSError *error) {
-    if (callback != nil) {
-      NSDictionary *dict = nil;
-      if (error != nil) {
-        dict = @{ @"success": @(NO), @"error": [error localizedDescription] };
-      } else {
-        dict = @{ @"success": @(YES) };
-      }
-      [callback call:@[dict] thisObject:nil];
-    }
-  }];
-}
-
-- (void)deleteToken:(id)arguments
-{
-  NSString *authorizedEntity;
-  ENSURE_ARG_AT_INDEX(authorizedEntity, arguments, 0, NSString);
-  
-  NSString *scope;
-  ENSURE_ARG_AT_INDEX(scope, arguments, 1, NSString);
-  
-  KrollCallback *callback;
-  ENSURE_ARG_OR_NIL_AT_INDEX(callback, arguments, 2, KrollCallback);
-  
-  [[FIRInstanceID instanceID] deleteTokenWithAuthorizedEntity:authorizedEntity scope:scope handler:^(NSError *error) {
-    if (callback != nil) {
-      NSDictionary *dict = nil;
-      if (error != nil) {
-        dict = @{ @"success": @(NO), @"error": [error localizedDescription] };
-      } else {
-        dict = @{ @"success": @(YES) };
-      }
-      [callback call:@[dict] thisObject:nil];
-    }
-  }];
-}
-
 #pragma mark Constants
 
 MAKE_SYSTEM_PROP(LOG_LEVEL_ERROR, FIRLoggerLevelError);

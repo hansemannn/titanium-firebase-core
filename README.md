@@ -28,7 +28,7 @@ Read the [Firebase-Core](https://github.com/hansemannn/titanium-firebase#install
 
 Configure Firebase without additional parameters.
 
-Returns `false` if it was already configured or if there was an error. Calling `deleteInstanceId()` can be used to re-configure it.
+Returns `false` if it was already configured or if there was an error.
 
 ##### `configure(parameters)`
 
@@ -57,39 +57,6 @@ Or you can configure Firebase without a file by passing these parameters:
 | `deepLinkURLScheme` | String | | iOS
 | `logLevel` | `LOG_LEVEL_* [ERROR\|WARNING\|NOTICE\|INFO\|DEBUG]` | | iOS
 | `applicationID` | String | Analytics | Android
-
-##### `fetchInstanceID(callback)` (iOS)
-
-Returns a result of app instance identifier InstanceID and a Firebase Messaging scoped token.
-
-The callback receives an object containing this fields:
-
-| Key | Type | Description | Platform |
-| - | - | - | - |
-| `fcmToken` | String | The current FCM token | *
-| `error` | String | The localized error message, if set | *
-
-##### `deleteInstanceId(callback)` (iOS)
-
-Delete the current `instanceId` (invalidating all tokens).
-
-The callback receives an object containing this fields:
-
-| Key | Type | Description | Platform |
-| - | - | - | - |
-| `success` | Boolean | `true` if the deletion succeeded | *
-| `error` | String | The localized error message, if set | *
-
-##### `deleteToken(authorizedEntity, scope, callback)` (iOS)
-
-Delete the token of the provided `authorizedEntity` and `scope`. See the [Firebase docs](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#deleteToken(java.lang.String,%20java.lang.String)) for details.
-
-The callback receives an object containing this fields:
-
-| Key | Type | Description | Platform |
-| - | - | - | - |
-| `success` | Boolean | `true` if the deletion succeeded | *
-| `error` | String | The localized error message | *
 
 ## Examples
 
