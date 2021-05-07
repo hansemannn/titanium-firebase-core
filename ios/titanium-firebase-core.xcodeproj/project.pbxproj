@@ -27,7 +27,6 @@
 		24DE9E1111C5FE74003F90F6 /* FirebaseCoreModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* FirebaseCoreModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* FirebaseCoreModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* FirebaseCoreModuleAssets.m */; };
 		3AF26BF825CECACE000B34BE /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BEE25CECACD000B34BE /* PromisesObjC.xcframework */; };
-		3AF26BF925CECACE000B34BE /* Protobuf.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BEF25CECACD000B34BE /* Protobuf.xcframework */; };
 		3AF26BFA25CECACE000B34BE /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BF025CECACE000B34BE /* FirebaseInstallations.xcframework */; };
 		3AF26BFB25CECACE000B34BE /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BF125CECACE000B34BE /* GoogleAppMeasurement.xcframework */; };
 		3AF26BFC25CECACE000B34BE /* FirebaseInstanceID.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BF225CECACE000B34BE /* FirebaseInstanceID.xcframework */; };
@@ -56,7 +55,6 @@
 		24DE9E0F11C5FE74003F90F6 /* FirebaseCoreModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirebaseCoreModuleAssets.h; path = Classes/FirebaseCoreModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* FirebaseCoreModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirebaseCoreModuleAssets.m; path = Classes/FirebaseCoreModuleAssets.m; sourceTree = "<group>"; };
 		3AF26BEE25CECACD000B34BE /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = platform/PromisesObjC.xcframework; sourceTree = "<group>"; };
-		3AF26BEF25CECACD000B34BE /* Protobuf.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Protobuf.xcframework; path = platform/Protobuf.xcframework; sourceTree = "<group>"; };
 		3AF26BF025CECACE000B34BE /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInstallations.xcframework; path = platform/FirebaseInstallations.xcframework; sourceTree = "<group>"; };
 		3AF26BF125CECACE000B34BE /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = platform/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
 		3AF26BF225CECACE000B34BE /* FirebaseInstanceID.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInstanceID.xcframework; path = platform/FirebaseInstanceID.xcframework; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF26BF925CECACE000B34BE /* Protobuf.xcframework in Frameworks */,
 				3AF26BFC25CECACE000B34BE /* FirebaseInstanceID.xcframework in Frameworks */,
 				3AF26BFF25CECACE000B34BE /* GoogleDataTransport.xcframework in Frameworks */,
 				3AF26BFE25CECACE000B34BE /* FirebaseCore.xcframework in Frameworks */,
@@ -121,7 +118,6 @@
 				3AF26BF725CECACE000B34BE /* GoogleUtilities.xcframework */,
 				3AF26BF625CECACE000B34BE /* nanopb.xcframework */,
 				3AF26BEE25CECACD000B34BE /* PromisesObjC.xcframework */,
-				3AF26BEF25CECACD000B34BE /* Protobuf.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
