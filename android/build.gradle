@@ -4,5 +4,5 @@ repositories {
 
 dependencies {
 	// get latest version from https://firebase.google.com/docs/android/learn-more#bom
-	implementation 'com.google.firebase:firebase-core:18.0.3'
+	implementation 'com.google.firebase:firebase-core:19.0.0'
 }
