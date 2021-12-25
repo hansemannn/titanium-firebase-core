@@ -29,7 +29,6 @@
 		3AF26BF825CECACE000B34BE /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BEE25CECACD000B34BE /* PromisesObjC.xcframework */; };
 		3AF26BFA25CECACE000B34BE /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BF025CECACE000B34BE /* FirebaseInstallations.xcframework */; };
 		3AF26BFB25CECACE000B34BE /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BF125CECACE000B34BE /* GoogleAppMeasurement.xcframework */; };
-		3AF26BFC25CECACE000B34BE /* FirebaseInstanceID.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BF225CECACE000B34BE /* FirebaseInstanceID.xcframework */; };
 		3AF26BFD25CECACE000B34BE /* FirebaseCoreDiagnostics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BF325CECACE000B34BE /* FirebaseCoreDiagnostics.xcframework */; };
 		3AF26BFE25CECACE000B34BE /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BF425CECACE000B34BE /* FirebaseCore.xcframework */; };
 		3AF26BFF25CECACE000B34BE /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26BF525CECACE000B34BE /* GoogleDataTransport.xcframework */; };
@@ -57,7 +56,6 @@
 		3AF26BEE25CECACD000B34BE /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = platform/PromisesObjC.xcframework; sourceTree = "<group>"; };
 		3AF26BF025CECACE000B34BE /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInstallations.xcframework; path = platform/FirebaseInstallations.xcframework; sourceTree = "<group>"; };
 		3AF26BF125CECACE000B34BE /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = platform/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
-		3AF26BF225CECACE000B34BE /* FirebaseInstanceID.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInstanceID.xcframework; path = platform/FirebaseInstanceID.xcframework; sourceTree = "<group>"; };
 		3AF26BF325CECACE000B34BE /* FirebaseCoreDiagnostics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreDiagnostics.xcframework; path = platform/FirebaseCoreDiagnostics.xcframework; sourceTree = "<group>"; };
 		3AF26BF425CECACE000B34BE /* FirebaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCore.xcframework; path = platform/FirebaseCore.xcframework; sourceTree = "<group>"; };
 		3AF26BF525CECACE000B34BE /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleDataTransport.xcframework; path = platform/GoogleDataTransport.xcframework; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF26BFC25CECACE000B34BE /* FirebaseInstanceID.xcframework in Frameworks */,
 				3AF26BFF25CECACE000B34BE /* GoogleDataTransport.xcframework in Frameworks */,
 				3AF26BFE25CECACE000B34BE /* FirebaseCore.xcframework in Frameworks */,
 				3AF26BF825CECACE000B34BE /* PromisesObjC.xcframework in Frameworks */,
@@ -112,7 +109,6 @@
 				3AF26BF425CECACE000B34BE /* FirebaseCore.xcframework */,
 				3AF26BF325CECACE000B34BE /* FirebaseCoreDiagnostics.xcframework */,
 				3AF26BF025CECACE000B34BE /* FirebaseInstallations.xcframework */,
-				3AF26BF225CECACE000B34BE /* FirebaseInstanceID.xcframework */,
 				3AF26BF125CECACE000B34BE /* GoogleAppMeasurement.xcframework */,
 				3AF26BF525CECACE000B34BE /* GoogleDataTransport.xcframework */,
 				3AF26BF725CECACE000B34BE /* GoogleUtilities.xcframework */,
@@ -181,7 +177,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1310;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "titanium-firebase-core" */;
 			compatibilityVersion = "Xcode 8.0";

@@ -6,7 +6,7 @@
  */
 
 #import <FirebaseCore/FirebaseCore.h>
-#import <FirebaseInstanceId/FirebaseInstanceId.h>
+#import <FirebaseInstallations/FirebaseInstallations.h>
 
 #import "FirebaseCoreModule.h"
 #import "TiBase.h"
