@@ -1,5 +1,5 @@
 # Firebase Core - Titanium Module
-Use the native Firebase SDK in Axway Titanium. This repository is part of the [Titanium Firebase](https://github.com/hansemannn/titanium-firebase) project.
+Use the native Firebase SDK in Axway Titanium. This repository is part of the [Titanium Firebase](https://github.com/hansemannn/titanium-firebase) project. This module is <strong>required for iOS but not needed anymore for Android</strong>. Since Ti 9.0.0 gradle will automatically read the configuration (see [Firebase-Core](https://github.com/hansemannn/titanium-firebase#installation))
 
 ## Supporting this effort
 
@@ -89,12 +89,16 @@ cd [ios|android]
 appc run -p [ios|android] --build-only
 ```
 
-## iOS Notes
+## iOS notes
 
 If you are also using [Ti.GoogleSignIn](https://github.com/hansemannn/titanium-google-signin) you will probably
 have a `duplicate symbols` error. Both `Ti.GoogleSignIn` and this module share some common dependencies.
 In order to solve this conflict, remove the *GTMSessionFetcher.framework* and *GoogleToolboxForMac.framework* files
 from `<YOUR_PROJECT_DIR>/modules/iphone/firebase.core/<VERSION>/platform` and rebuild your app.
+
+## Android notes
+
+check [firebase-core](https://github.com/hansemannn/titanium-firebase#%EF%B8%8F-android-notes) for more information.
 
 ## Legal
 
