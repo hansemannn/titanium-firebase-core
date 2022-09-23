@@ -8,7 +8,7 @@ this project maintained and be able to use the latest Firebase SDK's, please see
 thank you!
 
 ## Requirements
-- [x] Titanium SDK 7.0.0+
+- [x] Titanium SDK 10.0.0+
 
 ## Download
 - [x] [Stable release](https://github.com/hansemannn/titanium-firebase-core/releases)
