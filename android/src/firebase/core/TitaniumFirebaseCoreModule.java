@@ -8,8 +8,14 @@
  */
 package firebase.core;
 
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
+import com.google.firebase.installations.FirebaseInstallations;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -38,6 +44,21 @@ public class TitaniumFirebaseCoreModule extends KrollModule
 
 	// Public APIs
 
+	@Kroll.method
+	public void getInstanceId() {
+		FirebaseInstallations.getInstance().getId()
+			.addOnCompleteListener(task -> {
+				KrollDict kd = new KrollDict();
+					if (task.isSuccessful()) {
+					kd.put("value", task.getResult());
+					kd.put("status", "success");
+				} else {
+					kd.put("value", 0);
+					kd.put("status", "error");
+				}
+				fireEvent("instanceId", kd);
+			});
+	}
 	@Kroll.method
 	public boolean configure(@Kroll.argument(optional = true) KrollDict param)
 	{
