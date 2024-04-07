@@ -6,6 +6,6 @@ framework module Promises {
 }
 
 module Promises.Swift {
-    header "Promises-Swift.h"
-    requires objc
+  header "Promises-Swift.h"
+  requires objc
 }

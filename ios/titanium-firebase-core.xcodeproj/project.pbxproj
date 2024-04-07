@@ -14,6 +14,7 @@
 		3A2114C62A9A6CA500E75B79 /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2114C52A9A6CA500E75B79 /* FBLPromises.xcframework */; };
 		3A4255452A632FDE00B017F5 /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4255442A632FDD00B017F5 /* FirebaseCoreExtension.xcframework */; };
 		3A4255472A632FE100B017F5 /* PromisesSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4255462A632FE100B017F5 /* PromisesSwift.xcframework */; };
+		3AB66DB92B2F3303002610C1 /* FirebaseSharedSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB66DB82B2F3302002610C1 /* FirebaseSharedSwift.xcframework */; };
 		3AC1470728DD932100591618 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC146FC28DD932100591618 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
 		3AC1470928DD932100591618 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC146FE28DD932100591618 /* GoogleDataTransport.xcframework */; };
 		3AC1470A28DD932100591618 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC146FF28DD932100591618 /* nanopb.xcframework */; };
@@ -35,6 +36,7 @@
 		3A2114C52A9A6CA500E75B79 /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = platform/FBLPromises.xcframework; sourceTree = "<group>"; };
 		3A4255442A632FDD00B017F5 /* FirebaseCoreExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreExtension.xcframework; path = platform/FirebaseCoreExtension.xcframework; sourceTree = "<group>"; };
 		3A4255462A632FE100B017F5 /* PromisesSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesSwift.xcframework; path = platform/PromisesSwift.xcframework; sourceTree = "<group>"; };
+		3AB66DB82B2F3302002610C1 /* FirebaseSharedSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseSharedSwift.xcframework; path = platform/FirebaseSharedSwift.xcframework; sourceTree = "<group>"; };
 		3AC146FC28DD932100591618 /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementIdentitySupport.xcframework; path = platform/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
 		3AC146FE28DD932100591618 /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleDataTransport.xcframework; path = platform/GoogleDataTransport.xcframework; sourceTree = "<group>"; };
 		3AC146FF28DD932100591618 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = platform/nanopb.xcframework; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB66DB92B2F3303002610C1 /* FirebaseSharedSwift.xcframework in Frameworks */,
 				3AC1470928DD932100591618 /* GoogleDataTransport.xcframework in Frameworks */,
 				3AC1470B28DD932100591618 /* FirebaseCoreInternal.xcframework in Frameworks */,
 				3AC1470C28DD932100591618 /* FirebaseInstallations.xcframework in Frameworks */,
@@ -105,6 +108,7 @@
 				3AC146FF28DD932100591618 /* nanopb.xcframework */,
 				3A2114C52A9A6CA500E75B79 /* FBLPromises.xcframework */,
 				3A4255462A632FE100B017F5 /* PromisesSwift.xcframework */,
+				3AB66DB82B2F3302002610C1 /* FirebaseSharedSwift.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
