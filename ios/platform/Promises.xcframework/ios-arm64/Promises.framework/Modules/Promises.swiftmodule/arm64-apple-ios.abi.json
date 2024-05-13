@@ -1,0 +1,4780 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "FBLPromises",
+        "printedName": "FBLPromises",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Promise",
+        "printedName": "Promise",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FBLPromise",
+                "printedName": "FBLPromises.FBLPromise<τ_1_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "c:objc(cs)FBLPromise"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises7PromiseCyACyxGSo10FBLPromiseCyqd__GcRld__Clufc",
+            "mangledName": "$s8Promises7PromiseCyACyxGSo10FBLPromiseCyqd__GcRld__Clufc",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_1_0 : AnyObject>",
+            "sugared_genericSig": "<Value, T where T : AnyObject>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "pending",
+            "printedName": "pending()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC7pendingACyxGyFZ",
+            "mangledName": "$s8Promises7PromiseC7pendingACyxGyFZ",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises7PromiseCACyxGycfc",
+            "mangledName": "$s8Promises7PromiseCACyxGycfc",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises7PromiseCyACyxGs5Error_pcfc",
+            "mangledName": "$s8Promises7PromiseCyACyxGs5Error_pcfc",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises7PromiseCyACyxGxyKXKcfc",
+            "mangledName": "$s8Promises7PromiseCyACyxGxyKXKcfc",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "fulfill",
+            "printedName": "fulfill(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC7fulfillyyxF",
+            "mangledName": "$s8Promises7PromiseC7fulfillyyxF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reject",
+            "printedName": "reject(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC6rejectyys5Error_pF",
+            "mangledName": "$s8Promises7PromiseC6rejectyys5Error_pF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "asObjCPromise",
+            "printedName": "asObjCPromise()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FBLPromise",
+                "printedName": "FBLPromises.FBLPromise<τ_1_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "c:objc(cs)FBLPromise"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC13asObjCPromiseSo10FBLPromiseCyqd__GyRld__ClF",
+            "mangledName": "$s8Promises7PromiseC13asObjCPromiseSo10FBLPromiseCyqd__GyRld__ClF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_1_0 : AnyObject>",
+            "sugared_genericSig": "<Value, T where T : AnyObject>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Promises7PromiseC11descriptionSSvp",
+            "mangledName": "$s8Promises7PromiseC11descriptionSSvp",
+            "moduleName": "Promises",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Promises7PromiseC11descriptionSSvg",
+                "mangledName": "$s8Promises7PromiseC11descriptionSSvg",
+                "moduleName": "Promises",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Value>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "always",
+            "printedName": "always(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC6always2on_ACyxGSo17OS_dispatch_queueC_yyctF",
+            "mangledName": "$s8Promises7PromiseC6always2on_ACyxGSo17OS_dispatch_queueC_yyctF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(@escaping (τ_0_0) -> (), @escaping (Swift.Error) -> ()) throws -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "((τ_0_0) -> (), (Swift.Error) -> ())",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(τ_0_0) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Error) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises7PromiseC2on_ACyxGSo17OS_dispatch_queueC_yyxc_ys5Error_pctKctcfc",
+            "mangledName": "$s8Promises7PromiseC2on_ACyxGSo17OS_dispatch_queueC_yyxc_ys5Error_pctKctcfc",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Convenience",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "catch",
+            "printedName": "catch(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC5catch2on_ACyxGSo17OS_dispatch_queueC_ys5Error_pctF",
+            "mangledName": "$s8Promises7PromiseC5catch2on_ACyxGSo17OS_dispatch_queueC_ys5Error_pctF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delay",
+            "printedName": "delay(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC5delay2on_ACyxGSo17OS_dispatch_queueC_SdtF",
+            "mangledName": "$s8Promises7PromiseC5delay2on_ACyxGSo17OS_dispatch_queueC_SdtF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises7PromiseC2on_ACyxGSo17OS_dispatch_queueC_qd__yKctclufc",
+            "mangledName": "$s8Promises7PromiseC2on_ACyxGSo17OS_dispatch_queueC_qd__yKctclufc",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0, τ_1_0>",
+            "sugared_genericSig": "<Value, T>",
+            "declAttributes": [
+              "Convenience",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> Promises.Promise<τ_1_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Promise",
+                    "printedName": "Promises.Promise<τ_1_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      }
+                    ],
+                    "usr": "s:8Promises7PromiseC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises7PromiseC2on_ACyxGSo17OS_dispatch_queueC_ACyqd__GyKctclufc",
+            "mangledName": "$s8Promises7PromiseC2on_ACyxGSo17OS_dispatch_queueC_ACyqd__GyKctclufc",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0, τ_1_0>",
+            "sugared_genericSig": "<Value, T>",
+            "declAttributes": [
+              "Convenience",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "recover",
+            "printedName": "recover(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Error) throws -> Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Promise",
+                    "printedName": "Promises.Promise<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:8Promises7PromiseC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC7recover2on_ACyxGSo17OS_dispatch_queueC_AFs5Error_pKctF",
+            "mangledName": "$s8Promises7PromiseC7recover2on_ACyxGSo17OS_dispatch_queueC_AFs5Error_pKctF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "recover",
+            "printedName": "recover(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Error) throws -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC7recover2on_ACyxGSo17OS_dispatch_queueC_xs5Error_pKctF",
+            "mangledName": "$s8Promises7PromiseC7recover2on_ACyxGSo17OS_dispatch_queueC_xs5Error_pKctF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reduce",
+            "printedName": "reduce(on:_:combine:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_1_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0, τ_1_0) throws -> Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Promise",
+                    "printedName": "Promises.Promise<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:8Promises7PromiseC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(τ_0_0, τ_1_0)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC6reduce2on_7combineACyxGSo17OS_dispatch_queueC_qd__dAGx_qd__tKctlF",
+            "mangledName": "$s8Promises7PromiseC6reduce2on_7combineACyxGSo17OS_dispatch_queueC_qd__dAGx_qd__tKctlF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0, τ_1_0>",
+            "sugared_genericSig": "<Value, Element>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reduce",
+            "printedName": "reduce(on:_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0, τ_1_0.Element) throws -> Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Promise",
+                    "printedName": "Promises.Promise<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:8Promises7PromiseC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(τ_0_0, τ_1_0.Element)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_1_0.Element"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC6reduce2on__ACyxGSo17OS_dispatch_queueC_qd__AFx_7ElementQyd__tKctSTRd__lF",
+            "mangledName": "$s8Promises7PromiseC6reduce2on__ACyxGSo17OS_dispatch_queueC_qd__AFx_7ElementQyd__tKctSTRd__lF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_1_0 : Swift.Sequence>",
+            "sugared_genericSig": "<Value, Container where Container : Swift.Sequence>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "then",
+            "printedName": "then(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_1_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) throws -> Promises.Promise<τ_1_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Promise",
+                    "printedName": "Promises.Promise<τ_1_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      }
+                    ],
+                    "usr": "s:8Promises7PromiseC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC4then2on_ACyqd__GSo17OS_dispatch_queueC_AFxKctlF",
+            "mangledName": "$s8Promises7PromiseC4then2on_ACyqd__GSo17OS_dispatch_queueC_AFxKctlF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0, τ_1_0>",
+            "sugared_genericSig": "<Value, Result>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "then",
+            "printedName": "then(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_1_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) throws -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC4then2on_ACyqd__GSo17OS_dispatch_queueC_qd__xKctlF",
+            "mangledName": "$s8Promises7PromiseC4then2on_ACyqd__GSo17OS_dispatch_queueC_qd__xKctlF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0, τ_1_0>",
+            "sugared_genericSig": "<Value, Result>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "then",
+            "printedName": "then(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) throws -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC4then2on_ACyxGSo17OS_dispatch_queueC_yxKctF",
+            "mangledName": "$s8Promises7PromiseC4then2on_ACyxGSo17OS_dispatch_queueC_yxKctF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "timeout",
+            "printedName": "timeout(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC7timeout2on_ACyxGSo17OS_dispatch_queueC_SdtF",
+            "mangledName": "$s8Promises7PromiseC7timeout2on_ACyxGSo17OS_dispatch_queueC_SdtF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validate",
+            "printedName": "validate(on:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises7PromiseC8validate2on_ACyxGSo17OS_dispatch_queueC_SbxctF",
+            "mangledName": "$s8Promises7PromiseC8validate2on_ACyxGSo17OS_dispatch_queueC_SbxctF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8Promises7PromiseC",
+        "mangledName": "$s8Promises7PromiseC",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "all",
+        "printedName": "all(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<[τ_0_0]>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Promises.Promise<τ_0_0>]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              }
+            ],
+            "usr": "s:Sa"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises3all2on_AA7PromiseCySayxGGSo17OS_dispatch_queueC_AEyxGdtlF",
+        "mangledName": "$s8Promises3all2on_AA7PromiseCySayxGGSo17OS_dispatch_queueC_AEyxGdtlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "all",
+        "printedName": "all(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<[τ_0_0]>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_1"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises3all2on_AA7PromiseCySayxGGSo17OS_dispatch_queueC_q_tSTR_AEyxG7ElementRt_r0_lF",
+        "mangledName": "$s8Promises3all2on_AA7PromiseCySayxGGSo17OS_dispatch_queueC_q_tSTR_AEyxG7ElementRt_r0_lF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Sequence, τ_0_1.Element == Promises.Promise<τ_0_0>>",
+        "sugared_genericSig": "<Value, Container where Container : Swift.Sequence, Container.Element == Promises.Promise<Value>>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "all",
+        "printedName": "all(on:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<(τ_0_0, τ_0_1)>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(τ_0_0, τ_0_1)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_1>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises3all2on__AA7PromiseCyx_q_tGSo17OS_dispatch_queueC_AEyxGAEyq_Gtr0_lF",
+        "mangledName": "$s8Promises3all2on__AA7PromiseCyx_q_tGSo17OS_dispatch_queueC_AEyxGAEyq_Gtr0_lF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0, τ_0_1>",
+        "sugared_genericSig": "<A, B>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "all",
+        "printedName": "all(on:_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<(τ_0_0, τ_0_1, τ_0_2)>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(τ_0_0, τ_0_1, τ_0_2)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_1>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_2>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_2"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises3all2on___AA7PromiseCyx_q_q0_tGSo17OS_dispatch_queueC_AEyxGAEyq_GAEyq0_Gtr1_lF",
+        "mangledName": "$s8Promises3all2on___AA7PromiseCyx_q_q0_tGSo17OS_dispatch_queueC_AEyxGAEyq_GAEyq0_Gtr1_lF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2>",
+        "sugared_genericSig": "<A, B, C>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "all",
+        "printedName": "all(on:_:_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<(τ_0_0, τ_0_1, τ_0_2, τ_0_3)>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(τ_0_0, τ_0_1, τ_0_2, τ_0_3)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_1>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_2>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_2"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_3>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_3"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises3all2on____AA7PromiseCyx_q_q0_q1_tGSo17OS_dispatch_queueC_AEyxGAEyq_GAEyq0_GAEyq1_Gtr2_lF",
+        "mangledName": "$s8Promises3all2on____AA7PromiseCyx_q_q0_q1_tGSo17OS_dispatch_queueC_AEyxGAEyq_GAEyq0_GAEyq1_Gtr2_lF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3>",
+        "sugared_genericSig": "<A, B, C, D>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "any",
+        "printedName": "any(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<[Promises.Maybe<τ_0_0>]>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Promises.Maybe<τ_0_0>]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Maybe",
+                    "printedName": "Promises.Maybe<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:8Promises5MaybeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Promises.Promise<τ_0_0>]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              }
+            ],
+            "usr": "s:Sa"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises3any2on_AA7PromiseCySayAA5MaybeOyxGGGSo17OS_dispatch_queueC_AEyxGdtlF",
+        "mangledName": "$s8Promises3any2on_AA7PromiseCySayAA5MaybeOyxGGGSo17OS_dispatch_queueC_AEyxGdtlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "any",
+        "printedName": "any(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<[Promises.Maybe<τ_0_0>]>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Promises.Maybe<τ_0_0>]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Maybe",
+                    "printedName": "Promises.Maybe<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:8Promises5MaybeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_1"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises3any2on_AA7PromiseCySayAA5MaybeOyxGGGSo17OS_dispatch_queueC_q_tSTR_AEyxG7ElementRt_r0_lF",
+        "mangledName": "$s8Promises3any2on_AA7PromiseCySayAA5MaybeOyxGGGSo17OS_dispatch_queueC_q_tSTR_AEyxG7ElementRt_r0_lF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Sequence, τ_0_1.Element == Promises.Promise<τ_0_0>>",
+        "sugared_genericSig": "<Value, Container where Container : Swift.Sequence, Container.Element == Promises.Promise<Value>>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "any",
+        "printedName": "any(on:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<(Promises.Maybe<τ_0_0>, Promises.Maybe<τ_0_1>)>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Promises.Maybe<τ_0_0>, Promises.Maybe<τ_0_1>)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Maybe",
+                    "printedName": "Promises.Maybe<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:8Promises5MaybeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Maybe",
+                    "printedName": "Promises.Maybe<τ_0_1>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:8Promises5MaybeO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_1>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises3any2on__AA7PromiseCyAA5MaybeOyxG_AGyq_GtGSo17OS_dispatch_queueC_AEyxGAEyq_Gtr0_lF",
+        "mangledName": "$s8Promises3any2on__AA7PromiseCyAA5MaybeOyxG_AGyq_GtGSo17OS_dispatch_queueC_AEyxGAEyq_Gtr0_lF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0, τ_0_1>",
+        "sugared_genericSig": "<A, B>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "any",
+        "printedName": "any(on:_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<(Promises.Maybe<τ_0_0>, Promises.Maybe<τ_0_1>, Promises.Maybe<τ_0_2>)>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Promises.Maybe<τ_0_0>, Promises.Maybe<τ_0_1>, Promises.Maybe<τ_0_2>)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Maybe",
+                    "printedName": "Promises.Maybe<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:8Promises5MaybeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Maybe",
+                    "printedName": "Promises.Maybe<τ_0_1>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:8Promises5MaybeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Maybe",
+                    "printedName": "Promises.Maybe<τ_0_2>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_2"
+                      }
+                    ],
+                    "usr": "s:8Promises5MaybeO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_1>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_2>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_2"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises3any2on___AA7PromiseCyAA5MaybeOyxG_AGyq_GAGyq0_GtGSo17OS_dispatch_queueC_AEyxGAEyq_GAEyq0_Gtr1_lF",
+        "mangledName": "$s8Promises3any2on___AA7PromiseCyAA5MaybeOyxG_AGyq_GAGyq0_GtGSo17OS_dispatch_queueC_AEyxGAEyq_GAEyq0_Gtr1_lF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2>",
+        "sugared_genericSig": "<A, B, C>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Maybe",
+        "printedName": "Maybe",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0> (Promises.Maybe<τ_0_0>.Type) -> (τ_0_0) -> Promises.Maybe<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0) -> Promises.Maybe<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Maybe",
+                        "printedName": "Promises.Maybe<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:8Promises5MaybeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Promises.Maybe<τ_0_0>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Maybe",
+                        "printedName": "Promises.Maybe<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:8Promises5MaybeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8Promises5MaybeO5valueyACyxGxcAEmlF",
+            "mangledName": "$s8Promises5MaybeO5valueyACyxGxcAEmlF",
+            "moduleName": "Promises"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0> (Promises.Maybe<τ_0_0>.Type) -> (Swift.Error) -> Promises.Maybe<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> Promises.Maybe<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Maybe",
+                        "printedName": "Promises.Maybe<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:8Promises5MaybeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Promises.Maybe<τ_0_0>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Maybe",
+                        "printedName": "Promises.Maybe<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:8Promises5MaybeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8Promises5MaybeO5erroryACyxGs5Error_pcAEmlF",
+            "mangledName": "$s8Promises5MaybeO5erroryACyxGs5Error_pcAEmlF",
+            "moduleName": "Promises"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Maybe",
+                "printedName": "Promises.Maybe<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises5MaybeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises5MaybeOyACyxGxcfc",
+            "mangledName": "$s8Promises5MaybeOyACyxGxcfc",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Maybe",
+                "printedName": "Promises.Maybe<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises5MaybeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises5MaybeOyACyxGs5Error_pcfc",
+            "mangledName": "$s8Promises5MaybeOyACyxGs5Error_pcfc",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Promises5MaybeO5valuexSgvp",
+            "mangledName": "$s8Promises5MaybeO5valuexSgvp",
+            "moduleName": "Promises",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Promises5MaybeO5valuexSgvg",
+                "mangledName": "$s8Promises5MaybeO5valuexSgvg",
+                "moduleName": "Promises",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Value>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Promises5MaybeO5errors5Error_pSgvp",
+            "mangledName": "$s8Promises5MaybeO5errors5Error_pSgvp",
+            "moduleName": "Promises",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Promises5MaybeO5errors5Error_pSgvg",
+                "mangledName": "$s8Promises5MaybeO5errors5Error_pSgvg",
+                "moduleName": "Promises",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Value>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "asAnyObject",
+            "printedName": "asAnyObject()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnyObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises5MaybeO11asAnyObjectyXlSgyF",
+            "mangledName": "$s8Promises5MaybeO11asAnyObjectyXlSgyF",
+            "moduleName": "Promises",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8Promises5MaybeO",
+        "mangledName": "$s8Promises5MaybeO",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "asMaybe",
+        "printedName": "asMaybe(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Maybe",
+            "printedName": "Promises.Maybe<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises5MaybeO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "ProtocolComposition",
+            "printedName": "AnyObject"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises7asMaybeyAA0C0OyxGyXllF",
+        "mangledName": "$s8Promises7asMaybeyAA0C0OyxGyXllF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "==",
+        "printedName": "==(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Maybe",
+            "printedName": "Promises.Maybe<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises5MaybeO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Maybe",
+            "printedName": "Promises.Maybe<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises5MaybeO"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises2eeoiySbAA5MaybeOyxG_AEtSQRzlF",
+        "mangledName": "$s8Promises2eeoiySbAA5MaybeOyxG_AEtSQRzlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Equatable>",
+        "sugared_genericSig": "<Value where Value : Swift.Equatable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "!=",
+        "printedName": "!=(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Maybe",
+            "printedName": "Promises.Maybe<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises5MaybeO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Maybe",
+            "printedName": "Promises.Maybe<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises5MaybeO"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises2neoiySbAA5MaybeOyxG_AEtSQRzlF",
+        "mangledName": "$s8Promises2neoiySbAA5MaybeOyxG_AEtSQRzlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Equatable>",
+        "sugared_genericSig": "<Value where Value : Swift.Equatable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FBLPromises",
+        "printedName": "FBLPromises",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "awaitPromise",
+        "printedName": "awaitPromise(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises12awaitPromiseyxAA0C0CyxGKlF",
+        "mangledName": "$s8Promises12awaitPromiseyxAA0C0CyxGKlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "throwing": true,
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "race",
+        "printedName": "race(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Promises.Promise<τ_0_0>]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              }
+            ],
+            "usr": "s:Sa"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4race2on_AA7PromiseCyxGSo17OS_dispatch_queueC_AFdtlF",
+        "mangledName": "$s8Promises4race2on_AA7PromiseCyxGSo17OS_dispatch_queueC_AFdtlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "race",
+        "printedName": "race(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Promises.Promise<τ_0_0>]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              }
+            ],
+            "usr": "s:Sa"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4race2on_AA7PromiseCyxGSo17OS_dispatch_queueC_SayAFGtlF",
+        "mangledName": "$s8Promises4race2on_AA7PromiseCyxGSo17OS_dispatch_queueC_SayAFGtlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FBLPromises",
+        "printedName": "FBLPromises",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "retry",
+        "printedName": "retry(on:attempts:delay:condition:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Double",
+            "printedName": "Swift.Double",
+            "hasDefaultArg": true,
+            "usr": "s:Sd"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "((Swift.Int, Swift.Error) -> Swift.Bool)?",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int, Swift.Error) -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Int, Swift.Error)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "() throws -> Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promise",
+                "printedName": "Promises.Promise<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:8Promises7PromiseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises5retry2on8attempts5delay9condition_AA7PromiseCyxGSo17OS_dispatch_queueC_SiSdSbSi_s5Error_ptcSgAIyKctlF",
+        "mangledName": "$s8Promises5retry2on8attempts5delay9condition_AA7PromiseCyxGSo17OS_dispatch_queueC_SiSdSbSi_s5Error_ptcSgAIyKctlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "FBLPromises",
+        "printedName": "FBLPromises",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "wrap",
+        "printedName": "wrap(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<Any?>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(@escaping () -> ()) throws -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4wrap2on_AA7PromiseCyypSgGSo17OS_dispatch_queueC_yyycKctF",
+        "mangledName": "$s8Promises4wrap2on_AA7PromiseCyypSgGSo17OS_dispatch_queueC_yyycKctF",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "wrap",
+        "printedName": "wrap(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(@escaping (τ_0_0) -> ()) throws -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4wrap2on_AA7PromiseCyxGSo17OS_dispatch_queueC_yyxcKctlF",
+        "mangledName": "$s8Promises4wrap2on_AA7PromiseCyxGSo17OS_dispatch_queueC_yyxcKctlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "wrap",
+        "printedName": "wrap(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0?>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(@escaping (τ_0_0?) -> ()) throws -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4wrap2on_AA7PromiseCyxSgGSo17OS_dispatch_queueC_yyAFcKctlF",
+        "mangledName": "$s8Promises4wrap2on_AA7PromiseCyxSgGSo17OS_dispatch_queueC_yyAFcKctlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "wrap",
+        "printedName": "wrap(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(@escaping (τ_0_0, Swift.Error?) -> ()) throws -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(τ_0_0, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4wrap2on_AA7PromiseCyxGSo17OS_dispatch_queueC_yyx_s5Error_pSgtcKctlF",
+        "mangledName": "$s8Promises4wrap2on_AA7PromiseCyxGSo17OS_dispatch_queueC_yyx_s5Error_pSgtcKctlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "wrap",
+        "printedName": "wrap(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(@escaping (Swift.Error?, τ_0_0) -> ()) throws -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Error?, τ_0_0) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Error?, τ_0_0)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4wrap2on_AA7PromiseCyxGSo17OS_dispatch_queueC_yys5Error_pSg_xtcKctlF",
+        "mangledName": "$s8Promises4wrap2on_AA7PromiseCyxGSo17OS_dispatch_queueC_yys5Error_pSg_xtcKctlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "wrap",
+        "printedName": "wrap(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0?>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(@escaping (τ_0_0?, Swift.Error?) -> ()) throws -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(τ_0_0?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "τ_0_0?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4wrap2on_AA7PromiseCyxSgGSo17OS_dispatch_queueC_yyAF_s5Error_pSgtcKctlF",
+        "mangledName": "$s8Promises4wrap2on_AA7PromiseCyxSgGSo17OS_dispatch_queueC_yyAF_s5Error_pSgtcKctlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "wrap",
+        "printedName": "wrap(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<τ_0_0?>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(@escaping (Swift.Error?, τ_0_0?) -> ()) throws -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Error?, τ_0_0?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Error?, τ_0_0?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "τ_0_0?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4wrap2on_AA7PromiseCyxSgGSo17OS_dispatch_queueC_yys5Error_pSg_AFtcKctlF",
+        "mangledName": "$s8Promises4wrap2on_AA7PromiseCyxSgGSo17OS_dispatch_queueC_yys5Error_pSg_AFtcKctlF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "wrap",
+        "printedName": "wrap(on:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Promise",
+            "printedName": "Promises.Promise<(τ_0_0?, τ_0_1?)>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(τ_0_0?, τ_0_1?)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_1?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:8Promises7PromiseC"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DispatchQueue",
+            "printedName": "Dispatch.DispatchQueue",
+            "hasDefaultArg": true,
+            "usr": "c:objc(cs)OS_dispatch_queue"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(@escaping (τ_0_0?, τ_0_1?, Swift.Error?) -> ()) throws -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0?, τ_0_1?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(τ_0_0?, τ_0_1?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "τ_0_0?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "τ_0_1?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8Promises4wrap2on_AA7PromiseCyxSg_q_SgtGSo17OS_dispatch_queueC_yyAF_AGs5Error_pSgtcKctr0_lF",
+        "mangledName": "$s8Promises4wrap2on_AA7PromiseCyxSg_q_SgtGSo17OS_dispatch_queueC_yyAF_AGs5Error_pSgtcKctr0_lF",
+        "moduleName": "Promises",
+        "genericSig": "<τ_0_0, τ_0_1>",
+        "sugared_genericSig": "<Value1, Value2>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "FBLPromises",
+        "printedName": "FBLPromises",
+        "declKind": "Import",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PromiseError",
+        "printedName": "PromiseError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "timedOut",
+            "printedName": "timedOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Promises.PromiseError.Type) -> Promises.PromiseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PromiseError",
+                    "printedName": "Promises.PromiseError",
+                    "usr": "s:8Promises12PromiseErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Promises.PromiseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PromiseError",
+                        "printedName": "Promises.PromiseError",
+                        "usr": "s:8Promises12PromiseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8Promises12PromiseErrorO8timedOutyA2CmF",
+            "mangledName": "$s8Promises12PromiseErrorO8timedOutyA2CmF",
+            "moduleName": "Promises"
+          },
+          {
+            "kind": "Var",
+            "name": "validationFailure",
+            "printedName": "validationFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Promises.PromiseError.Type) -> Promises.PromiseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PromiseError",
+                    "printedName": "Promises.PromiseError",
+                    "usr": "s:8Promises12PromiseErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Promises.PromiseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PromiseError",
+                        "printedName": "Promises.PromiseError",
+                        "usr": "s:8Promises12PromiseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8Promises12PromiseErrorO17validationFailureyA2CmF",
+            "mangledName": "$s8Promises12PromiseErrorO17validationFailureyA2CmF",
+            "moduleName": "Promises"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PromiseError",
+                "printedName": "Promises.PromiseError",
+                "usr": "s:8Promises12PromiseErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PromiseError",
+                "printedName": "Promises.PromiseError",
+                "usr": "s:8Promises12PromiseErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises12PromiseErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8Promises12PromiseErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "Promises",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Promises12PromiseErrorO9hashValueSivp",
+            "mangledName": "$s8Promises12PromiseErrorO9hashValueSivp",
+            "moduleName": "Promises",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Promises12PromiseErrorO9hashValueSivg",
+                "mangledName": "$s8Promises12PromiseErrorO9hashValueSivg",
+                "moduleName": "Promises",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Promises12PromiseErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8Promises12PromiseErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "Promises",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Promises.PromiseError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PromiseError",
+                    "printedName": "Promises.PromiseError",
+                    "usr": "s:8Promises12PromiseErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Promises12PromiseErrorOyACSgs0C0_pcfc",
+            "mangledName": "$s8Promises12PromiseErrorOyACSgs0C0_pcfc",
+            "moduleName": "Promises",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDomain",
+            "printedName": "errorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Promises12PromiseErrorO11errorDomainSSvpZ",
+            "mangledName": "$s8Promises12PromiseErrorO11errorDomainSSvpZ",
+            "moduleName": "Promises",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Promises12PromiseErrorO11errorDomainSSvgZ",
+                "mangledName": "$s8Promises12PromiseErrorO11errorDomainSSvgZ",
+                "moduleName": "Promises",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Promises12PromiseErrorO9errorCodeSivp",
+            "mangledName": "$s8Promises12PromiseErrorO9errorCodeSivp",
+            "moduleName": "Promises",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Promises12PromiseErrorO9errorCodeSivg",
+                "mangledName": "$s8Promises12PromiseErrorO9errorCodeSivg",
+                "moduleName": "Promises",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorUserInfo",
+            "printedName": "errorUserInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Promises12PromiseErrorO13errorUserInfoSDySSypGvp",
+            "mangledName": "$s8Promises12PromiseErrorO13errorUserInfoSDySSypGvp",
+            "moduleName": "Promises",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Promises12PromiseErrorO13errorUserInfoSDySSypGvg",
+                "mangledName": "$s8Promises12PromiseErrorO13errorUserInfoSDySSypGvg",
+                "moduleName": "Promises",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8Promises12PromiseErrorO",
+        "mangledName": "$s8Promises12PromiseErrorO",
+        "moduleName": "Promises",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomNSError",
+            "printedName": "CustomNSError",
+            "usr": "s:10Foundation13CustomNSErrorP",
+            "mangledName": "$s10Foundation13CustomNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DispatchQueue",
+        "printedName": "DispatchQueue",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "promises",
+            "printedName": "promises",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So17OS_dispatch_queueC8PromisesE8promisesABvpZ",
+            "mangledName": "$sSo17OS_dispatch_queueC8PromisesE8promisesABvpZ",
+            "moduleName": "Promises",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So17OS_dispatch_queueC8PromisesE8promisesABvgZ",
+                "mangledName": "$sSo17OS_dispatch_queueC8PromisesE8promisesABvgZ",
+                "moduleName": "Promises",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So17OS_dispatch_queueC8PromisesE8promisesABvsZ",
+                "mangledName": "$sSo17OS_dispatch_queueC8PromisesE8promisesABvsZ",
+                "moduleName": "Promises",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So17OS_dispatch_queueC8PromisesE8promisesABvMZ",
+                "mangledName": "$sSo17OS_dispatch_queueC8PromisesE8promisesABvMZ",
+                "moduleName": "Promises",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)OS_dispatch_queue",
+        "moduleName": "Dispatch",
+        "isOpen": true,
+        "objc_name": "OS_dispatch_queue",
+        "declAttributes": [
+          "ObjC",
+          "SynthesizedProtocol",
+          "Sendable",
+          "HasMissingDesignatedInitializers",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)OS_dispatch_object",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Dispatch.DispatchObject",
+          "os_object.OS_object",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Scheduler",
+            "printedName": "Scheduler",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SchedulerTimeType",
+                "printedName": "SchedulerTimeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SchedulerTimeType",
+                    "printedName": "Dispatch.DispatchQueue.SchedulerTimeType",
+                    "usr": "s:So17OS_dispatch_queueC8DispatchE17SchedulerTimeTypeV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SchedulerOptions",
+                "printedName": "SchedulerOptions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SchedulerOptions",
+                    "printedName": "Dispatch.DispatchQueue.SchedulerOptions",
+                    "usr": "s:So17OS_dispatch_queueC8DispatchE16SchedulerOptionsV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine9SchedulerP",
+            "mangledName": "$s7Combine9SchedulerP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 1025,
+      "length": 44,
+      "value": "\"Cannot cast \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 1047,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 1068,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 2666,
+      "length": 44,
+      "value": "\"Cannot cast \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 2696,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 2709,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 3227,
+      "length": 53,
+      "value": "\"Cannot cast \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 3262,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 3279,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 4337,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 4448,
+      "length": 27,
+      "value": "\"Fulfilled: \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 4474,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 4586,
+      "length": 26,
+      "value": "\"Rejected: \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 4611,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 4630,
+      "length": 24,
+      "value": "\"Pending: \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
+      "kind": "StringLiteral",
+      "offset": 4653,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3373,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3429,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "StringLiteral",
+      "offset": 3474,
+      "length": 58,
+      "value": "\"Cannot convert \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "StringLiteral",
+      "offset": 3513,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "StringLiteral",
+      "offset": 3531,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4898,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4954,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5010,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "StringLiteral",
+      "offset": 5055,
+      "length": 61,
+      "value": "\"Cannot convert \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "StringLiteral",
+      "offset": 5094,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "StringLiteral",
+      "offset": 5115,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6593,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6649,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6705,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6761,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "StringLiteral",
+      "offset": 6806,
+      "length": 64,
+      "value": "\"Cannot convert \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "StringLiteral",
+      "offset": 6845,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
+      "kind": "StringLiteral",
+      "offset": 6869,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4102,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4152,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5738,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5788,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5838,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8466,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
+      "kind": "StringLiteral",
+      "offset": 1658,
+      "length": 53,
+      "value": "\"Cannot cast \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
+      "kind": "StringLiteral",
+      "offset": 1693,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
+      "kind": "StringLiteral",
+      "offset": 1710,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
+      "kind": "StringLiteral",
+      "offset": 2884,
+      "length": 53,
+      "value": "\"Cannot cast \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
+      "kind": "StringLiteral",
+      "offset": 2919,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
+      "kind": "StringLiteral",
+      "offset": 2936,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
+      "kind": "StringLiteral",
+      "offset": 4178,
+      "length": 53,
+      "value": "\"Cannot cast \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
+      "kind": "StringLiteral",
+      "offset": 4213,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
+      "kind": "StringLiteral",
+      "offset": 4230,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Validate.swift",
+      "kind": "StringLiteral",
+      "offset": 1345,
+      "length": 53,
+      "value": "\"Cannot cast \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Validate.swift",
+      "kind": "StringLiteral",
+      "offset": 1380,
+      "length": 2,
+      "value": "\" to \""
+    },
+    {
+      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Validate.swift",
+      "kind": "StringLiteral",
+      "offset": 1397,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

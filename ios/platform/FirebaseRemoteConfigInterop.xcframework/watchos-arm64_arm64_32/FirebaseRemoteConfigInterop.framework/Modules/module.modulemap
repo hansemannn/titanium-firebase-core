@@ -1,0 +1,11 @@
+framework module FirebaseRemoteConfigInterop {
+  umbrella header "FirebaseRemoteConfigInterop-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module FirebaseRemoteConfigInterop.Swift {
+  header "FirebaseRemoteConfigInterop-Swift.h"
+  requires objc
+}
