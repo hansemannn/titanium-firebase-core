@@ -1,0 +1,13 @@
+framework module FirebaseRemoteConfig {
+umbrella header "FirebaseRemoteConfig-umbrella.h"
+export *
+module * { export * }
+  link framework "AppKit"
+  link framework "Foundation"
+  link framework "Security"
+  link "z"
+}
+module FirebaseRemoteConfig.Swift {
+  header "FirebaseRemoteConfig-Swift.h"
+  requires objc
+}
