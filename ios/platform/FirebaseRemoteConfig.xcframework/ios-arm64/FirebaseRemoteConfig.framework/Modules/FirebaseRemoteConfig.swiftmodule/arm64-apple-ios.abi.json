@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "FirebaseRemoteConfig",
+    "printedName": "FirebaseRemoteConfig",
     "children": [
       {
         "kind": "Import",
@@ -90,6 +90,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -170,6 +184,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -181,6 +209,350 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FirebaseRemoteConfig",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CustomSignalValue",
+        "printedName": "CustomSignalValue",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "string",
+            "printedName": "string(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomSignalValue",
+                "printedName": "FirebaseRemoteConfig.CustomSignalValue",
+                "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV6stringyACSSFZ",
+            "mangledName": "$s20FirebaseRemoteConfig17CustomSignalValueV6stringyACSSFZ",
+            "moduleName": "FirebaseRemoteConfig",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "integer",
+            "printedName": "integer(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomSignalValue",
+                "printedName": "FirebaseRemoteConfig.CustomSignalValue",
+                "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV7integeryACSiFZ",
+            "mangledName": "$s20FirebaseRemoteConfig17CustomSignalValueV7integeryACSiFZ",
+            "moduleName": "FirebaseRemoteConfig",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "double",
+            "printedName": "double(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomSignalValue",
+                "printedName": "FirebaseRemoteConfig.CustomSignalValue",
+                "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV6doubleyACSdFZ",
+            "mangledName": "$s20FirebaseRemoteConfig17CustomSignalValueV6doubleyACSdFZ",
+            "moduleName": "FirebaseRemoteConfig",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(stringLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomSignalValue",
+                "printedName": "FirebaseRemoteConfig.CustomSignalValue",
+                "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV13stringLiteralACSS_tcfc",
+            "mangledName": "$s20FirebaseRemoteConfig17CustomSignalValueV13stringLiteralACSS_tcfc",
+            "moduleName": "FirebaseRemoteConfig",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(integerLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomSignalValue",
+                "printedName": "FirebaseRemoteConfig.CustomSignalValue",
+                "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV14integerLiteralACSi_tcfc",
+            "mangledName": "$s20FirebaseRemoteConfig17CustomSignalValueV14integerLiteralACSi_tcfc",
+            "moduleName": "FirebaseRemoteConfig",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(floatLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomSignalValue",
+                "printedName": "FirebaseRemoteConfig.CustomSignalValue",
+                "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV12floatLiteralACSd_tcfc",
+            "mangledName": "$s20FirebaseRemoteConfig17CustomSignalValueV12floatLiteralACSd_tcfc",
+            "moduleName": "FirebaseRemoteConfig",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV",
+        "mangledName": "$s20FirebaseRemoteConfig17CustomSignalValueV",
+        "moduleName": "FirebaseRemoteConfig",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringInterpolation",
+            "printedName": "ExpressibleByStringInterpolation",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringInterpolation",
+                "printedName": "StringInterpolation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultStringInterpolation",
+                    "printedName": "Swift.DefaultStringInterpolation",
+                    "usr": "s:s26DefaultStringInterpolationV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s32ExpressibleByStringInterpolationP",
+            "mangledName": "$ss32ExpressibleByStringInterpolationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByIntegerLiteral",
+            "printedName": "ExpressibleByIntegerLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "IntegerLiteralType",
+                "printedName": "IntegerLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s27ExpressibleByIntegerLiteralP",
+            "mangledName": "$ss27ExpressibleByIntegerLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByFloatLiteral",
+            "printedName": "ExpressibleByFloatLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "FloatLiteralType",
+                "printedName": "FloatLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByFloatLiteralP",
+            "mangledName": "$ss25ExpressibleByFloatLiteralP"
           }
         ]
       },
@@ -236,6 +608,7 @@
             "mangledName": "$s20FirebaseRemoteConfig0bC8PropertyV3keySSvp",
             "moduleName": "FirebaseRemoteConfig",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "AccessControl",
@@ -283,6 +656,7 @@
             "mangledName": "$s20FirebaseRemoteConfig0bC8PropertyV12wrappedValuexvp",
             "moduleName": "FirebaseRemoteConfig",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -345,6 +719,7 @@
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
             "sugared_genericSig": "<T where T : Swift.Decodable>",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -363,6 +738,7 @@
         "intro_tvOS": "14.0",
         "intro_watchOS": "7.0",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "PropertyWrapper",
@@ -376,10 +752,31 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DynamicProperty",
             "printedName": "DynamicProperty",
             "usr": "s:7SwiftUI15DynamicPropertyP",
             "mangledName": "$s7SwiftUI15DynamicPropertyP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -469,6 +866,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -584,6 +995,56 @@
             "moduleName": "FirebaseRemoteConfig",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
             "sugared_genericSig": "<Value where Value : Swift.Encodable>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomSignals",
+            "printedName": "setCustomSignals(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : FirebaseRemoteConfig.CustomSignalValue?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FirebaseRemoteConfig.CustomSignalValue?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomSignalValue",
+                        "printedName": "FirebaseRemoteConfig.CustomSignalValue",
+                        "usr": "s:20FirebaseRemoteConfig17CustomSignalValueV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E16setCustomSignalsyySDySSAC0F11SignalValueVSgGYaKF",
+            "mangledName": "$sSo15FIRRemoteConfigC014FirebaseRemoteB0E16setCustomSignalsyySDySSAC0F11SignalValueVSgGYaKF",
+            "moduleName": "FirebaseRemoteConfig",
             "declAttributes": [
               "RawDocComment"
             ],
@@ -780,6 +1241,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -834,49 +1309,14 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/Codable.swift",
-      "kind": "StringLiteral",
-      "offset": 1198,
-      "length": 43,
-      "value": "\"Date type is not currently supported for \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/Codable.swift",
-      "kind": "StringLiteral",
-      "offset": 1254,
-      "length": 62,
-      "value": "\" Remote Config Value decoding. Please file a feature request\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/Codable.swift",
-      "kind": "StringLiteral",
-      "offset": 2485,
-      "length": 80,
-      "value": "\"The setDefaults input: \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/Codable.swift",
-      "kind": "StringLiteral",
-      "offset": 2517,
-      "length": 1,
-      "value": "\", must be a Struct that encodes to a Dictionary\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/FirebaseRemoteConfigValueDecoderHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 1255,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/PropertyWrapper\/RemoteConfigValueObservable.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/PropertyWrapper\/RemoteConfigValueObservable.swift",
       "kind": "StringLiteral",
       "offset": 881,
       "length": 37,
       "value": "\"FIRRemoteConfigActivateNotification\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/PropertyWrapper\/RemoteConfigValueObservable.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/PropertyWrapper\/RemoteConfigValueObservable.swift",
       "kind": "StringLiteral",
       "offset": 1040,
       "length": 15,

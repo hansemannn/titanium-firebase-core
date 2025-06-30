@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-tvos12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FirebaseSharedSwift
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-tvos13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FirebaseSharedSwift
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import FirebaseSharedSwift
 import Foundation
 import Swift
@@ -18,7 +18,6 @@ public class FirebaseDataEncoder {
     case deferredToDate
     case secondsSince1970
     case millisecondsSince1970
-    @available(macOS 10.12, iOS 10.0, watchOS 3.0, tvOS 10.0, *)
     case iso8601
     case formatted(Foundation.DateFormatter)
     case custom((Foundation.Date, any Swift.Encoder) throws -> Swift.Void)
@@ -45,7 +44,11 @@ public class FirebaseDataEncoder {
   open var passthroughTypeResolver: any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type
   open var userInfo: [Swift.CodingUserInfoKey : Any]
   public init()
+  #if compiler(>=5.3) && $SendingArgsAndResults
+  open func encode<T>(_ value: T) throws -> sending Any where T : Swift.Encodable
+  #else
   open func encode<T>(_ value: T) throws -> Any where T : Swift.Encodable
+  #endif
   @objc deinit
 }
 public class FirebaseDataDecoder {
@@ -53,7 +56,6 @@ public class FirebaseDataDecoder {
     case deferredToDate
     case secondsSince1970
     case millisecondsSince1970
-    @available(macOS 10.12, iOS 10.0, watchOS 3.0, tvOS 10.0, *)
     case iso8601
     case formatted(Foundation.DateFormatter)
     case custom((_ decoder: any Swift.Decoder) throws -> Foundation.Date)

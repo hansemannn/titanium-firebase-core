@@ -6,23 +6,6 @@
 	<array>
 		<dict>
 			<key>BinaryPath</key>
-			<string>FirebaseCore.framework/FirebaseCore</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-simulator</string>
-			<key>LibraryPath</key>
-			<string>FirebaseCore.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>x86_64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-			<key>SupportedPlatformVariant</key>
-			<string>simulator</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
 			<string>FirebaseCore.framework/Versions/A/FirebaseCore</string>
 			<key>LibraryIdentifier</key>
 			<string>macos-arm64_x86_64</string>
@@ -38,9 +21,26 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
+			<string>FirebaseCore.framework/Versions/A/FirebaseCore</string>
+			<key>LibraryIdentifier</key>
+			<string>ios-arm64_x86_64-maccatalyst</string>
+			<key>LibraryPath</key>
+			<string>FirebaseCore.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+				<string>x86_64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
+			<key>SupportedPlatformVariant</key>
+			<string>maccatalyst</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
 			<string>FirebaseCore.framework/FirebaseCore</string>
 			<key>LibraryIdentifier</key>
-			<string>tvos-arm64</string>
+			<string>ios-arm64</string>
 			<key>LibraryPath</key>
 			<string>FirebaseCore.framework</string>
 			<key>SupportedArchitectures</key>
@@ -48,7 +48,7 @@
 				<string>arm64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>tvos</string>
+			<string>ios</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -86,20 +86,17 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>FirebaseCore.framework/Versions/A/FirebaseCore</string>
+			<string>FirebaseCore.framework/FirebaseCore</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-maccatalyst</string>
+			<string>tvos-arm64</string>
 			<key>LibraryPath</key>
 			<string>FirebaseCore.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
-				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>ios</string>
-			<key>SupportedPlatformVariant</key>
-			<string>maccatalyst</string>
+			<string>tvos</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -120,15 +117,18 @@
 			<key>BinaryPath</key>
 			<string>FirebaseCore.framework/FirebaseCore</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
+			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>FirebaseCore.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
+				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
 			<string>ios</string>
+			<key>SupportedPlatformVariant</key>
+			<string>simulator</string>
 		</dict>
 	</array>
 	<key>CFBundlePackageType</key>

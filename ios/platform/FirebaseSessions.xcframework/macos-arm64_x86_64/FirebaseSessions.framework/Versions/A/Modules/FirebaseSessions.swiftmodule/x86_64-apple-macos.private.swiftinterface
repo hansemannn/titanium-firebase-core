@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-macos10.13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FirebaseSessions
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-macos10.15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FirebaseSessions
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AppKit
 import Cocoa
 @_exported import FirebaseSessions
 import Foundation
+import Promises
 import Swift
 import _Concurrency
 import _StringProcessing
@@ -30,16 +31,32 @@ extension FirebaseSessions._firebase_appquality_sessions_LogEnvironment : Swift.
     get
   }
 }
+#if compiler(>=5.3) && $NoncopyableGenerics
 extension Swift.UnsafeMutablePointer : Swift.CustomStringConvertible where Pointee == nanopb.pb_bytes_array_s {
   public var description: Swift.String {
     get
   }
 }
+#else
+extension Swift.UnsafeMutablePointer : Swift.CustomStringConvertible where Pointee == nanopb.pb_bytes_array_s {
+  public var description: Swift.String {
+    get
+  }
+}
+#endif
+#if compiler(>=5.3) && $NoncopyableGenerics
 extension Swift.Optional : Swift.CustomStringConvertible where Wrapped == Swift.UnsafeMutablePointer<nanopb.pb_bytes_array_s> {
   public var description: Swift.String {
     get
   }
 }
+#else
+extension Swift.Optional : Swift.CustomStringConvertible where Wrapped == Swift.UnsafeMutablePointer<nanopb.pb_bytes_array_s> {
+  public var description: Swift.String {
+    get
+  }
+}
+#endif
 @_inheritsConvenienceInitializers @objc(FIRSessionsDependencies) public class SessionsDependencies : ObjectiveC.NSObject {
   @objc public static func addDependency(name: FirebaseSessions.SessionsSubscriberName)
   @objc override dynamic public init()
@@ -48,7 +65,7 @@ extension Swift.Optional : Swift.CustomStringConvertible where Wrapped == Swift.
 @objc(FIRSessionsProvider) public protocol SessionsProvider {
   @objc func register(subscriber: any FirebaseSessions.SessionsSubscriber)
 }
-@objc(FIRSessionsSubscriber) public protocol SessionsSubscriber {
+@objc(FIRSessionsSubscriber) public protocol SessionsSubscriber : Swift.Sendable {
   @objc func onSessionChanged(_ session: FirebaseSessions.SessionDetails)
   @objc var isDataCollectionEnabled: Swift.Bool { get }
   @objc var sessionsSubscriberName: FirebaseSessions.SessionsSubscriberName { get }
@@ -58,7 +75,7 @@ extension Swift.Optional : Swift.CustomStringConvertible where Wrapped == Swift.
   public init(sessionId: Swift.String?)
   @objc deinit
 }
-@objc(FIRSessionsSubscriberName) public enum SessionsSubscriberName : Swift.Int, Swift.CustomStringConvertible {
+@objc(FIRSessionsSubscriberName) public enum SessionsSubscriberName : Swift.Int, Swift.CustomStringConvertible, Swift.Sendable {
   case Unknown
   case Crashlytics
   case Performance

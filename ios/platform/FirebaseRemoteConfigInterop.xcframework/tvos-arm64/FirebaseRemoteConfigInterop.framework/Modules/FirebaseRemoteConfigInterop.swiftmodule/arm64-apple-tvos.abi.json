@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "FirebaseRemoteConfigInterop",
+    "printedName": "FirebaseRemoteConfigInterop",
     "children": [
       {
         "kind": "Import",
@@ -118,6 +118,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -195,7 +209,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "RolloutsStateSubscriber",
-                "printedName": "FirebaseRemoteConfigInterop.RolloutsStateSubscriber",
+                "printedName": "any FirebaseRemoteConfigInterop.RolloutsStateSubscriber",
                 "usr": "c:@M@FirebaseRemoteConfigInterop@objc(pl)FIRRolloutsStateSubscriber"
               },
               {
@@ -229,6 +243,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -802,6 +832,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1053,6 +1097,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1158,6 +1216,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       }
     ],
@@ -1165,25 +1239,11 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-tvos\/Pods\/FirebaseRemoteConfigInterop\/FirebaseRemoteConfig\/Interop\/RemoteConfigConstants.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseRemoteConfigInterop\/FirebaseRemoteConfig\/Interop\/RemoteConfigConstants.swift",
       "kind": "StringLiteral",
       "offset": 789,
       "length": 10,
       "value": "\"firebase\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-tvos\/Pods\/FirebaseRemoteConfigInterop\/FirebaseRemoteConfig\/Interop\/RolloutAssignment.swift",
-      "kind": "StringLiteral",
-      "offset": 649,
-      "length": 17,
-      "value": "\"FirebaseRemoteConfigInterop.RolloutAssignment\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-tvos\/Pods\/FirebaseRemoteConfigInterop\/FirebaseRemoteConfig\/Interop\/RolloutAssignment.swift",
-      "kind": "StringLiteral",
-      "offset": 1292,
-      "length": 13,
-      "value": "\"FirebaseRemoteConfigInterop.RolloutsState\""
     }
   ]
 }

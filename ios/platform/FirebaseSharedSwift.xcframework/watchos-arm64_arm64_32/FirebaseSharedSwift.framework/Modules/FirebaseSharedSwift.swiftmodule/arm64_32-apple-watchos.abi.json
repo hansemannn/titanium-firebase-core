@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "FirebaseSharedSwift",
+    "printedName": "FirebaseSharedSwift",
     "children": [
       {
         "kind": "Import",
@@ -54,6 +54,22 @@
         "moduleName": "FirebaseSharedSwift",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -66,6 +82,22 @@
         "moduleName": "FirebaseSharedSwift",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -234,15 +266,7 @@
                 "usr": "s:19FirebaseSharedSwift0A11DataEncoderC20DateEncodingStrategyO7iso8601yA2EmF",
                 "mangledName": "$s19FirebaseSharedSwift0A11DataEncoderC20DateEncodingStrategyO7iso8601yA2EmF",
                 "moduleName": "FirebaseSharedSwift",
-                "intro_Macosx": "10.12",
-                "intro_iOS": "10.0",
-                "intro_tvOS": "10.0",
-                "intro_watchOS": "3.0",
                 "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available",
                   "RawDocComment"
                 ]
               },
@@ -307,12 +331,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy.Type) -> (@escaping (Foundation.Date, Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy.Type) -> (@escaping (Foundation.Date, any Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping (Foundation.Date, Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy",
+                        "printedName": "(@escaping (Foundation.Date, any Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -323,7 +347,7 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Foundation.Date, Swift.Encoder) throws -> ()",
+                            "printedName": "(Foundation.Date, any Swift.Encoder) throws -> ()",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -333,7 +357,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Tuple",
-                                "printedName": "(Foundation.Date, Swift.Encoder)",
+                                "printedName": "(Foundation.Date, any Swift.Encoder)",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
@@ -344,7 +368,7 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Encoder",
-                                    "printedName": "Swift.Encoder",
+                                    "printedName": "any Swift.Encoder",
                                     "usr": "s:s7EncoderP"
                                   }
                                 ]
@@ -385,6 +409,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -520,12 +560,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy.Type) -> (@escaping (Foundation.Data, Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy.Type) -> (@escaping (Foundation.Data, any Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping (Foundation.Data, Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy",
+                        "printedName": "(@escaping (Foundation.Data, any Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -536,7 +576,7 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Foundation.Data, Swift.Encoder) throws -> ()",
+                            "printedName": "(Foundation.Data, any Swift.Encoder) throws -> ()",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -546,7 +586,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Tuple",
-                                "printedName": "(Foundation.Data, Swift.Encoder)",
+                                "printedName": "(Foundation.Data, any Swift.Encoder)",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
@@ -557,7 +597,7 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Encoder",
-                                    "printedName": "Swift.Encoder",
+                                    "printedName": "any Swift.Encoder",
                                     "usr": "s:s7EncoderP"
                                   }
                                 ]
@@ -598,6 +638,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -725,6 +781,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -820,12 +892,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy.Type) -> (@escaping ([Swift.CodingKey]) -> Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy.Type) -> (@escaping ([any Swift.CodingKey]) -> any Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping ([Swift.CodingKey]) -> Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy",
+                        "printedName": "(@escaping ([any Swift.CodingKey]) -> any Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -836,23 +908,23 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "([Swift.CodingKey]) -> Swift.CodingKey",
+                            "printedName": "([any Swift.CodingKey]) -> any Swift.CodingKey",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "CodingKey",
-                                "printedName": "Swift.CodingKey",
+                                "printedName": "any Swift.CodingKey",
                                 "usr": "s:s9CodingKeyP"
                               },
                               {
                                 "kind": "TypeNominal",
                                 "name": "Array",
-                                "printedName": "[Swift.CodingKey]",
+                                "printedName": "[any Swift.CodingKey]",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "CodingKey",
-                                    "printedName": "Swift.CodingKey",
+                                    "printedName": "any Swift.CodingKey",
                                     "usr": "s:s9CodingKeyP"
                                   }
                                 ],
@@ -894,6 +966,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -1252,7 +1340,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExistentialMetatype",
-                "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1283,7 +1371,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ExistentialMetatype",
-                    "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                    "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1314,7 +1402,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ExistentialMetatype",
-                    "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                    "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1537,6 +1625,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1705,15 +1809,7 @@
                 "usr": "s:19FirebaseSharedSwift0A11DataDecoderC20DateDecodingStrategyO7iso8601yA2EmF",
                 "mangledName": "$s19FirebaseSharedSwift0A11DataDecoderC20DateDecodingStrategyO7iso8601yA2EmF",
                 "moduleName": "FirebaseSharedSwift",
-                "intro_Macosx": "10.12",
-                "intro_iOS": "10.0",
-                "intro_tvOS": "10.0",
-                "intro_watchOS": "3.0",
                 "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available",
                   "RawDocComment"
                 ]
               },
@@ -1778,12 +1874,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy.Type) -> (@escaping (Swift.Decoder) throws -> Foundation.Date) -> FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy.Type) -> (@escaping (any Swift.Decoder) throws -> Foundation.Date) -> FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping (Swift.Decoder) throws -> Foundation.Date) -> FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy",
+                        "printedName": "(@escaping (any Swift.Decoder) throws -> Foundation.Date) -> FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1794,7 +1890,7 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Swift.Decoder) throws -> Foundation.Date",
+                            "printedName": "(any Swift.Decoder) throws -> Foundation.Date",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -1805,7 +1901,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Decoder",
-                                "printedName": "Swift.Decoder",
+                                "printedName": "any Swift.Decoder",
                                 "usr": "s:s7DecoderP"
                               }
                             ]
@@ -1844,6 +1940,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -1979,12 +2091,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy.Type) -> (@escaping (Swift.Decoder) throws -> Foundation.Data) -> FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy.Type) -> (@escaping (any Swift.Decoder) throws -> Foundation.Data) -> FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping (Swift.Decoder) throws -> Foundation.Data) -> FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy",
+                        "printedName": "(@escaping (any Swift.Decoder) throws -> Foundation.Data) -> FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1995,7 +2107,7 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Swift.Decoder) throws -> Foundation.Data",
+                            "printedName": "(any Swift.Decoder) throws -> Foundation.Data",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -2006,7 +2118,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Decoder",
-                                "printedName": "Swift.Decoder",
+                                "printedName": "any Swift.Decoder",
                                 "usr": "s:s7DecoderP"
                               }
                             ]
@@ -2045,6 +2157,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2172,6 +2300,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2267,12 +2411,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy.Type) -> (@escaping ([Swift.CodingKey]) -> Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy.Type) -> (@escaping ([any Swift.CodingKey]) -> any Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping ([Swift.CodingKey]) -> Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy",
+                        "printedName": "(@escaping ([any Swift.CodingKey]) -> any Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -2283,23 +2427,23 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "([Swift.CodingKey]) -> Swift.CodingKey",
+                            "printedName": "([any Swift.CodingKey]) -> any Swift.CodingKey",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "CodingKey",
-                                "printedName": "Swift.CodingKey",
+                                "printedName": "any Swift.CodingKey",
                                 "usr": "s:s9CodingKeyP"
                               },
                               {
                                 "kind": "TypeNominal",
                                 "name": "Array",
-                                "printedName": "[Swift.CodingKey]",
+                                "printedName": "[any Swift.CodingKey]",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "CodingKey",
-                                    "printedName": "Swift.CodingKey",
+                                    "printedName": "any Swift.CodingKey",
                                     "usr": "s:s9CodingKeyP"
                                   }
                                 ],
@@ -2341,6 +2485,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2699,7 +2859,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExistentialMetatype",
-                "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2730,7 +2890,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ExistentialMetatype",
-                    "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                    "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2761,7 +2921,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ExistentialMetatype",
-                    "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                    "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2996,6 +3156,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3191,6 +3367,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3204,10 +3396,25 @@
         "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
         "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -3511,1845 +3718,53 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "BooleanLiteral",
-      "offset": 884,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 1513,
-      "length": 87,
-      "value": "\"Expected to decode \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 1547,
-      "length": 3,
-      "value": "\" but found \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 1590,
-      "length": 7,
-      "value": "\" instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 2063,
-      "length": 14,
-      "value": "\"a null value\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 2263,
-      "length": 10,
-      "value": "\"a number\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 2319,
-      "length": 15,
-      "value": "\"a string\/data\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 2379,
-      "length": 10,
-      "value": "\"an array\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 2443,
-      "length": 14,
-      "value": "\"a dictionary\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 2484,
-      "length": 20,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 2503,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "Array",
-      "offset": 8661,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "Array",
-      "offset": 9289,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "Array",
-      "offset": 9642,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 11044,
-      "length": 3,
-      "value": "\"_\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Dictionary",
-      "offset": 12051,
+      "offset": 11986,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
-      "offset": 13887,
+      "offset": 14823,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 13909,
-      "length": 48,
-      "value": "\"Top-level \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 13929,
-      "length": 3,
-      "value": "\" did not encode any values.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
-      "offset": 14880,
+      "offset": 17897,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 16527,
-      "length": 92,
-      "value": "\"Attempt to push new keyed encoding container when already previously encoded at this path.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 17306,
-      "length": 94,
-      "value": "\"Attempt to push new unkeyed encoding container when already previously encoded at this path.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "Array",
-      "offset": 17954,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 18710,
-      "length": 24,
-      "value": "\"Empty container stack.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 23386,
-      "length": 159,
-      "value": "\"Attempt to re-encode into nested KeyedEncodingContainer<\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 23454,
-      "length": 1,
-      "value": "\"> for key \"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 23481,
-      "length": 1,
-      "value": "\"\" is invalid: non-keyed container already encoded for this key\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 24296,
-      "length": 157,
-      "value": "\"Attempt to re-encode into nested UnkeyedEncodingContainer for key \"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 24380,
-      "length": 1,
-      "value": "\"\" is invalid: keyed container\/single value already encoded for this key\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 29487,
-      "length": 95,
-      "value": "\"Attempt to encode value through single value container when previously value already encoded.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "FloatLiteral",
-      "offset": 34909,
-      "length": 6,
-      "value": "1000.0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 35142,
-      "length": 55,
-      "value": "\"ISO8601DateFormatter is unavailable on this platform.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42678,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42885,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42920,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 42983,
-      "length": 68,
-      "value": "\"Referencing encoder deallocated with multiple containers on stack.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 40844,
-      "length": 24,
-      "value": "\"FirebaseSharedSwift.__JSONReferencingEncoder\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 47413,
-      "length": 3,
-      "value": "\"_\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 47717,
-      "length": 3,
-      "value": "\"_\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 48085,
-      "length": 3,
-      "value": "\"_\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 48151,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 48340,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 48370,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Dictionary",
-      "offset": 50174,
+      "offset": 49881,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
-      "offset": 52051,
+      "offset": 52772,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 52073,
-      "length": 51,
-      "value": "\"The given data did not contain a top-level value.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
-      "offset": 53060,
+      "offset": 55701,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "StringLiteral",
-      "offset": 53680,
-      "length": 66,
-      "value": "\"Cannot get keyed decoding container -- found null value instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 54899,
-      "length": 68,
-      "value": "\"Cannot get unkeyed decoding container -- found null value instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "Array",
-      "offset": 55989,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 56276,
-      "length": 24,
-      "value": "\"Empty container stack.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 56530,
-      "length": 24,
-      "value": "\"Empty container stack.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 58926,
-      "length": 26,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 58933,
-      "length": 1,
-      "value": "\" (\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 58948,
-      "length": 1,
-      "value": "\"\")\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59008,
-      "length": 53,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59015,
-      "length": 1,
-      "value": "\" (\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59030,
-      "length": 1,
-      "value": "\"\"), converted to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59060,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59092,
-      "length": 97,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59099,
-      "length": 1,
-      "value": "\" (\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59114,
-      "length": 1,
-      "value": "\"\"), with divergent representation \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59161,
-      "length": 1,
-      "value": "\", converted to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59188,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59277,
-      "length": 33,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59284,
-      "length": 1,
-      "value": "\" (\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59306,
-      "length": 1,
-      "value": "\"\")\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59561,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59620,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59919,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 59978,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 60279,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 60296,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 60612,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 60671,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 60971,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 60988,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 61306,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 61365,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 61666,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 61683,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 62003,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 62062,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 62364,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 62381,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 62701,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 62760,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 63062,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 63079,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 63399,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 63458,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 63760,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 63777,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 64095,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 64154,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 64455,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 64472,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 64792,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 64851,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 65153,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 65170,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 65492,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 65551,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 65854,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 65871,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 66193,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 66252,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 66555,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 66572,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 66894,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 66953,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 67256,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 67273,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 67593,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 67652,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 67954,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 67971,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 68293,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 68352,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 68655,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 68672,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 68994,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 69053,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 69356,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 69373,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 69920,
-      "length": 61,
-      "value": "\"No value associated with key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 69979,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 70275,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 70292,
-      "length": 5,
-      "value": "\" value but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 70852,
-      "length": 110,
-      "value": "\"Cannot get \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 70905,
-      "length": 2,
-      "value": "\" -- no value found for key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 70961,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 71761,
-      "length": 93,
-      "value": "\"Cannot get UnkeyedDecodingContainer -- no value found for key \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 71853,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 73483,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 73929,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 74049,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "BooleanLiteral",
-      "offset": 74064,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "BooleanLiteral",
-      "offset": 74095,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 74371,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 74800,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 74817,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 74877,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 75160,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 75588,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 75605,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 75665,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 75950,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 76379,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 76396,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 76456,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 76743,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 77173,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 77190,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 77250,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 77537,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 77967,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 77984,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78044,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 78331,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 78761,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 78778,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78838,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 79123,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 79552,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 79569,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79629,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 79916,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 80346,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 80363,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80423,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 80712,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 81143,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 81160,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81220,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 81509,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 81940,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 81957,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82017,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 82306,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 82737,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 82754,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82814,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 83101,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 83531,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 83548,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 83608,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 83897,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 84328,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 84345,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84405,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 84694,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 85125,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 85142,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 85202,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 85496,
-      "length": 30,
-      "value": "\"Unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 85920,
-      "length": 42,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 85937,
-      "length": 3,
-      "value": "\" but found null instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 85997,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 86554,
-      "length": 67,
-      "value": "\"Cannot get nested keyed container -- unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 86968,
-      "length": 66,
-      "value": "\"Cannot get keyed decoding container -- found null value instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 87246,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 87887,
-      "length": 67,
-      "value": "\"Cannot get nested keyed container -- unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 88292,
-      "length": 66,
-      "value": "\"Cannot get keyed decoding container -- found null value instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 88547,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 89076,
-      "length": 59,
-      "value": "\"Cannot get superDecoder() -- unkeyed container is at end.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89220,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 89647,
-      "length": 48,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 89664,
-      "length": 3,
-      "value": "\" but found null value instead.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92845,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92922,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 94146,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 94176,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 94201,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 94598,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 94628,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 94653,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 95056,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 95086,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 95111,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 95515,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 95545,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 95570,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 95974,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 96004,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 96029,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 96428,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 96458,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 96483,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 96886,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 96916,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 96941,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 97350,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 97380,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 97405,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 97815,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 97845,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 97870,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 98280,
-      "length": 57,
-      "value": "\"Parsed JSON number <\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 98310,
-      "length": 1,
-      "value": "\"> does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 98335,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 99334,
-      "length": 55,
-      "value": "\"Parsed JSON number \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 99363,
-      "length": 4,
-      "value": "\" does not fit in \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 99387,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "FloatLiteral",
-      "offset": 102913,
-      "length": 6,
-      "value": "1000.0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 103256,
-      "length": 47,
-      "value": "\"Expected date string to be ISO8601-formatted.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 103371,
-      "length": 55,
-      "value": "\"ISO8601DateFormatter is unavailable on this platform.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 103702,
-      "length": 58,
-      "value": "\"Date string does not match format expected by formatter.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 104721,
-      "length": 39,
-      "value": "\"Encountered Data is not valid Base64.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 107530,
-      "length": 21,
-      "value": "\"Invalid URL string.\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 108584,
-      "length": 13,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 108596,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 108810,
-      "length": 16,
-      "value": "\"Index \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 108825,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 108915,
+      "offset": 108456,
       "length": 7,
       "value": "\"super\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 110380,
-      "length": 20,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 110390,
-      "length": 1,
-      "value": "\".infinity\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 110463,
-      "length": 21,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 110474,
-      "length": 1,
-      "value": "\".infinity\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 110523,
-      "length": 15,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 110533,
-      "length": 1,
-      "value": "\".nan\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 110573,
-      "length": 167,
-      "value": "\"Unable to encode \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-watchos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 110610,
-      "length": 8,
-      "value": "\" directly in JSON. Use JSONEncoder.NonConformingFloatEncodingStrategy.convertToString to specify how the value should be encoded.\""
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "Promises",
+    "printedName": "Promises",
     "children": [
       {
         "kind": "Import",
@@ -149,7 +149,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -260,7 +260,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -442,7 +442,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(@escaping (τ_0_0) -> (), @escaping (Swift.Error) -> ()) throws -> ()",
+                "printedName": "(@escaping (τ_0_0) -> (), @escaping (any Swift.Error) -> ()) throws -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -452,7 +452,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "((τ_0_0) -> (), (Swift.Error) -> ())",
+                    "printedName": "((τ_0_0) -> (), (any Swift.Error) -> ())",
                     "children": [
                       {
                         "kind": "TypeFunc",
@@ -474,7 +474,7 @@
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Error) -> ()",
+                        "printedName": "(any Swift.Error) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -484,7 +484,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ]
@@ -535,7 +535,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Error) -> ()",
+                "printedName": "(any Swift.Error) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -545,7 +545,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ]
@@ -758,7 +758,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Error) throws -> Promises.Promise<τ_0_0>",
+                "printedName": "(any Swift.Error) throws -> Promises.Promise<τ_0_0>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -776,7 +776,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ]
@@ -824,7 +824,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Error) throws -> τ_0_0",
+                "printedName": "(any Swift.Error) throws -> τ_0_0",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -834,7 +834,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ]
@@ -1322,6 +1322,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "CustomStringConvertible",
@@ -2181,12 +2195,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "GenericFunction",
-                "printedName": "<τ_0_0> (Promises.Maybe<τ_0_0>.Type) -> (Swift.Error) -> Promises.Maybe<τ_0_0>",
+                "printedName": "<τ_0_0> (Promises.Maybe<τ_0_0>.Type) -> (any Swift.Error) -> Promises.Maybe<τ_0_0>",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> Promises.Maybe<τ_0_0>",
+                    "printedName": "(any Swift.Error) -> Promises.Maybe<τ_0_0>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2204,7 +2218,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -2293,7 +2307,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -2372,12 +2386,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -2400,12 +2414,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Error?",
+                    "printedName": "(any Swift.Error)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -2465,6 +2479,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2896,12 +2924,12 @@
           {
             "kind": "TypeNominal",
             "name": "Optional",
-            "printedName": "((Swift.Int, Swift.Error) -> Swift.Bool)?",
+            "printedName": "((Swift.Int, any Swift.Error) -> Swift.Bool)?",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Int, Swift.Error) -> Swift.Bool",
+                "printedName": "(Swift.Int, any Swift.Error) -> Swift.Bool",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2912,7 +2940,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.Int, Swift.Error)",
+                    "printedName": "(Swift.Int, any Swift.Error)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2923,7 +2951,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -3273,7 +3301,7 @@
           {
             "kind": "TypeFunc",
             "name": "Function",
-            "printedName": "(@escaping (τ_0_0, Swift.Error?) -> ()) throws -> ()",
+            "printedName": "(@escaping (τ_0_0, (any Swift.Error)?) -> ()) throws -> ()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3283,7 +3311,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(τ_0_0, Swift.Error?) -> ()",
+                "printedName": "(τ_0_0, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3293,7 +3321,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(τ_0_0, Swift.Error?)",
+                    "printedName": "(τ_0_0, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -3303,12 +3331,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -3361,7 +3389,7 @@
           {
             "kind": "TypeFunc",
             "name": "Function",
-            "printedName": "(@escaping (Swift.Error?, τ_0_0) -> ()) throws -> ()",
+            "printedName": "(@escaping ((any Swift.Error)?, τ_0_0) -> ()) throws -> ()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3371,7 +3399,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Error?, τ_0_0) -> ()",
+                "printedName": "((any Swift.Error)?, τ_0_0) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3381,17 +3409,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.Error?, τ_0_0)",
+                    "printedName": "((any Swift.Error)?, τ_0_0)",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -3457,7 +3485,7 @@
           {
             "kind": "TypeFunc",
             "name": "Function",
-            "printedName": "(@escaping (τ_0_0?, Swift.Error?) -> ()) throws -> ()",
+            "printedName": "(@escaping (τ_0_0?, (any Swift.Error)?) -> ()) throws -> ()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3467,7 +3495,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(τ_0_0?, Swift.Error?) -> ()",
+                "printedName": "(τ_0_0?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3477,7 +3505,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(τ_0_0?, Swift.Error?)",
+                    "printedName": "(τ_0_0?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -3495,12 +3523,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -3561,7 +3589,7 @@
           {
             "kind": "TypeFunc",
             "name": "Function",
-            "printedName": "(@escaping (Swift.Error?, τ_0_0?) -> ()) throws -> ()",
+            "printedName": "(@escaping ((any Swift.Error)?, τ_0_0?) -> ()) throws -> ()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3571,7 +3599,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Error?, τ_0_0?) -> ()",
+                "printedName": "((any Swift.Error)?, τ_0_0?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3581,17 +3609,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.Error?, τ_0_0?)",
+                    "printedName": "((any Swift.Error)?, τ_0_0?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -3685,7 +3713,7 @@
           {
             "kind": "TypeFunc",
             "name": "Function",
-            "printedName": "(@escaping (τ_0_0?, τ_0_1?, Swift.Error?) -> ()) throws -> ()",
+            "printedName": "(@escaping (τ_0_0?, τ_0_1?, (any Swift.Error)?) -> ()) throws -> ()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3695,7 +3723,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(τ_0_0?, τ_0_1?, Swift.Error?) -> ()",
+                "printedName": "(τ_0_0?, τ_0_1?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3705,7 +3733,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(τ_0_0?, τ_0_1?, Swift.Error?)",
+                    "printedName": "(τ_0_0?, τ_0_1?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -3736,12 +3764,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -3973,7 +4001,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -4153,6 +4181,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4324,6 +4366,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4411,370 +4467,5 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": [
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 1025,
-      "length": 44,
-      "value": "\"Cannot cast \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 1047,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 1068,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 2666,
-      "length": 44,
-      "value": "\"Cannot cast \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 2696,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 2709,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 3227,
-      "length": 53,
-      "value": "\"Cannot cast \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 3262,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 3279,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 4337,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 4448,
-      "length": 27,
-      "value": "\"Fulfilled: \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 4474,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 4586,
-      "length": 26,
-      "value": "\"Rejected: \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 4611,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 4630,
-      "length": 24,
-      "value": "\"Pending: \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise.swift",
-      "kind": "StringLiteral",
-      "offset": 4653,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3373,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3429,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "StringLiteral",
-      "offset": 3474,
-      "length": 58,
-      "value": "\"Cannot convert \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "StringLiteral",
-      "offset": 3513,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "StringLiteral",
-      "offset": 3531,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4898,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4954,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5010,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "StringLiteral",
-      "offset": 5055,
-      "length": 61,
-      "value": "\"Cannot convert \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "StringLiteral",
-      "offset": 5094,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "StringLiteral",
-      "offset": 5115,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6593,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6649,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6705,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6761,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "StringLiteral",
-      "offset": 6806,
-      "length": 64,
-      "value": "\"Cannot convert \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "StringLiteral",
-      "offset": 6845,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+All.swift",
-      "kind": "StringLiteral",
-      "offset": 6869,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4102,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4152,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5738,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5788,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5838,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Any.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8466,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
-      "kind": "StringLiteral",
-      "offset": 1658,
-      "length": 53,
-      "value": "\"Cannot cast \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
-      "kind": "StringLiteral",
-      "offset": 1693,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
-      "kind": "StringLiteral",
-      "offset": 1710,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
-      "kind": "StringLiteral",
-      "offset": 2884,
-      "length": 53,
-      "value": "\"Cannot cast \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
-      "kind": "StringLiteral",
-      "offset": 2919,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
-      "kind": "StringLiteral",
-      "offset": 2936,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
-      "kind": "StringLiteral",
-      "offset": 4178,
-      "length": 53,
-      "value": "\"Cannot cast \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
-      "kind": "StringLiteral",
-      "offset": 4213,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Then.swift",
-      "kind": "StringLiteral",
-      "offset": 4230,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Validate.swift",
-      "kind": "StringLiteral",
-      "offset": 1345,
-      "length": 53,
-      "value": "\"Cannot cast \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Validate.swift",
-      "kind": "StringLiteral",
-      "offset": 1380,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-macos\/Pods\/PromisesSwift\/Sources\/Promises\/Promise+Validate.swift",
-      "kind": "StringLiteral",
-      "offset": 1397,
-      "length": 2,
-      "value": "\"\""
-    }
-  ]
+  "ConstValues": []
 }

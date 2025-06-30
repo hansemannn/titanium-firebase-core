@@ -5,6 +5,7 @@ module * { export * }
   link framework "AppKit"
   link framework "Foundation"
   link framework "Security"
+  link framework "SystemConfiguration"
   link "z"
 }
 module FirebaseRemoteConfig.Swift {

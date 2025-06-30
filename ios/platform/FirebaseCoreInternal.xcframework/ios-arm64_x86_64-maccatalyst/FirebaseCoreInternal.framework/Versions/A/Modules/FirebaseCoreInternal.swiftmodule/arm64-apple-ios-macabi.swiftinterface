@@ -1,17 +1,20 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FirebaseCoreInternal
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FirebaseCoreInternal
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import FirebaseCoreInternal
 import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os.lock
+import os
 @objc(FIRHeartbeatController) @objcMembers public class _ObjC_HeartbeatController : ObjectiveC.NSObject {
   @objc public init(id: Swift.String)
   @objc public func log(_ agent: Swift.String)
   @objc public func flush() -> FirebaseCoreInternal._ObjC_HeartbeatsPayload
+  @objc public func flushAsync(completionHandler: @escaping @Sendable (FirebaseCoreInternal._ObjC_HeartbeatsPayload) -> Swift.Void)
   @objc public func flushHeartbeatFromToday() -> FirebaseCoreInternal._ObjC_HeartbeatsPayload
   @objc deinit
 }
@@ -23,11 +26,28 @@ import _SwiftConcurrencyShims
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class HeartbeatController {
+final public class FIRAllocatedUnfairLock<State> : @unchecked Swift.Sendable {
+  #if compiler(>=5.3) && $SendingArgsAndResults
+  public init(initialState: sending State)
+  #else
+  public init(initialState: __owned State)
+  #endif
+  convenience public init() where State == ()
+  final public func lock()
+  final public func unlock()
+  final public func value() -> State
+  @discardableResult
+  final public func withLock<R>(_ body: (inout State) throws -> R) rethrows -> R
+  @discardableResult
+  final public func withLock<R>(_ body: () throws -> R) rethrows -> R
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class HeartbeatController : Swift.Sendable {
   convenience public init(id: Swift.String)
   final public func log(_ agent: Swift.String)
   @discardableResult
   final public func flush() -> FirebaseCoreInternal.HeartbeatsPayload
+  final public func flushAsync(completionHandler: @escaping @Sendable (FirebaseCoreInternal.HeartbeatsPayload) -> Swift.Void)
   @discardableResult
   final public func flushHeartbeatFromToday() -> FirebaseCoreInternal.HeartbeatsPayload
   @objc deinit
@@ -35,7 +55,7 @@ import _SwiftConcurrencyShims
 public protocol HTTPHeaderRepresentable {
   func headerValue() -> Swift.String
 }
-public struct HeartbeatsPayload : Swift.Codable {
+public struct HeartbeatsPayload : Swift.Codable, Swift.Sendable {
   public var isEmpty: Swift.Bool {
     get
   }
