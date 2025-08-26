@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "FirebaseSharedSwift",
+    "printedName": "FirebaseSharedSwift",
     "children": [
       {
         "kind": "Import",
@@ -54,6 +54,22 @@
         "moduleName": "FirebaseSharedSwift",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -66,6 +82,22 @@
         "moduleName": "FirebaseSharedSwift",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -234,15 +266,7 @@
                 "usr": "s:19FirebaseSharedSwift0A11DataEncoderC20DateEncodingStrategyO7iso8601yA2EmF",
                 "mangledName": "$s19FirebaseSharedSwift0A11DataEncoderC20DateEncodingStrategyO7iso8601yA2EmF",
                 "moduleName": "FirebaseSharedSwift",
-                "intro_Macosx": "10.12",
-                "intro_iOS": "10.0",
-                "intro_tvOS": "10.0",
-                "intro_watchOS": "3.0",
                 "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available",
                   "RawDocComment"
                 ]
               },
@@ -307,12 +331,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy.Type) -> (@escaping (Foundation.Date, Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy.Type) -> (@escaping (Foundation.Date, any Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping (Foundation.Date, Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy",
+                        "printedName": "(@escaping (Foundation.Date, any Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DateEncodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -323,7 +347,7 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Foundation.Date, Swift.Encoder) throws -> ()",
+                            "printedName": "(Foundation.Date, any Swift.Encoder) throws -> ()",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -333,7 +357,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Tuple",
-                                "printedName": "(Foundation.Date, Swift.Encoder)",
+                                "printedName": "(Foundation.Date, any Swift.Encoder)",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
@@ -344,7 +368,7 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Encoder",
-                                    "printedName": "Swift.Encoder",
+                                    "printedName": "any Swift.Encoder",
                                     "usr": "s:s7EncoderP"
                                   }
                                 ]
@@ -385,6 +409,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -520,12 +560,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy.Type) -> (@escaping (Foundation.Data, Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy.Type) -> (@escaping (Foundation.Data, any Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping (Foundation.Data, Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy",
+                        "printedName": "(@escaping (Foundation.Data, any Swift.Encoder) throws -> ()) -> FirebaseSharedSwift.FirebaseDataEncoder.DataEncodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -536,7 +576,7 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Foundation.Data, Swift.Encoder) throws -> ()",
+                            "printedName": "(Foundation.Data, any Swift.Encoder) throws -> ()",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -546,7 +586,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Tuple",
-                                "printedName": "(Foundation.Data, Swift.Encoder)",
+                                "printedName": "(Foundation.Data, any Swift.Encoder)",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
@@ -557,7 +597,7 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Encoder",
-                                    "printedName": "Swift.Encoder",
+                                    "printedName": "any Swift.Encoder",
                                     "usr": "s:s7EncoderP"
                                   }
                                 ]
@@ -598,6 +638,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -725,6 +781,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -820,12 +892,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy.Type) -> (@escaping ([Swift.CodingKey]) -> Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy.Type) -> (@escaping ([any Swift.CodingKey]) -> any Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping ([Swift.CodingKey]) -> Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy",
+                        "printedName": "(@escaping ([any Swift.CodingKey]) -> any Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataEncoder.KeyEncodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -836,23 +908,23 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "([Swift.CodingKey]) -> Swift.CodingKey",
+                            "printedName": "([any Swift.CodingKey]) -> any Swift.CodingKey",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "CodingKey",
-                                "printedName": "Swift.CodingKey",
+                                "printedName": "any Swift.CodingKey",
                                 "usr": "s:s9CodingKeyP"
                               },
                               {
                                 "kind": "TypeNominal",
                                 "name": "Array",
-                                "printedName": "[Swift.CodingKey]",
+                                "printedName": "[any Swift.CodingKey]",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "CodingKey",
-                                    "printedName": "Swift.CodingKey",
+                                    "printedName": "any Swift.CodingKey",
                                     "usr": "s:s9CodingKeyP"
                                   }
                                 ],
@@ -894,6 +966,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -1252,7 +1340,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExistentialMetatype",
-                "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1283,7 +1371,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ExistentialMetatype",
-                    "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                    "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1314,7 +1402,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ExistentialMetatype",
-                    "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                    "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1537,6 +1625,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1705,15 +1809,7 @@
                 "usr": "s:19FirebaseSharedSwift0A11DataDecoderC20DateDecodingStrategyO7iso8601yA2EmF",
                 "mangledName": "$s19FirebaseSharedSwift0A11DataDecoderC20DateDecodingStrategyO7iso8601yA2EmF",
                 "moduleName": "FirebaseSharedSwift",
-                "intro_Macosx": "10.12",
-                "intro_iOS": "10.0",
-                "intro_tvOS": "10.0",
-                "intro_watchOS": "3.0",
                 "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available",
                   "RawDocComment"
                 ]
               },
@@ -1778,12 +1874,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy.Type) -> (@escaping (Swift.Decoder) throws -> Foundation.Date) -> FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy.Type) -> (@escaping (any Swift.Decoder) throws -> Foundation.Date) -> FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping (Swift.Decoder) throws -> Foundation.Date) -> FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy",
+                        "printedName": "(@escaping (any Swift.Decoder) throws -> Foundation.Date) -> FirebaseSharedSwift.FirebaseDataDecoder.DateDecodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1794,7 +1890,7 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Swift.Decoder) throws -> Foundation.Date",
+                            "printedName": "(any Swift.Decoder) throws -> Foundation.Date",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -1805,7 +1901,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Decoder",
-                                "printedName": "Swift.Decoder",
+                                "printedName": "any Swift.Decoder",
                                 "usr": "s:s7DecoderP"
                               }
                             ]
@@ -1844,6 +1940,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -1979,12 +2091,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy.Type) -> (@escaping (Swift.Decoder) throws -> Foundation.Data) -> FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy.Type) -> (@escaping (any Swift.Decoder) throws -> Foundation.Data) -> FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping (Swift.Decoder) throws -> Foundation.Data) -> FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy",
+                        "printedName": "(@escaping (any Swift.Decoder) throws -> Foundation.Data) -> FirebaseSharedSwift.FirebaseDataDecoder.DataDecodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1995,7 +2107,7 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Swift.Decoder) throws -> Foundation.Data",
+                            "printedName": "(any Swift.Decoder) throws -> Foundation.Data",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -2006,7 +2118,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Decoder",
-                                "printedName": "Swift.Decoder",
+                                "printedName": "any Swift.Decoder",
                                 "usr": "s:s7DecoderP"
                               }
                             ]
@@ -2045,6 +2157,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2172,6 +2300,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2267,12 +2411,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy.Type) -> (@escaping ([Swift.CodingKey]) -> Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy",
+                    "printedName": "(FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy.Type) -> (@escaping ([any Swift.CodingKey]) -> any Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(@escaping ([Swift.CodingKey]) -> Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy",
+                        "printedName": "(@escaping ([any Swift.CodingKey]) -> any Swift.CodingKey) -> FirebaseSharedSwift.FirebaseDataDecoder.KeyDecodingStrategy",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -2283,23 +2427,23 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "([Swift.CodingKey]) -> Swift.CodingKey",
+                            "printedName": "([any Swift.CodingKey]) -> any Swift.CodingKey",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "CodingKey",
-                                "printedName": "Swift.CodingKey",
+                                "printedName": "any Swift.CodingKey",
                                 "usr": "s:s9CodingKeyP"
                               },
                               {
                                 "kind": "TypeNominal",
                                 "name": "Array",
-                                "printedName": "[Swift.CodingKey]",
+                                "printedName": "[any Swift.CodingKey]",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "CodingKey",
-                                    "printedName": "Swift.CodingKey",
+                                    "printedName": "any Swift.CodingKey",
                                     "usr": "s:s9CodingKeyP"
                                   }
                                 ],
@@ -2341,6 +2485,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2699,7 +2859,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExistentialMetatype",
-                "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2730,7 +2890,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ExistentialMetatype",
-                    "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                    "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2761,7 +2921,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ExistentialMetatype",
-                    "printedName": "FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
+                    "printedName": "any FirebaseSharedSwift.StructureCodingPassthroughTypeResolver.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2996,6 +3156,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3191,6 +3367,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3204,10 +3396,25 @@
         "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
         "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -3511,58 +3718,51 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Dictionary",
-      "offset": 12051,
+      "offset": 11986,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
-      "offset": 14880,
+      "offset": 14823,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
-      "offset": 17954,
+      "offset": 17897,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
-      "kind": "StringLiteral",
-      "offset": 40844,
-      "length": 24,
-      "value": "\"FirebaseSharedSwift.__JSONReferencingEncoder\""
-    },
-    {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Dictionary",
-      "offset": 50174,
+      "offset": 49881,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
-      "offset": 53060,
+      "offset": 52772,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
-      "offset": 55989,
+      "offset": 55701,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "StringLiteral",
-      "offset": 108915,
+      "offset": 108456,
       "length": 7,
       "value": "\"super\""
     }

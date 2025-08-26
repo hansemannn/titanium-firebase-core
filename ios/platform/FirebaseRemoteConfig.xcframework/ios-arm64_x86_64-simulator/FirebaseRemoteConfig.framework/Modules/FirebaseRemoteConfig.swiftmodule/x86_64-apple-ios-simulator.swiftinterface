@@ -1,0 +1,68 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FirebaseRemoteConfig
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import FirebaseCore
+@_exported import FirebaseRemoteConfig
+import FirebaseSharedSwift
+import Foundation
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum RemoteConfigValueCodableError : Swift.Error {
+  case unsupportedType(Swift.String)
+}
+extension FirebaseRemoteConfig.RemoteConfigValue {
+  public func decoded<Value>(asType: Value.Type = Value.self) throws -> Value where Value : Swift.Decodable
+}
+public enum RemoteConfigCodableError : Swift.Error {
+  case invalidSetDefaultsInput(Swift.String)
+}
+extension FirebaseRemoteConfig.RemoteConfig {
+  public func decoded<Value>(asType: Value.Type = Value.self) throws -> Value where Value : Swift.Decodable
+  public func setDefaults<Value>(from value: Value) throws where Value : Swift.Encodable
+}
+public struct CustomSignalValue {
+  public static func string(_ string: Swift.String) -> FirebaseRemoteConfig.CustomSignalValue
+  public static func integer(_ integer: Swift.Int) -> FirebaseRemoteConfig.CustomSignalValue
+  public static func double(_ double: Swift.Double) -> FirebaseRemoteConfig.CustomSignalValue
+}
+extension FirebaseRemoteConfig.CustomSignalValue : Swift.ExpressibleByStringInterpolation {
+  public init(stringLiteral value: Swift.String)
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension FirebaseRemoteConfig.CustomSignalValue : Swift.ExpressibleByIntegerLiteral {
+  public init(integerLiteral value: Swift.Int)
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension FirebaseRemoteConfig.CustomSignalValue : Swift.ExpressibleByFloatLiteral {
+  public init(floatLiteral value: Swift.Double)
+  public typealias FloatLiteralType = Swift.Double
+}
+@available(iOS 13, tvOS 13, macOS 10.15, macCatalyst 13, watchOS 7, *)
+extension FirebaseRemoteConfig.RemoteConfig {
+  public func setCustomSignals(_ customSignals: [Swift.String : FirebaseRemoteConfig.CustomSignalValue?]) async throws
+}
+@available(iOS 14.0, macOS 11.0, macCatalyst 14.0, tvOS 14.0, watchOS 7.0, *)
+@propertyWrapper @_Concurrency.MainActor @preconcurrency public struct RemoteConfigProperty<T> : SwiftUICore.DynamicProperty where T : Swift.Decodable {
+  @_Concurrency.MainActor @preconcurrency public let key: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var wrappedValue: T {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(key: Swift.String, fallback: T)
+}
+extension FirebaseRemoteConfig.RemoteConfig {
+  public subscript<T>(decodedValue key: Swift.String) -> T? where T : Swift.Decodable {
+    get
+  }
+  public subscript(jsonValue key: Swift.String) -> [Swift.String : Swift.AnyHashable]? {
+    get
+  }
+}
+@available(iOS 14.0, macOS 11.0, macCatalyst 14.0, tvOS 14.0, watchOS 7.0, *)
+extension FirebaseRemoteConfig.RemoteConfigProperty : Swift.Sendable {}

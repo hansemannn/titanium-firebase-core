@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "FirebaseCoreInternal",
+    "printedName": "FirebaseCoreInternal",
     "children": [
       {
         "kind": "Import",
@@ -101,6 +101,46 @@
           },
           {
             "kind": "Function",
+            "name": "flushAsync",
+            "printedName": "flushAsync(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FirebaseCoreInternal._ObjC_HeartbeatsPayload) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ObjC_HeartbeatsPayload",
+                    "printedName": "FirebaseCoreInternal._ObjC_HeartbeatsPayload",
+                    "usr": "c:@M@FirebaseCoreInternal@objc(cs)FIRHeartbeatsPayload"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FirebaseCoreInternal@objc(cs)FIRHeartbeatController(im)flushAsyncWithCompletionHandler:",
+            "mangledName": "$s20FirebaseCoreInternal25_ObjC_HeartbeatControllerC10flushAsync17completionHandleryyAA01_D19C_HeartbeatsPayloadCYbc_tF",
+            "moduleName": "FirebaseCoreInternal",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "flushHeartbeatFromToday",
             "printedName": "flushHeartbeatFromToday()",
             "children": [
@@ -165,6 +205,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -378,6 +432,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -424,6 +492,302 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FirebaseCoreInternal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FirebaseCoreInternal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.lock",
+        "printedName": "os.lock",
+        "declKind": "Import",
+        "moduleName": "FirebaseCoreInternal"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FIRAllocatedUnfairLock",
+        "printedName": "FIRAllocatedUnfairLock",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(initialState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FIRAllocatedUnfairLock",
+                "printedName": "FirebaseCoreInternal.FIRAllocatedUnfairLock<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0",
+                "paramValueOwnership": "Owned"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockC12initialStateACyxGxn_tcfc",
+            "mangledName": "$s20FirebaseCoreInternal22FIRAllocatedUnfairLockC12initialStateACyxGxn_tcfc",
+            "moduleName": "FirebaseCoreInternal",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<State>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FIRAllocatedUnfairLock",
+                "printedName": "FirebaseCoreInternal.FIRAllocatedUnfairLock<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockCACyytGycytRszlufc",
+            "mangledName": "$s20FirebaseCoreInternal22FIRAllocatedUnfairLockCACyytGycytRszlufc",
+            "moduleName": "FirebaseCoreInternal",
+            "genericSig": "<τ_0_0 where τ_0_0 == ()>",
+            "sugared_genericSig": "<State where State == ()>",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "lock",
+            "printedName": "lock()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockC4lockyyF",
+            "mangledName": "$s20FirebaseCoreInternal22FIRAllocatedUnfairLockC4lockyyF",
+            "moduleName": "FirebaseCoreInternal",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<State>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unlock",
+            "printedName": "unlock()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockC6unlockyyF",
+            "mangledName": "$s20FirebaseCoreInternal22FIRAllocatedUnfairLockC6unlockyyF",
+            "moduleName": "FirebaseCoreInternal",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<State>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "value",
+            "printedName": "value()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockC5valuexyF",
+            "mangledName": "$s20FirebaseCoreInternal22FIRAllocatedUnfairLockC5valuexyF",
+            "moduleName": "FirebaseCoreInternal",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<State>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withLock",
+            "printedName": "withLock(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(inout τ_0_0) throws -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockC04withF0yqd__qd__xzKXEKlF",
+            "mangledName": "$s20FirebaseCoreInternal22FIRAllocatedUnfairLockC04withF0yqd__qd__xzKXEKlF",
+            "moduleName": "FirebaseCoreInternal",
+            "genericSig": "<τ_0_0, τ_1_0>",
+            "sugared_genericSig": "<State, R>",
+            "declAttributes": [
+              "Final",
+              "Rethrows",
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withLock",
+            "printedName": "withLock(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockC04withF0yqd__qd__yKXEKlF",
+            "mangledName": "$s20FirebaseCoreInternal22FIRAllocatedUnfairLockC04withF0yqd__qd__yKXEKlF",
+            "moduleName": "FirebaseCoreInternal",
+            "genericSig": "<τ_0_0, τ_1_0>",
+            "sugared_genericSig": "<State, R>",
+            "declAttributes": [
+              "Final",
+              "Rethrows",
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20FirebaseCoreInternal22FIRAllocatedUnfairLockC",
+        "mangledName": "$s20FirebaseCoreInternal22FIRAllocatedUnfairLockC",
+        "moduleName": "FirebaseCoreInternal",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<State>",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -535,6 +899,45 @@
           },
           {
             "kind": "Function",
+            "name": "flushAsync",
+            "printedName": "flushAsync(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FirebaseCoreInternal.HeartbeatsPayload) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HeartbeatsPayload",
+                    "printedName": "FirebaseCoreInternal.HeartbeatsPayload",
+                    "usr": "s:20FirebaseCoreInternal17HeartbeatsPayloadV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20FirebaseCoreInternal19HeartbeatControllerC10flushAsync17completionHandleryyAA17HeartbeatsPayloadVYbc_tF",
+            "mangledName": "$s20FirebaseCoreInternal19HeartbeatControllerC10flushAsync17completionHandleryyAA17HeartbeatsPayloadVYbc_tF",
+            "moduleName": "FirebaseCoreInternal",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "flushHeartbeatFromToday",
             "printedName": "flushHeartbeatFromToday()",
             "children": [
@@ -567,7 +970,30 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -594,7 +1020,10 @@
         "name": "GoogleUtilities",
         "printedName": "GoogleUtilities",
         "declKind": "Import",
-        "moduleName": "FirebaseCoreInternal"
+        "moduleName": "FirebaseCoreInternal",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -631,6 +1060,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -693,7 +1138,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -718,7 +1163,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -848,6 +1293,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -859,6 +1318,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -1054,33 +1520,19 @@
         "usr": "s:10Foundation4DataV",
         "mangledName": "$s10Foundation4DataV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
         "declAttributes": [
-          "Frozen"
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
         ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSData",
-                    "printedName": "Foundation.NSData",
-                    "usr": "c:objc(cs)NSData"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1473,24 +1925,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -1516,6 +1983,27 @@
           },
           {
             "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -1535,154 +2023,119 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/_ObjC_HeartbeatController.swift",
-      "kind": "StringLiteral",
-      "offset": 763,
-      "length": 25,
-      "value": "\"FirebaseCoreInternal._ObjC_HeartbeatController\""
-    },
-    {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/_ObjC_HeartbeatsPayload.swift",
-      "kind": "StringLiteral",
-      "offset": 755,
-      "length": 23,
-      "value": "\"FirebaseCoreInternal._ObjC_HeartbeatsPayload\""
-    },
-    {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/Heartbeat.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/Heartbeat.swift",
       "kind": "IntegerLiteral",
       "offset": 869,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/Heartbeat.swift",
-      "kind": "IntegerLiteral",
-      "offset": 869,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/Heartbeat.swift",
-      "kind": "IntegerLiteral",
-      "offset": 869,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/Heartbeat.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/Heartbeat.swift",
       "kind": "IntegerLiteral",
       "offset": 1167,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/Heartbeat.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/Heartbeat.swift",
       "kind": "Array",
       "offset": 2219,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatController.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatController.swift",
+      "kind": "StringLiteral",
+      "offset": 997,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatController.swift",
       "kind": "IntegerLiteral",
-      "offset": 972,
+      "offset": 1063,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1442,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatController.swift",
-      "kind": "StringLiteral",
-      "offset": 1279,
-      "length": 13,
-      "value": "\"en_US_POSIX\""
-    },
-    {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatController.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
       "kind": "IntegerLiteral",
-      "offset": 1343,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1630,
+      "offset": 1658,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
       "kind": "StringLiteral",
-      "offset": 2212,
+      "offset": 2240,
       "length": 12,
       "value": "\"heartbeats\""
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
-      "kind": "StringLiteral",
-      "offset": 2212,
-      "length": 12,
-      "value": "\"heartbeats\""
-    },
-    {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
       "kind": "Array",
-      "offset": 2543,
+      "offset": 2571,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
       "kind": "StringLiteral",
-      "offset": 4309,
+      "offset": 4098,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
       "kind": "StringLiteral",
-      "offset": 4364,
+      "offset": 4153,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
       "kind": "IntegerLiteral",
-      "offset": 4429,
+      "offset": 4218,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
       "kind": "Array",
-      "offset": 4891,
+      "offset": 4680,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatsPayload.swift",
       "kind": "Array",
-      "offset": 5453,
+      "offset": 5242,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatStorage.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/HeartbeatStorage.swift",
       "kind": "Dictionary",
-      "offset": 2158,
+      "offset": 2465,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/StorageFactory.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/StorageFactory.swift",
       "kind": "StringLiteral",
       "offset": 758,
       "length": 26,
       "value": "\"google-heartbeat-storage\""
     },
     {
-      "filePath": "\/var\/folders\/3s\/vfzpb5r51gs6y328rmlgzm7c0000gn\/T\/ZipRelease\/2023-11-29T04-03-34\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/StorageFactory.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseCoreInternal\/FirebaseCore\/Internal\/Sources\/HeartbeatLogging\/StorageFactory.swift",
       "kind": "StringLiteral",
       "offset": 905,
       "length": 30,
