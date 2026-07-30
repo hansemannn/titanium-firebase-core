@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-tvos9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Promises
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-tvos9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Promises
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Dispatch
 import FBLPromises
 import Foundation
@@ -51,15 +51,21 @@ public enum Maybe<Value> {
   case error(any Swift.Error)
   public init(_ value: Value)
   public init(_ error: any Swift.Error)
+  #if compiler(>=5.3) && $NonescapableTypes
   public var value: Value? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var error: (any Swift.Error)? {
     get
   }
+  #endif
 }
 extension Promises.Maybe {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func asAnyObject() -> Swift.AnyObject?
+  #endif
 }
 public func asMaybe<Value>(_ value: Swift.AnyObject) -> Promises.Maybe<Value>
 extension Promises.Maybe : Swift.Equatable where Value : Swift.Equatable {
@@ -99,7 +105,9 @@ extension Promises.Promise {
   @discardableResult
   final public func reduce<Container>(on queue: Dispatch.DispatchQueue = .promises, _ items: Container, _ reducer: @escaping Promises.Promise<Value>.Reducer<Container.Element>) -> Promises.Promise<Value> where Container : Swift.Sequence
 }
+#if compiler(>=5.3) && $NonescapableTypes
 public func retry<Value>(on queue: Dispatch.DispatchQueue = .promises, attempts count: Swift.Int = __FBLPromiseRetryDefaultAttemptsCount, delay interval: Foundation.TimeInterval = __FBLPromiseRetryDefaultDelayInterval, condition predicate: ((_ count: Swift.Int, _ error: any Swift.Error) -> Swift.Bool)? = nil, _ work: @escaping () throws -> Promises.Promise<Value>) -> Promises.Promise<Value>
+#endif
 extension Promises.Promise {
   public typealias Then<Result> = (Value) throws -> Result
   @discardableResult
@@ -117,14 +125,28 @@ extension Promises.Promise {
   @discardableResult
   final public func validate(on queue: Dispatch.DispatchQueue = .promises, _ predicate: @escaping (Value) -> Swift.Bool) -> Promises.Promise<Value>
 }
+#if compiler(>=5.3) && $NonescapableTypes
 public func wrap(on queue: Dispatch.DispatchQueue = .promises, _ work: @escaping (@escaping () -> Swift.Void) throws -> Swift.Void) -> Promises.Promise<Any?>
+#endif
 public func wrap<Value>(on queue: Dispatch.DispatchQueue = .promises, _ work: @escaping (@escaping (Value) -> Swift.Void) throws -> Swift.Void) -> Promises.Promise<Value>
+#if compiler(>=5.3) && $NonescapableTypes
 public func wrap<Value>(on queue: Dispatch.DispatchQueue = .promises, _ work: @escaping (@escaping (Value?) -> Swift.Void) throws -> Swift.Void) -> Promises.Promise<Value?>
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
 public func wrap<Value>(on queue: Dispatch.DispatchQueue = .promises, _ work: @escaping (@escaping (Value, (any Swift.Error)?) -> Swift.Void) throws -> Swift.Void) -> Promises.Promise<Value>
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
 public func wrap<Value>(on queue: Dispatch.DispatchQueue = .promises, _ work: @escaping (@escaping ((any Swift.Error)?, Value) -> Swift.Void) throws -> Swift.Void) -> Promises.Promise<Value>
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
 public func wrap<Value>(on queue: Dispatch.DispatchQueue = .promises, _ work: @escaping (@escaping (Value?, (any Swift.Error)?) -> Swift.Void) throws -> Swift.Void) -> Promises.Promise<Value?>
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
 public func wrap<Value>(on queue: Dispatch.DispatchQueue = .promises, _ work: @escaping (@escaping ((any Swift.Error)?, Value?) -> Swift.Void) throws -> Swift.Void) -> Promises.Promise<Value?>
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
 public func wrap<Value1, Value2>(on queue: Dispatch.DispatchQueue = .promises, _ work: @escaping (@escaping (Value1?, Value2?, (any Swift.Error)?) -> Swift.Void) throws -> Swift.Void) -> Promises.Promise<(Value1?, Value2?)>
+#endif
 public enum PromiseError {
   case timedOut
   case validationFailure
@@ -135,7 +157,9 @@ public enum PromiseError {
   }
 }
 extension Promises.PromiseError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(_ error: any Swift.Error)
+  #endif
 }
 extension Promises.PromiseError : Foundation.CustomNSError {
   public static var errorDomain: Swift.String {

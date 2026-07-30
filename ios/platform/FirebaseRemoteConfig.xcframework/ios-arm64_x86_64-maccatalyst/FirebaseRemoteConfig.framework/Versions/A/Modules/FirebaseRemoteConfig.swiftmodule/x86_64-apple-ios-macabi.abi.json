@@ -115,6 +115,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -209,6 +216,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -570,6 +584,16 @@
         "kind": "Import",
         "name": "FirebaseSharedSwift",
         "printedName": "FirebaseSharedSwift",
+        "declKind": "Import",
+        "moduleName": "FirebaseRemoteConfig",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "FirebaseRemoteConfig",
         "declAttributes": [
@@ -1053,6 +1077,316 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Var",
+            "name": "configUpdates",
+            "printedName": "configUpdates",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RemoteConfigUpdateSequence",
+                "printedName": "FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence",
+                "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E13configUpdatesAbCE0dB14UpdateSequenceVvp",
+            "mangledName": "$sSo15FIRRemoteConfigC014FirebaseRemoteB0E13configUpdatesAbCE0dB14UpdateSequenceVvp",
+            "moduleName": "FirebaseRemoteConfig",
+            "intro_Macosx": "15.0",
+            "intro_iOS": "18.0",
+            "intro_tvOS": "18.0",
+            "intro_watchOS": "11.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RemoteConfigUpdateSequence",
+                    "printedName": "FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence",
+                    "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E13configUpdatesAbCE0dB14UpdateSequenceVvg",
+                "mangledName": "$sSo15FIRRemoteConfigC014FirebaseRemoteB0E13configUpdatesAbCE0dB14UpdateSequenceVvg",
+                "moduleName": "FirebaseRemoteConfig",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "RemoteConfigUpdateSequence",
+            "printedName": "RemoteConfigUpdateSequence",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RemoteConfigUpdateSequence",
+                    "printedName": "FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence",
+                    "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RemoteConfig",
+                    "printedName": "FirebaseRemoteConfig.RemoteConfig",
+                    "usr": "c:objc(cs)FIRRemoteConfig"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceVyAeBcfc",
+                "mangledName": "$sSo15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceVyAeBcfc",
+                "moduleName": "FirebaseRemoteConfig",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "makeAsyncIterator",
+                "printedName": "makeAsyncIterator()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence.Iterator",
+                    "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV8IteratorV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV17makeAsyncIteratorAE0I0VyF",
+                "mangledName": "$sSo15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV17makeAsyncIteratorAE0I0VyF",
+                "moduleName": "FirebaseRemoteConfig",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "Function",
+                    "name": "next",
+                    "printedName": "next()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "FirebaseRemoteConfig.RemoteConfigUpdate?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RemoteConfigUpdate",
+                            "printedName": "FirebaseRemoteConfig.RemoteConfigUpdate",
+                            "usr": "c:objc(cs)FIRRemoteConfigUpdate"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV8IteratorV4nextSo0abE0CSgyYaKF",
+                    "mangledName": "$sSo15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV8IteratorV4nextSo0abE0CSgyYaKF",
+                    "moduleName": "FirebaseRemoteConfig",
+                    "declAttributes": [
+                      "Mutating",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "throwing": true,
+                    "funcSelfKind": "Mutating"
+                  }
+                ],
+                "declKind": "Struct",
+                "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV8IteratorV",
+                "mangledName": "$sSo15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV8IteratorV",
+                "moduleName": "FirebaseRemoteConfig",
+                "intro_Macosx": "15.0",
+                "intro_iOS": "18.0",
+                "intro_tvOS": "18.0",
+                "intro_watchOS": "11.0",
+                "declAttributes": [
+                  "AccessControl",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "RawDocComment"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "AsyncIteratorProtocol",
+                    "printedName": "AsyncIteratorProtocol",
+                    "children": [
+                      {
+                        "kind": "TypeWitness",
+                        "name": "Element",
+                        "printedName": "Element",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RemoteConfigUpdate",
+                            "printedName": "FirebaseRemoteConfig.RemoteConfigUpdate",
+                            "usr": "c:objc(cs)FIRRemoteConfigUpdate"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeWitness",
+                        "name": "Failure",
+                        "printedName": "Failure",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:ScI",
+                    "mangledName": "$sScI"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Sendable",
+                    "printedName": "Sendable",
+                    "usr": "s:s8SendableP",
+                    "mangledName": "$ss8SendableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "SendableMetatype",
+                    "printedName": "SendableMetatype",
+                    "usr": "s:s16SendableMetatypeP",
+                    "mangledName": "$ss16SendableMetatypeP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV",
+            "mangledName": "$sSo15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV",
+            "moduleName": "FirebaseRemoteConfig",
+            "intro_Macosx": "15.0",
+            "intro_iOS": "18.0",
+            "intro_tvOS": "18.0",
+            "intro_watchOS": "11.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "AsyncSequence",
+                "printedName": "AsyncSequence",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AsyncIterator",
+                    "printedName": "AsyncIterator",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Iterator",
+                        "printedName": "FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence.Iterator",
+                        "usr": "s:So15FIRRemoteConfigC014FirebaseRemoteB0E0dB14UpdateSequenceV8IteratorV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeWitness",
+                    "name": "Element",
+                    "printedName": "Element",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RemoteConfigUpdate",
+                        "printedName": "FirebaseRemoteConfig.RemoteConfigUpdate",
+                        "usr": "c:objc(cs)FIRRemoteConfigUpdate"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeWitness",
+                    "name": "Failure",
+                    "printedName": "Failure",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sci",
+                "mangledName": "$sSci"
+              }
+            ]
+          },
+          {
             "kind": "Subscript",
             "name": "subscript",
             "printedName": "subscript(decodedValue:)",
@@ -1309,14 +1643,14 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/PropertyWrapper\/RemoteConfigValueObservable.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/PropertyWrapper\/RemoteConfigValueObservable.swift",
       "kind": "StringLiteral",
       "offset": 881,
       "length": 37,
       "value": "\"FIRRemoteConfigActivateNotification\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/PropertyWrapper\/RemoteConfigValueObservable.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseRemoteConfig\/FirebaseRemoteConfig\/Swift\/PropertyWrapper\/RemoteConfigValueObservable.swift",
       "kind": "StringLiteral",
       "offset": 1040,
       "length": 15,
