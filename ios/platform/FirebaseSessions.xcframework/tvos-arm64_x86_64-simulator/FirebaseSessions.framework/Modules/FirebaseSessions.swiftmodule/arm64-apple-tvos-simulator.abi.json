@@ -245,16 +245,6 @@
       },
       {
         "kind": "Import",
-        "name": "FirebaseCoreInternal",
-        "printedName": "FirebaseCoreInternal",
-        "declKind": "Import",
-        "moduleName": "FirebaseSessions",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -312,12 +302,32 @@
       },
       {
         "kind": "Import",
+        "name": "GoogleUtilities",
+        "printedName": "GoogleUtilities",
+        "declKind": "Import",
+        "moduleName": "FirebaseSessions",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "FirebaseSessions",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseCoreInternal",
+        "printedName": "FirebaseCoreInternal",
+        "declKind": "Import",
+        "moduleName": "FirebaseSessions",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -724,6 +734,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -757,11 +774,12 @@
             "mangledName": "$s16FirebaseSessions14SessionDetailsC9sessionIdSSSgvp",
             "moduleName": "FirebaseSessions",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -790,62 +808,10 @@
                 "moduleName": "FirebaseSessions",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FirebaseSessions@objc(cs)FIRSessionDetails(im)setSessionId:",
-                "mangledName": "$s16FirebaseSessions14SessionDetailsC9sessionIdSSSgvs",
-                "moduleName": "FirebaseSessions",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16FirebaseSessions14SessionDetailsC9sessionIdSSSgvM",
-                "mangledName": "$s16FirebaseSessions14SessionDetailsC9sessionIdSSSgvM",
-                "moduleName": "FirebaseSessions",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -917,6 +883,7 @@
         "moduleName": "FirebaseSessions",
         "objc_name": "FIRSessionDetails",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjC",
           "RawDocComment"
@@ -926,6 +893,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -988,6 +962,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1307,6 +1288,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1359,6 +1347,17 @@
         "declAttributes": [
           "AccessControl",
           "Preconcurrency"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseCoreInternal",
+        "printedName": "FirebaseCoreInternal",
+        "declKind": "Import",
+        "moduleName": "FirebaseSessions",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -1502,6 +1501,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1558,6 +1564,7 @@
         "moduleName": "FirebaseSessions",
         "declAttributes": [
           "SynthesizedProtocol",
+          "SynthesizedProtocol",
           "SynthesizedProtocol"
         ],
         "isExternal": true,
@@ -1575,6 +1582,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -1667,6 +1681,7 @@
         "moduleName": "FirebaseSessions",
         "declAttributes": [
           "SynthesizedProtocol",
+          "SynthesizedProtocol",
           "SynthesizedProtocol"
         ],
         "isExternal": true,
@@ -1684,6 +1699,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -1776,6 +1798,7 @@
         "moduleName": "FirebaseSessions",
         "declAttributes": [
           "SynthesizedProtocol",
+          "SynthesizedProtocol",
           "SynthesizedProtocol"
         ],
         "isExternal": true,
@@ -1793,6 +1816,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -1885,6 +1915,7 @@
         "moduleName": "FirebaseSessions",
         "declAttributes": [
           "SynthesizedProtocol",
+          "SynthesizedProtocol",
           "SynthesizedProtocol"
         ],
         "isExternal": true,
@@ -1902,6 +1933,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -1998,6 +2036,7 @@
         "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable>",
         "sugared_genericSig": "<Pointee where Pointee : ~Copyable>",
         "declAttributes": [
+          "Unsafe",
           "Frozen"
         ],
         "isExternal": true,
@@ -2029,6 +2068,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -2185,21 +2231,14 @@
         "usr": "s:Sq",
         "mangledName": "$sSq",
         "moduleName": "Swift",
-        "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable>",
-        "sugared_genericSig": "<Wrapped where Wrapped : ~Copyable>",
+        "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable, τ_0_0 : ~Escapable>",
+        "sugared_genericSig": "<Wrapped where Wrapped : ~Copyable, Wrapped : ~Escapable>",
         "declAttributes": [
           "Frozen"
         ],
         "isExternal": true,
         "isEnumExhaustive": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "CustomStringConvertible",
@@ -2237,10 +2276,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2248,6 +2287,20 @@
             "printedName": "BitwiseCopyable",
             "usr": "s:s15BitwiseCopyableP",
             "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -2339,6 +2392,103 @@
             ],
             "usr": "s:10Foundation26DecodableWithConfigurationP",
             "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AttributedTextFormattingDefinition",
+            "printedName": "AttributedTextFormattingDefinition",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUICore.AttributedTextFormattingDefinition<Wrapped.Scope>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AttributedTextFormattingDefinition",
+                        "printedName": "SwiftUICore.AttributedTextFormattingDefinition",
+                        "usr": "s:7SwiftUI34AttributedTextFormattingDefinitionP"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Scope",
+                "printedName": "Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Scope"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI34AttributedTextFormattingDefinitionP",
+            "mangledName": "$s7SwiftUI34AttributedTextFormattingDefinitionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Gesture",
+            "printedName": "Gesture",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Value"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI7GestureP",
+            "mangledName": "$s7SwiftUI7GestureP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
           }
         ]
       }
@@ -2347,163 +2497,163 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Development\/DevEventConsoleLogger.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Development\/DevEventConsoleLogger.swift",
       "kind": "StringLiteral",
       "offset": 780,
       "length": 25,
       "value": "\"-FIRSessionsDebugEvents\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/FirebaseSessions.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/FirebaseSessions.swift",
       "kind": "StringLiteral",
       "offset": 982,
       "length": 6,
       "value": "\"1974\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/FirebaseSessions.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/FirebaseSessions.swift",
       "kind": "Array",
       "offset": 1754,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/FirebaseSessions.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/FirebaseSessions.swift",
       "kind": "Dictionary",
       "offset": 2005,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/FirebaseSessions.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/FirebaseSessions.swift",
       "kind": "StringLiteral",
       "offset": 2101,
       "length": 34,
       "value": "\"SessionIDChangedNotificationName\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/LocalOverrideSettings.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/LocalOverrideSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1244,
+      "offset": 1285,
       "length": 25,
       "value": "\"FirebaseSessionsEnabled\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/LocalOverrideSettings.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/LocalOverrideSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1311,
+      "offset": 1338,
       "length": 25,
       "value": "\"FirebaseSessionsTimeout\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/LocalOverrideSettings.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/LocalOverrideSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1383,
+      "offset": 1396,
       "length": 29,
       "value": "\"FirebaseSessionsSampingRate\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Logger.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 761,
       "length": 20,
       "value": "\"[FirebaseSessions]\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Logger.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 813,
       "length": 13,
       "value": "\"I-SES000000\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/RemoteSettings.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/RemoteSettings.swift",
       "kind": "StringLiteral",
-      "offset": 981,
+      "offset": 944,
       "length": 18,
       "value": "\"sessions_enabled\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/RemoteSettings.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/RemoteSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1040,
+      "offset": 1003,
       "length": 15,
       "value": "\"sampling_rate\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/RemoteSettings.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/RemoteSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1098,
+      "offset": 1061,
       "length": 25,
       "value": "\"session_timeout_seconds\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/RemoteSettings.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/RemoteSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1165,
+      "offset": 1128,
       "length": 13,
       "value": "\"app_quality\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/SessionGenerator.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/SessionGenerator.swift",
       "kind": "StringLiteral",
       "offset": 1355,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Public\/SessionsSubscriber.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Public\/SessionsSubscriber.swift",
       "kind": "IntegerLiteral",
-      "offset": 1426,
+      "offset": 1442,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Public\/SessionsSubscriber.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Public\/SessionsSubscriber.swift",
       "kind": "IntegerLiteral",
-      "offset": 1445,
+      "offset": 1461,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2204,
+      "offset": 2691,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2209,
+      "offset": 2696,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
       "kind": "StringLiteral",
-      "offset": 2253,
+      "offset": 2740,
       "length": 16,
       "value": "\"cache_duration\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2314,
+      "offset": 2801,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
       "kind": "StringLiteral",
-      "offset": 2378,
+      "offset": 2866,
       "length": 28,
       "value": "\"firebase-sessions-settings\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-tvos\/Pods\/FirebaseSessions\/FirebaseSessions\/Sources\/Settings\/SettingsCacheClient.swift",
       "kind": "StringLiteral",
-      "offset": 2436,
+      "offset": 2924,
       "length": 29,
       "value": "\"firebase-sessions-cache-key\""
     }

@@ -3684,6 +3684,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -3718,49 +3725,49 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Dictionary",
       "offset": 11986,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
       "offset": 14823,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
       "offset": 17897,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Dictionary",
       "offset": 49881,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
       "offset": 52772,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "Array",
       "offset": 55701,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseSharedSwift\/FirebaseSharedSwift\/Sources\/third_party\/FirebaseDataEncoder\/FirebaseDataEncoder.swift",
       "kind": "StringLiteral",
       "offset": 108456,
       "length": 7,

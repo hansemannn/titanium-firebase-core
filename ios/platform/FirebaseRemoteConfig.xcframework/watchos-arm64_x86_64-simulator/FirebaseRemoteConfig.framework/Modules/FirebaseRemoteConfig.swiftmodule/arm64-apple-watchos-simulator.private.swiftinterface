@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-watchos7.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FirebaseRemoteConfig
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-watchos7.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FirebaseRemoteConfig
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import FirebaseCore
 @_exported import FirebaseRemoteConfig
 import FirebaseSharedSwift
@@ -44,9 +44,38 @@ extension FirebaseRemoteConfig.CustomSignalValue : Swift.ExpressibleByFloatLiter
   public init(floatLiteral value: Swift.Double)
   public typealias FloatLiteralType = Swift.Double
 }
-@available(iOS 13, tvOS 13, macOS 10.15, macCatalyst 13, watchOS 7, *)
 extension FirebaseRemoteConfig.RemoteConfig {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func setCustomSignals(_ customSignals: [Swift.String : FirebaseRemoteConfig.CustomSignalValue?]) async throws
+  #endif
+}
+extension FirebaseRemoteConfig.RemoteConfig {
+  @available(macOS 15.0, iOS 18.0, watchOS 11.0, tvOS 18.0, visionOS 2.0, *)
+  public var configUpdates: FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence {
+    get
+  }
+  @available(macOS 15.0, iOS 18.0, watchOS 11.0, tvOS 18.0, visionOS 2.0, *)
+  public struct RemoteConfigUpdateSequence : _Concurrency.AsyncSequence {
+    public typealias Element = FirebaseRemoteConfig.RemoteConfigUpdate
+    public typealias Failure = Swift.Error
+    public typealias AsyncIterator = FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence.Iterator
+    public init(_ remoteConfig: FirebaseRemoteConfig.RemoteConfig)
+    public func makeAsyncIterator() -> FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence.Iterator
+    @available(macOS 15.0, iOS 18.0, watchOS 11.0, tvOS 18.0, visionOS 2.0, *)
+    public struct Iterator : _Concurrency.AsyncIteratorProtocol {
+      public typealias Element = FirebaseRemoteConfig.RemoteConfigUpdate
+      #if compiler(>=5.3) && $NonescapableTypes
+      public mutating func next() async throws -> FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence.Iterator.Element?
+      #endif
+      @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+      @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = any Swift.Error
+    }
+    @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+    @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = any Swift.Error
+  }
+}
+@available(*, unavailable)
+extension FirebaseRemoteConfig.RemoteConfig.RemoteConfigUpdateSequence.Iterator : Swift.Sendable {
 }
 @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, tvOS 14.0, watchOS 7.0, *)
 @propertyWrapper @_Concurrency.MainActor @preconcurrency public struct RemoteConfigProperty<T> : SwiftUICore.DynamicProperty where T : Swift.Decodable {
@@ -57,12 +86,16 @@ extension FirebaseRemoteConfig.RemoteConfig {
   @_Concurrency.MainActor @preconcurrency public init(key: Swift.String, fallback: T)
 }
 extension FirebaseRemoteConfig.RemoteConfig {
+  #if compiler(>=5.3) && $NonescapableTypes
   public subscript<T>(decodedValue key: Swift.String) -> T? where T : Swift.Decodable {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(jsonValue key: Swift.String) -> [Swift.String : Swift.AnyHashable]? {
     get
   }
+  #endif
 }
 @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, tvOS 14.0, watchOS 7.0, *)
 extension FirebaseRemoteConfig.RemoteConfigProperty : Swift.Sendable {}
